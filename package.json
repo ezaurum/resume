@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "preview": "vite preview",
-    "build": "vue-tsc && vite build",
+    "build": "tsc && vite build",
     "dev": "vite --host --port 9990",
     "lint": "eslint --fix",
     "prepare": "husky"
