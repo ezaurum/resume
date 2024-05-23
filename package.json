@@ -5,7 +5,7 @@
     "preview": "vite preview",
     "build": "vue-tsc && vite build",
     "dev": "vite --host --port 9990",
-    "lint": "eslint",
+    "lint": "eslint --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -32,7 +32,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+      "pnpm lint"
     ]
   },
   "engines": {
