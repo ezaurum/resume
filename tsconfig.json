@@ -9,6 +9,7 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -18,8 +19,9 @@
     "jsxImportSource": "react",
     "strict": true,
     "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+        "@/*": ["src/*"]
+    }
   },
-  "include": [
-    "vite.config.mts"
-  ]
 }
