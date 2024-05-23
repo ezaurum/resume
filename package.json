@@ -1,6 +1,7 @@
 {
   "name": "cho-seok-gyu-resume",
   "private": true,
+  "type": "module",
   "scripts": {
     "preview": "vite preview",
     "build": "tsc && vite build",

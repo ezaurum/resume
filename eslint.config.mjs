@@ -1,26 +1,26 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
-import pluginReactConfig from "eslint-plugin-react/configs/recommended.js";
-import pluginReactConfigJSX from "eslint-plugin-react/configs/jsx-runtime.js";
-import {fixupConfigRules} from "@eslint/compat";
+import globals from "globals"
+import pluginJs from "@eslint/js"
+import tseslint from "typescript-eslint"
+import pluginReactConfig from "eslint-plugin-react/configs/recommended.js"
+import pluginReactConfigJSX from "eslint-plugin-react/configs/jsx-runtime.js"
+import { fixupConfigRules } from "@eslint/compat"
 
 export default [
-    {
-        ignores: ["*.d.ts", "dist/*"],
+  {
+    ignores: ["*.d.ts", "dist/*"],
+  },
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
     },
-    {
-        settings: {
-            react: {
-                version: "detect",
-            },
-        },
-    },
-    {
-        languageOptions: {globals: globals.browser},
-    },
-    pluginJs.configs.recommended,
-    ...tseslint.configs.recommended,
-    ...fixupConfigRules(pluginReactConfig),
-    ...fixupConfigRules(pluginReactConfigJSX),
-];
+  },
+  {
+    languageOptions: { globals: globals.browser },
+  },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...fixupConfigRules(pluginReactConfig),
+  ...fixupConfigRules(pluginReactConfigJSX),
+]
