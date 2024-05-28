@@ -9,4 +9,5 @@ export interface Project extends HasTechTag {
   teamSize: number | string
   employer: string
   achievements: string[]
+  employmentType: string
 }
