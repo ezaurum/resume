@@ -6,6 +6,7 @@ export interface Project extends HasTechTag {
   to: Date
   description: string
   roles: string[]
-  teamSize: number
+  teamSize: number | string
   employer: string
+  achievements: string[]
 }

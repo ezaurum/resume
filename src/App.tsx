@@ -43,11 +43,55 @@ function App() {
         <div key={item.title}>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
-          <ul>
-            {item.tags.map((tag) => (
-              <div key={tag}>{tag}</div>
-            ))}
-          </ul>
+
+          {item.to || item.from ? (
+            <p>
+              <span>기간: </span>
+              {item.from ? (
+                <span> {item.from?.toLocaleDateString()}</span>
+              ) : null}
+              ~
+              {item.to ? <span> {item.from?.toLocaleDateString()}</span> : null}
+            </p>
+          ) : null}
+          {item.employer ? <div>업체: {item.employer}</div> : null}
+
+          {item.teamSize ? <div>팀 규모: {item.teamSize} 인</div> : null}
+          {item.roles ? (
+            <div>
+              역할:
+              <ul className="flex flex-row gap-2">
+                {item.roles.map((tag) => (
+                  <div className="px-2 py-1 rounded bg-amber-200" key={tag}>
+                    {tag}
+                  </div>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+          <div>
+            기술 스택:
+            <ul className="flex flex-row gap-2">
+              {item.tags.map((tag) => (
+                <div className="px-2 py-1 rounded bg-amber-200" key={tag}>
+                  {tag}
+                </div>
+              ))}
+            </ul>
+          </div>
+          <div>
+            성과:
+            <ul className="flex flex-col gap-2">
+              {item.achievements.map((tag) => (
+                <li
+                  className="before:content-['•'] before:px-1 before:font-bold"
+                  key={tag}
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       ))}
     </main>
