@@ -1,4 +1,4 @@
-import profile from "@/assets/profile.json"
+import profile from "@/data/profile.ts"
 import resumePDF from "@/assets/resume.pdf"
 
 function LinkSection() {
