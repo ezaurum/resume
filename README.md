@@ -1,10 +1,10 @@
 # RESUME
 
 ToDos:
-- [ ] Add a link to my LinkedIn profile
-- [ ] Add a link to my Github profile
-- [ ] Add a link to my personal website
-- [ ] Add buttons to download my resume in PDF and DOCX formats
+- [x] Add a link to my LinkedIn profile
+- [x] Add a link to my Github profile
+- [x] Add a link to my personal website
+- [x] Add buttons to download my resume in PDF and DOCX formats
 - [ ] Add a section for my skills
 - [ ] Add a section for my work experience
 - [ ] Add a section for my education

@@ -1,7 +1,9 @@
 import { ChangeEvent, useEffect, useState } from "react"
 import Fuse from "fuse.js"
+import profile from "@/assets/profile.json"
 
 import "@/App.css"
+import LinkSection from "@/LinkSection.tsx"
 
 function App() {
   const [filterText, setFilterText] = useState("")
@@ -47,8 +49,10 @@ function App() {
   return (
     <>
       <h1>Resume</h1>
-      <h2>조석규</h2>
+      <h2>{profile.fullName}</h2>
+      <LinkSection />
       <input type={"text"} onInput={inputFilterText} />
+
       {result.map((item) => (
         <div key={item.tech}>{item.tech}</div>
       ))}
