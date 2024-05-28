@@ -11,6 +11,8 @@ function App() {
   }
 
   const fuseOptions = {
+    threshold: 0.3,
+    distance: 100,
     keys: ["tech"],
   }
 
@@ -18,24 +20,26 @@ function App() {
     tech: string
   }
 
-  const fuse = new Fuse<Tech>(
-    [
-      {
-        tech: "React",
-      },
-      {
-        tech: "Vue",
-      },
-      {
-        tech: "Angular",
-      },
-    ],
-    fuseOptions
-  )
+  const resumeValues = [
+    {
+      tech: "React",
+    },
+    {
+      tech: "Vue",
+    },
+    {
+      tech: "Angular",
+    },
+  ]
+  const fuse = new Fuse<Tech>(resumeValues, fuseOptions)
 
   const [result, setResult] = useState<Tech[]>([])
 
   useEffect(() => {
+    if (filterText === "") {
+      setResult(resumeValues)
+      return
+    }
     const search = fuse.search(filterText)
     setResult(search.map((i) => i.item))
   }, [filterText])
