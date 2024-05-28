@@ -32,6 +32,10 @@ function App() {
     setProjectSearchResult(search.map((i) => i.item))
   }, [filterText])
 
+  const toYearMonth = (date: Date) => {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`
+  }
+
   return (
     <main className="p-2 flex flex-col gap-4">
       <h1>Resume</h1>
@@ -47,11 +51,8 @@ function App() {
           {item.to || item.from ? (
             <p>
               <span>기간: </span>
-              {item.from ? (
-                <span> {item.from?.toLocaleDateString()}</span>
-              ) : null}
-              ~
-              {item.to ? <span> {item.from?.toLocaleDateString()}</span> : null}
+              {item.from ? <span>{toYearMonth(item.from)}</span> : null}~
+              {item.to ? <span>{toYearMonth(item.to)}</span> : "현재"}~
             </p>
           ) : null}
           {item.employer ? <div>업체: {item.employer}</div> : null}
