@@ -1,9 +1,8 @@
-import { ChangeEvent, useRef, useState } from "react"
+import { ChangeEvent, useState } from "react"
 import profile from "@/data/profile.ts"
 
 import "@/App.css"
 import LinkSection from "@/LinkSection.tsx"
-import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import ProjectItem from "@/components/Project.tsx"
 import ProjectSearcher from "@/ProjectSearcher.ts"
@@ -17,9 +16,6 @@ function App() {
   }
 
   const projectSearchResult = ProjectSearcher(filterText)
-  const projectItemRef = useRef([])
-
-  const abilityItemRef = useRef([])
 
   const [isBig, setIsBig] = useState(false)
 
@@ -42,39 +38,17 @@ function App() {
         />
       </div>
       <div className="mt-32">
-        <TransitionGroup>
-          <CSSTransition timeout={500} classNames="fade">
-            <h2>{profile.fullName}</h2>
-          </CSSTransition>
+        <h2>{profile.fullName}</h2>
 
-          <CSSTransition timeout={500} classNames="fade">
-            <LinkSection />
-          </CSSTransition>
+        <LinkSection />
 
-          {projectSearchResult.map((item, index) => (
-            <CSSTransition
-              timeout={500}
-              classNames="fade"
-              nodeRef={abilityItemRef.current[index]}
-              key={index}
-            >
-              <p ref={abilityItemRef.current[index]}>{item.title}</p>
-            </CSSTransition>
-          ))}
-          <CSSTransition timeout={500} classNames="fade">
-            <h3>프로젝트</h3>
-          </CSSTransition>
-          {projectSearchResult.map((item, index) => (
-            <CSSTransition
-              timeout={500}
-              classNames="fade"
-              key={index}
-              nodeRef={projectItemRef.current[index]}
-            >
-              <ProjectItem project={item} ref={projectItemRef.current[index]} />
-            </CSSTransition>
-          ))}
-        </TransitionGroup>
+        {projectSearchResult.map((item, index) => (
+          <p key={index}>{item.title}</p>
+        ))}
+        <h3>프로젝트</h3>
+        {projectSearchResult.map((item, index) => (
+          <ProjectItem key={index} project={item} />
+        ))}
       </div>
     </main>
   )
