@@ -7,6 +7,7 @@ import "@/App.css"
 import LinkSection from "@/LinkSection.tsx"
 
 import { Project } from "@/types/Project.ts"
+import Tag from "@/components/Tag.tsx"
 
 function App() {
   const [filterText, setFilterText] = useState("")
@@ -62,22 +63,14 @@ function App() {
             <div>
               역할:
               <ul className="flex flex-row gap-2">
-                {item.roles.map((tag) => (
-                  <div className="px-2 py-1 rounded bg-amber-200" key={tag}>
-                    {tag}
-                  </div>
-                ))}
+                {item.roles.map((i) => Tag(i))}
               </ul>
             </div>
           ) : null}
           <div>
             기술 스택:
             <ul className="flex flex-row gap-2">
-              {item.tags.map((tag) => (
-                <div className="px-2 py-1 rounded bg-amber-200" key={tag}>
-                  {tag}
-                </div>
-              ))}
+              {item.tags.map((i) => Tag(i))}
             </ul>
           </div>
           <div>
