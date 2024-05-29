@@ -10,4 +10,5 @@ export interface Project extends HasTechTag {
   employer: string
   achievements: string[]
   employmentType: string
+  project?: Project
 }

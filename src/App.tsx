@@ -1,43 +1,25 @@
-import { ChangeEvent, useEffect, useState } from "react"
-import Fuse from "fuse.js"
+import { ChangeEvent, useRef, useState } from "react"
 import profile from "@/data/profile.ts"
-import projects from "@/data/projects.ts"
 
 import "@/App.css"
 import LinkSection from "@/LinkSection.tsx"
 import { CSSTransition, TransitionGroup } from "react-transition-group"
 
-import { Project } from "@/types/Project.ts"
-import Tag from "@/components/Tag.tsx"
+import ProjectItem from "@/components/Project.tsx"
+import ProjectSearcher from "@/ProjectSearcher.ts"
 
 function App() {
   const [filterText, setFilterText] = useState("")
+
   const inputFilterText = (ev: ChangeEvent<HTMLInputElement>) => {
     ev.preventDefault()
     setFilterText(ev.target.value)
   }
 
-  const projectSearchOptions = {
-    threshold: 0.3,
-    keys: ["tags", "title"],
-  }
-  const projectSearch = new Fuse<Project>(projects, projectSearchOptions)
+  const projectSearchResult = ProjectSearcher(filterText)
+  const projectItemRef = useRef([])
 
-  const [projectSearchResult, setProjectSearchResult] = useState<Project[]>([])
-
-  useEffect(() => {
-    if (filterText === "") {
-      //setProjectSearchResult(projects)
-      setProjectSearchResult([])
-      return
-    }
-    const search = projectSearch.search(filterText)
-    setProjectSearchResult(search.map((i) => i.item))
-  }, [filterText])
-
-  const toYearMonth = (date: Date) => {
-    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`
-  }
+  const abilityItemRef = useRef([])
 
   const [isBig, setIsBig] = useState(false)
 
@@ -60,54 +42,36 @@ function App() {
         />
       </div>
       <div className="mt-32">
-        <h2>{profile.fullName}</h2>
-        <LinkSection />
-
         <TransitionGroup>
+          <CSSTransition timeout={500} classNames="fade">
+            <h2>{profile.fullName}</h2>
+          </CSSTransition>
+
+          <CSSTransition timeout={500} classNames="fade">
+            <LinkSection />
+          </CSSTransition>
+
           {projectSearchResult.map((item, index) => (
-            <CSSTransition timeout={500} classNames="fade" key={index}>
-              <div key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-
-                {item.to || item.from ? (
-                  <p>
-                    <span>기간: </span>
-                    {item.from ? <span>{toYearMonth(item.from)}</span> : null}~
-                    {item.to ? <span>{toYearMonth(item.to)}</span> : "현재"}~
-                  </p>
-                ) : null}
-                {item.employer ? <div>업체: {item.employer}</div> : null}
-
-                {item.teamSize ? <div>팀 규모: {item.teamSize} 인</div> : null}
-                {item.roles ? (
-                  <div>
-                    역할:
-                    <ul className="flex flex-row gap-2">
-                      {item.roles.map((i) => Tag(i))}
-                    </ul>
-                  </div>
-                ) : null}
-                <div>
-                  기술 스택:
-                  <ul className="flex flex-row gap-2">
-                    {item.tags.map((i) => Tag(i))}
-                  </ul>
-                </div>
-                <div>
-                  성과:
-                  <ul className="flex flex-col gap-2">
-                    {item.achievements.map((tag) => (
-                      <li
-                        className="before:content-['•'] before:px-1 before:font-bold"
-                        key={tag}
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+            <CSSTransition
+              timeout={500}
+              classNames="fade"
+              nodeRef={abilityItemRef.current[index]}
+              key={index}
+            >
+              <p ref={abilityItemRef.current[index]}>{item.title}</p>
+            </CSSTransition>
+          ))}
+          <CSSTransition timeout={500} classNames="fade">
+            <h3>프로젝트</h3>
+          </CSSTransition>
+          {projectSearchResult.map((item, index) => (
+            <CSSTransition
+              timeout={500}
+              classNames="fade"
+              key={index}
+              nodeRef={projectItemRef.current[index]}
+            >
+              <ProjectItem project={item} ref={projectItemRef.current[index]} />
             </CSSTransition>
           ))}
         </TransitionGroup>

@@ -84,7 +84,8 @@ const schemeStyle = (hash: number) => {
   } as CSSProperties
 }
 
-export default function Tag(tag: string, type = "scheme") {
+// eslint-disable-next-line react/prop-types
+const TagItem = ({ children: tag, type }) => {
   const hash = stringHash(tag)
   const styleValue = type === "scheme" ? schemeStyle(hash) : rgbString(hash)
   return (
@@ -97,3 +98,4 @@ export default function Tag(tag: string, type = "scheme") {
     </li>
   )
 }
+export default TagItem
