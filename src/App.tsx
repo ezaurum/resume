@@ -5,6 +5,7 @@ import projects from "@/data/projects.ts"
 
 import "@/App.css"
 import LinkSection from "@/LinkSection.tsx"
+import { CSSTransition, TransitionGroup } from "react-transition-group"
 
 import { Project } from "@/types/Project.ts"
 import Tag from "@/components/Tag.tsx"
@@ -26,7 +27,8 @@ function App() {
 
   useEffect(() => {
     if (filterText === "") {
-      setProjectSearchResult(projects)
+      //setProjectSearchResult(projects)
+      setProjectSearchResult([])
       return
     }
     const search = projectSearch.search(filterText)
@@ -61,50 +63,54 @@ function App() {
         <h2>{profile.fullName}</h2>
         <LinkSection />
 
-        {projectSearchResult.map((item) => (
-          <div key={item.title}>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
+        <TransitionGroup>
+          {projectSearchResult.map((item, index) => (
+            <CSSTransition timeout={500} classNames="fade" key={index}>
+              <div key={item.title}>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
 
-            {item.to || item.from ? (
-              <p>
-                <span>기간: </span>
-                {item.from ? <span>{toYearMonth(item.from)}</span> : null}~
-                {item.to ? <span>{toYearMonth(item.to)}</span> : "현재"}~
-              </p>
-            ) : null}
-            {item.employer ? <div>업체: {item.employer}</div> : null}
+                {item.to || item.from ? (
+                  <p>
+                    <span>기간: </span>
+                    {item.from ? <span>{toYearMonth(item.from)}</span> : null}~
+                    {item.to ? <span>{toYearMonth(item.to)}</span> : "현재"}~
+                  </p>
+                ) : null}
+                {item.employer ? <div>업체: {item.employer}</div> : null}
 
-            {item.teamSize ? <div>팀 규모: {item.teamSize} 인</div> : null}
-            {item.roles ? (
-              <div>
-                역할:
-                <ul className="flex flex-row gap-2">
-                  {item.roles.map((i) => Tag(i))}
-                </ul>
+                {item.teamSize ? <div>팀 규모: {item.teamSize} 인</div> : null}
+                {item.roles ? (
+                  <div>
+                    역할:
+                    <ul className="flex flex-row gap-2">
+                      {item.roles.map((i) => Tag(i))}
+                    </ul>
+                  </div>
+                ) : null}
+                <div>
+                  기술 스택:
+                  <ul className="flex flex-row gap-2">
+                    {item.tags.map((i) => Tag(i))}
+                  </ul>
+                </div>
+                <div>
+                  성과:
+                  <ul className="flex flex-col gap-2">
+                    {item.achievements.map((tag) => (
+                      <li
+                        className="before:content-['•'] before:px-1 before:font-bold"
+                        key={tag}
+                      >
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            ) : null}
-            <div>
-              기술 스택:
-              <ul className="flex flex-row gap-2">
-                {item.tags.map((i) => Tag(i))}
-              </ul>
-            </div>
-            <div>
-              성과:
-              <ul className="flex flex-col gap-2">
-                {item.achievements.map((tag) => (
-                  <li
-                    className="before:content-['•'] before:px-1 before:font-bold"
-                    key={tag}
-                  >
-                    {tag}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
       </div>
     </main>
   )
