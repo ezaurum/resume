@@ -1,9 +1,8 @@
-import Tag from "@/components/Tag.tsx"
+import TagItem from "@/components/TagItem.tsx"
 import { Project } from "@/types/Project.ts"
 import { toYearMonth } from "@/libs/DateFormatter.ts"
-import { FC } from "react"
 
-const ProjectItem: FC<{ project: Project }> = ({ project }) => (
+const ProjectItem = ({ project }: { project: Project }) => (
   <div key={project.title}>
     <h3>{project.title}</h3>
     <p>{project.description}</p>
@@ -23,7 +22,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => (
         역할:
         <ul className="flex flex-row gap-2">
           {project.roles.map((i) => (
-            <Tag key={i}>{i}</Tag>
+            <TagItem key={i}>{i}</TagItem>
           ))}
         </ul>
       </div>
@@ -32,7 +31,7 @@ const ProjectItem: FC<{ project: Project }> = ({ project }) => (
       기술 스택:
       <ul className="flex flex-row gap-2">
         {project.tags.map((i) => (
-          <Tag key={i}>{i}</Tag>
+          <TagItem key={i}>{i}</TagItem>
         ))}
       </ul>
     </div>

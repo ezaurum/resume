@@ -84,8 +84,13 @@ const schemeStyle = (hash: number) => {
   } as CSSProperties
 }
 
-// eslint-disable-next-line react/prop-types
-const TagItem = ({ children: tag, type }) => {
+const TagItem = ({
+  children: tag,
+  type = "scheme",
+}: {
+  children: string
+  type?: "scheme" | "generated"
+}) => {
   const hash = stringHash(tag)
   const styleValue = type === "scheme" ? schemeStyle(hash) : rgbString(hash)
   return (

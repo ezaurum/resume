@@ -4,7 +4,7 @@ import profile from "@/data/profile.ts"
 import "@/App.css"
 import LinkSection from "@/LinkSection.tsx"
 
-import ProjectItem from "@/components/Project.tsx"
+import ProjectItem from "@/components/ProjectItem.tsx"
 import ProjectSearcher from "@/ProjectSearcher.ts"
 
 function App() {
