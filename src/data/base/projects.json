@@ -1,0 +1,13 @@
+[
+  { "id": "project-latex-ide",          "type": "project", "company": "company-muple",        "skills": ["skill-nodejs", "skill-python", "skill-kotlin", "skill-kubernetes", "skill-docker", "skill-vue"], "tags": ["tag-microservice", "tag-ai", "tag-backend"] },
+  { "id": "project-bebecook-migration",  "type": "project", "company": "company-bebecook",     "skills": ["skill-mysql", "skill-mssql", "skill-aws", "skill-cicd"],                           "tags": ["tag-migration", "tag-cicd"] },
+  { "id": "project-kongkong",            "type": "project", "company": "company-revivallabs",  "skills": ["skill-go", "skill-redis", "skill-vue", "skill-docker", "skill-aws", "skill-websocket", "skill-mysql"], "tags": ["tag-b2b", "tag-performance", "tag-backend"] },
+  { "id": "project-payment-refactor",   "type": "project", "company": "company-theswing",     "skills": ["skill-kotlin"],                                                                     "tags": ["tag-payment", "tag-refactoring", "tag-backend"] },
+  { "id": "project-kolon-pipeline",     "type": "project", "company": "company-kolon",        "skills": ["skill-nodejs", "skill-lambda", "skill-sqs", "skill-aws"],                          "tags": ["tag-async", "tag-migration", "tag-batch"] },
+  { "id": "project-suites-vegas",       "type": "project", "company": "company-octave",       "skills": ["skill-java", "skill-aws", "skill-jenkins", "skill-cicd"],                          "tags": ["tag-gameserver", "tag-cicd"] },
+  { "id": "project-rebirth-m",          "type": "project", "company": "company-carrot",       "skills": ["skill-csharp", "skill-tcpip"],                                                      "tags": ["tag-gameserver", "tag-mmorpg"] },
+  { "id": "project-dragonnest",         "type": "project", "company": "company-cube",         "skills": ["skill-csharp", "skill-tcpip", "skill-python"],                                     "tags": ["tag-gameserver", "tag-performance"] },
+  { "id": "project-secret-garden",      "type": "project", "company": "company-kidari",       "skills": ["skill-java", "skill-spring", "skill-aws"],                                         "tags": ["tag-gameserver"] },
+  { "id": "project-groupon-batch",      "type": "project", "company": "company-groupon",      "skills": ["skill-java", "skill-spring", "skill-springbatch", "skill-mysql"],                  "tags": ["tag-performance", "tag-batch"] },
+  { "id": "project-ace",                "type": "project", "company": "company-airforce",     "skills": ["skill-java"],                                                                       "tags": ["tag-backend"] }
+]

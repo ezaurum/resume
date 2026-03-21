@@ -1,0 +1,313 @@
+{
+  "person": {
+    "name": "Jo Seokgyu",
+    "nameEn": "Jo Seokgyu",
+    "title": "15-Year Backend Engineer",
+    "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services.",
+    "highlights": [
+      "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
+      "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
+      "Query optimization: partner revenue management response time 5 min → instant",
+      "As CTO, led team building, CI/CD setup, and architecture design for 6 years 9 months",
+      "Currently developing polyglot (Node.js/Python/Kotlin) services in K8s microservices environment"
+    ],
+    "strengths": [
+      "High-Traffic Processing",
+      "Performance Optimization",
+      "Architecture Design",
+      "Technical Leadership",
+      "Fast Adaptability",
+      "Polyglot Development"
+    ],
+    "education": [
+      { "school": "Korea National University of Education", "major": "Computer Education", "degree": "B.S." }
+    ],
+    "certifications": ["Secondary School Teacher License (Grade 2)", "JLPT N1"]
+  },
+  "companies": {
+    "company-muple": {
+      "name": "Muple Inc.",
+      "role": "Fullstack Engineer",
+      "period": "2024.07 ~ Present",
+      "description": "Fullstack development of Murfy, an AI-based LaTeX Web IDE. Designing and operating microservices in Kubernetes with a polyglot backend (Node.js/Python/Kotlin) and Vue-based frontend.",
+      "achievements": [
+        "Microservice design and operation in Kubernetes environment",
+        "Polyglot microservice architecture with Node.js, Python, Kotlin",
+        "Vue-based frontend development",
+        "Container orchestration and service deployment management"
+      ]
+    },
+    "company-bebecook": {
+      "name": "Bebecook",
+      "role": "Backend Engineer",
+      "period": "2023.09 ~ 2024.06 (9 months)",
+      "description": "Migrated Azure MSSQL-based system to AWS MySQL and established a CI/CD pipeline.",
+      "achievements": [
+        "Migrated Azure MSSQL + stored procedure-based system to AWS MySQL",
+        "Moved stored procedure logic to application layer, improving maintainability and visibility",
+        "Established CI/CD pipeline"
+      ]
+    },
+    "company-revivallabs": {
+      "name": "Revival Labs",
+      "role": "CTO",
+      "period": "2017.08 ~ 2024.04",
+      "description": "Designed, developed, and operated 'KongKong', an event management B2B platform. Achieved 100x throughput improvement and 50% infrastructure cost reduction by migrating from PHP to Go.",
+      "achievements": [
+        "PHP → Go migration: 100x performance improvement (30 → 3,000 req/s)",
+        "50% monthly infrastructure cost reduction",
+        "Go channel-based event-driven architecture to minimize service coupling",
+        "Docker scale-out, Redis caching, WebSocket real-time communication",
+        "CI/CD pipeline enabling bi-weekly continuous deployment",
+        "Team building and mentoring; led full dev cycle from requirements to release"
+      ]
+    },
+    "company-theswing": {
+      "name": "The Swing",
+      "role": "Backend Engineer",
+      "period": "2022.05 ~ 2022.10",
+      "description": "Unified payment system by abstracting multiple payment gateway logics behind a common interface.",
+      "achievements": [
+        "Abstracted multiple PG payment logics into a common interface",
+        "Technical lectures for junior developers (once a week, 4 weeks)"
+      ]
+    },
+    "company-kolon": {
+      "name": "Kolon Mall (PurpleWorks)",
+      "role": "Backend Engineer",
+      "period": "2019.02 ~ 2019.12",
+      "description": "Built an asynchronous data migration pipeline with AWS SQS + Lambda and developed the shopping mall backend.",
+      "achievements": [
+        "Built async data migration pipeline with AWS SQS + Lambda",
+        "Designed and implemented review data migration batch system"
+      ]
+    },
+    "company-octave": {
+      "name": "Octave Games",
+      "role": "Team Leader",
+      "period": "2016.03 ~ 2017.07",
+      "description": "Designed and developed the server for Facebook social casino game 'Suites in Vegas'. Led the team as a founding member.",
+      "achievements": [
+        "Game server and admin console design/development",
+        "Led team as founding member",
+        "Built Jenkins-based CI/CD pipeline",
+        "Introduced TDD"
+      ]
+    },
+    "company-carrot": {
+      "name": "Carrot Games",
+      "role": "Backend Engineer",
+      "period": "2014.10 ~ 2016.02",
+      "description": "Developed server for mobile MMORPG 'Rebirth M'. Built real-time game server for global launch.",
+      "achievements": [
+        "Multi-threaded real-time game server design and implementation",
+        "TCP/IP socket communication and concurrent connection management"
+      ]
+    },
+    "company-cube": {
+      "name": "Cube Games",
+      "role": "Backend Engineer",
+      "period": "2013.04 ~ 2014.09",
+      "description": "Developed server for mobile board game 'Dragon Nest Wonderland'. Handled massive traffic of 40,000 req/s through scale-out.",
+      "achievements": [
+        "Handled 40,000 req/s massive traffic via scale-out",
+        "Multi-threaded TCP/IP game server and client network library design",
+        "Solved Mono generic limitations with a Python code generator"
+      ]
+    },
+    "company-kidari": {
+      "name": "Kidari Studio",
+      "role": "Backend Engineer",
+      "period": "2012.04 ~ 2013.04",
+      "description": "Developed server for Facebook social game 'Secret Garden'. Implemented game server and admin console for global launch.",
+      "achievements": [
+        "Game server and admin console development",
+        "Global launch support"
+      ]
+    },
+    "company-groupon": {
+      "name": "Groupon Korea",
+      "role": "Backend Engineer",
+      "period": "2011.10 ~ 2012.03",
+      "description": "Shopping mall backend development. Optimized partner revenue management queries, reducing response time from 5 minutes to instant.",
+      "achievements": [
+        "Query optimization: converted real-time SQL to batch + cached results, 5 min → instant",
+        "Spring Batch-based data processing pipeline implementation"
+      ]
+    },
+    "company-airforce": {
+      "name": "ROKAF Central Computing Center",
+      "role": "Military Service (Developer)",
+      "period": "2009.12 ~ 2011.10",
+      "description": "Developed a win-loss management system for Air Force game team 'ACE'.",
+      "achievements": [
+        "Developed ACE team win-loss management system",
+        "Java/JSP-based web system implementation"
+      ]
+    }
+  },
+  "projects": {
+    "project-latex-ide": {
+      "name": "Murfy (AI LaTeX Web IDE)",
+      "projectType": "Backend / Microservices",
+      "period": "2024.07 ~ Present",
+      "description": "Backend for Murfy, an AI-based LaTeX web editor. Microservice architecture in Kubernetes with polyglot services across multiple languages.",
+      "achievements": [
+        "K8s microservice design and operation",
+        "Node.js/Python/Kotlin polyglot service development",
+        "Container orchestration and deployment management"
+      ]
+    },
+    "project-bebecook-migration": {
+      "name": "DB Migration (Azure→AWS)",
+      "projectType": "Database Migration",
+      "period": "2024",
+      "description": "Migrated Azure MSSQL stored procedure-based system to AWS MySQL. Improved maintainability by moving stored procedure logic to the application layer.",
+      "achievements": [
+        "Azure MSSQL → AWS MySQL migration",
+        "Stored procedure logic moved to application layer",
+        "CI/CD pipeline setup"
+      ]
+    },
+    "project-kongkong": {
+      "name": "KongKong (Event B2B Platform)",
+      "projectType": "B2B SaaS Platform",
+      "period": "2017.08 ~ 2024.04",
+      "description": "Event management B2B SaaS platform. Migrated from PHP to Go, achieving 100x throughput improvement (30 → 3,000 req/s) and 50% infrastructure cost reduction.",
+      "achievements": [
+        "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s)",
+        "50% monthly infrastructure cost reduction",
+        "Go channel-based event-driven architecture",
+        "Redis caching and WebSocket real-time communication",
+        "Docker scale-out configuration"
+      ]
+    },
+    "project-payment-refactor": {
+      "name": "Payment System Refactoring",
+      "projectType": "Payment System",
+      "period": "2022.05 ~ 2022.10",
+      "description": "Unified payment system by abstracting multiple PG payment logics behind a common interface. Implemented in Kotlin.",
+      "achievements": [
+        "Abstracted multiple PG payment logics into a common interface",
+        "Technical lectures for junior developers (once a week, 4 weeks)"
+      ]
+    },
+    "project-kolon-pipeline": {
+      "name": "Async Migration Pipeline",
+      "projectType": "Data Pipeline",
+      "period": "2019.02 ~ 2019.12",
+      "description": "Asynchronous data migration pipeline using AWS SQS + Lambda. Designed and implemented a batch system for review data migration.",
+      "achievements": [
+        "AWS SQS + Lambda async pipeline",
+        "Review data migration batch system design and implementation"
+      ]
+    },
+    "project-suites-vegas": {
+      "name": "Suites in Vegas",
+      "projectType": "Social Game Server",
+      "period": "2016.03 ~ 2017.07",
+      "description": "Facebook social casino game server (North America launch). Designed game server and admin console, introduced Jenkins CI/CD and TDD.",
+      "achievements": [
+        "Game server and admin console design/development",
+        "Jenkins CI/CD pipeline setup",
+        "Introduced TDD"
+      ]
+    },
+    "project-rebirth-m": {
+      "name": "Rebirth M",
+      "projectType": "MMORPG Game Server",
+      "period": "2014.10 ~ 2016.02",
+      "description": "Mobile MMORPG server development (global launch). Designed and implemented a multi-threaded real-time game server.",
+      "achievements": [
+        "Multi-threaded real-time game server design and implementation",
+        "TCP/IP socket communication and concurrent connection management"
+      ]
+    },
+    "project-dragonnest": {
+      "name": "Dragon Nest Wonderland",
+      "projectType": "Mobile Game Server",
+      "period": "2013.04 ~ 2014.09",
+      "description": "Mobile board game server development (Chinese market launch). Handled massive traffic of 40,000 req/s through scale-out.",
+      "achievements": [
+        "Handled 40,000 req/s massive traffic via scale-out",
+        "Multi-threaded TCP/IP game server design",
+        "Client network library design",
+        "Solved Mono generic limitations with a Python code generator"
+      ]
+    },
+    "project-secret-garden": {
+      "name": "Secret Garden",
+      "projectType": "Social Game Server",
+      "period": "2012.04 ~ 2013.04",
+      "description": "Facebook social game server development (global launch). Developed game server and admin console using Java/Spring/AWS.",
+      "achievements": [
+        "Game server and admin console development",
+        "Global launch support"
+      ]
+    },
+    "project-groupon-batch": {
+      "name": "Partner Revenue Optimization",
+      "projectType": "Query Optimization / Batch Processing",
+      "period": "2011.10 ~ 2012.03",
+      "description": "Optimized partner revenue management queries, reducing response time from 5 minutes to instant. Implemented Spring Batch data processing pipeline.",
+      "achievements": [
+        "Query optimization: response time 5 min → instant",
+        "Spring Batch data processing pipeline implementation"
+      ]
+    },
+    "project-ace": {
+      "name": "ACE Win-Loss Management System",
+      "projectType": "Military Internal System",
+      "period": "2009.12 ~ 2011.10",
+      "description": "Win-loss management system for Air Force game team 'ACE'. Java/JSP-based web system.",
+      "achievements": [
+        "Air Force game team win-loss management system development"
+      ]
+    }
+  },
+  "skills": {
+    "skill-go":         { "description": "Migrated PHP legacy to Go at Revival Labs, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
+    "skill-java":       { "description": "Built Spring-based backends at Kidari Studio, Octave Games, and Groupon. 10+ years of experience." },
+    "skill-kotlin":     { "description": "Used for payment system refactoring at The Swing; leveraged for microservice development at Muple." },
+    "skill-csharp":     { "description": "Used for TCP/IP game server development at Cube Games and Carrot Games. Implemented systems handling 40,000 req/s." },
+    "skill-python":     { "description": "Used for code generators, scripting automation, and microservice development at Muple." },
+    "skill-typescript": { "description": "Used for type safety in Node.js projects." },
+    "skill-javascript": { "description": "Used for frontend and Node.js backend development." },
+    "skill-php":        { "description": "Maintained legacy system at Revival Labs before migrating to Go." },
+    "skill-spring":     { "description": "Primary Java backend framework. Used at Kidari Studio, Groupon, and more." },
+    "skill-nodejs":     { "description": "Used with AWS Lambda at Kolon Mall; used for microservice development at Muple." },
+    "skill-vue":        { "description": "Used for B2B platform frontend development at Revival Labs." },
+    "skill-react":      { "description": "Frontend development experience." },
+    "skill-springbatch":{ "description": "Used for data processing pipeline implementation at Groupon Korea." },
+    "skill-grpc":       { "description": "Used as a communication protocol between microservices." },
+    "skill-websocket":  { "description": "Implemented real-time event notification system using WebSocket at Revival Labs." },
+    "skill-tcpip":      { "description": "Directly implemented TCP/IP socket communication in game server development. Managed concurrent connections in multi-threaded environments." },
+    "skill-mysql":      { "description": "Primary RDBMS. Extensive experience in query optimization, index design, and migration." },
+    "skill-redis":      { "description": "Used as a caching layer at Revival Labs to significantly boost performance." },
+    "skill-mssql":      { "description": "Operated Azure MSSQL system at Bebecook and migrated it to AWS MySQL." },
+    "skill-docker":     { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at Revival Labs." },
+    "skill-kubernetes": { "description": "Currently operating K8s microservices environment at Muple." },
+    "skill-aws":        { "description": "Leveraged EC2, S3, Lambda, SQS, and more. Designed AWS-based infrastructure at multiple companies." },
+    "skill-jenkins":    { "description": "Built Jenkins-based CI/CD pipeline at Octave Games." },
+    "skill-cicd":       { "description": "Established continuous deployment pipelines at multiple companies." },
+    "skill-lambda":     { "description": "Implemented async data pipeline combined with SQS at Kolon Mall." },
+    "skill-sqs":        { "description": "Implemented async message queue system combined with Lambda at Kolon Mall." }
+  },
+  "tags": {
+    "tag-backend":      { "name": "Backend",          "description": "Server-side development" },
+    "tag-performance":  { "name": "Performance",      "description": "Throughput improvement, latency reduction, cost saving" },
+    "tag-architecture": { "name": "Architecture",     "description": "System architecture design and technical decision-making" },
+    "tag-leadership":   { "name": "Leadership",       "description": "Team building, technical mentoring, CTO role" },
+    "tag-gameserver":   { "name": "Game Server",      "description": "Real-time game server development experience" },
+    "tag-b2b":          { "name": "B2B",              "description": "Business-to-business service development" },
+    "tag-microservice": { "name": "Microservice",     "description": "MSA-based service design and operation" },
+    "tag-migration":    { "name": "Migration",        "description": "Legacy system or database migration" },
+    "tag-cicd":         { "name": "CI/CD",            "description": "Continuous integration and deployment pipeline" },
+    "tag-ai":           { "name": "AI Service",       "description": "AI-based product backend development" },
+    "tag-payment":      { "name": "Payment",          "description": "Payment gateway integration and payment systems" },
+    "tag-refactoring":  { "name": "Refactoring",      "description": "Legacy code improvement and design enhancement" },
+    "tag-async":        { "name": "Async Processing", "description": "Event-driven and message queue-based async processing" },
+    "tag-batch":        { "name": "Batch Processing", "description": "Large-scale data batch processing" },
+    "tag-mmorpg":       { "name": "MMORPG",           "description": "Massively multiplayer online role-playing game" }
+  }
+}

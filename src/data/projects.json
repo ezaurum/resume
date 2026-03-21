@@ -1,0 +1,174 @@
+[
+  {
+    "id": "project-latex-ide",
+    "type": "project",
+    "name": "AI LaTeX Web IDE",
+    "company": "company-muple",
+    "description": "AI 기반 LaTeX 웹 편집기 백엔드. 쿠버네티스 환경에서 마이크로서비스 아키텍처로 구성되어 있으며, 다양한 언어로 구성된 폴리글랏 서비스들을 운영합니다.",
+    "projectType": "백엔드 / 마이크로서비스",
+    "period": "2024.07 ~ 현재",
+    "skills": ["skill-nodejs", "skill-python", "skill-kotlin", "skill-kubernetes", "skill-docker"],
+    "tags": ["tag-microservice", "tag-ai", "tag-backend"],
+    "achievements": [
+      "K8s 마이크로서비스 설계 및 운영",
+      "Node.js/Python/Kotlin 폴리글랏 서비스 개발",
+      "컨테이너 오케스트레이션 및 배포 관리"
+    ]
+  },
+  {
+    "id": "project-bebecook-migration",
+    "type": "project",
+    "name": "DB 마이그레이션 (Azure→AWS)",
+    "company": "company-bebecook",
+    "description": "Azure MSSQL 기반 프로시저 중심 시스템을 AWS MySQL로 마이그레이션. 프로시저 로직을 애플리케이션 레이어로 이전하여 유지보수성을 향상시켰습니다.",
+    "projectType": "DB 마이그레이션",
+    "period": "2024",
+    "skills": ["skill-mysql", "skill-mssql", "skill-aws", "skill-cicd"],
+    "tags": ["tag-migration", "tag-cicd"],
+    "achievements": [
+      "Azure MSSQL → AWS MySQL 전환",
+      "프로시저 로직 애플리케이션 레이어 이전",
+      "CI/CD 파이프라인 구축"
+    ]
+  },
+  {
+    "id": "project-kongkong",
+    "type": "project",
+    "name": "콩콩 (이벤트 B2B 플랫폼)",
+    "company": "company-revivallabs",
+    "description": "이벤트 운영 B2B SaaS 플랫폼. PHP에서 Go로 전환하여 초당 처리량을 30에서 3,000 req/s로 100배 향상시키고 인프라 비용을 50% 절감했습니다.",
+    "projectType": "B2B SaaS 플랫폼",
+    "period": "2017.08 ~ 2024.04",
+    "skills": ["skill-go", "skill-redis", "skill-vue", "skill-docker", "skill-aws", "skill-websocket", "skill-mysql"],
+    "tags": ["tag-b2b", "tag-performance", "tag-backend"],
+    "achievements": [
+      "PHP → Go 전환으로 처리량 100배 향상 (30 → 3,000 req/s)",
+      "월 인프라 비용 50% 절감",
+      "Go channel 기반 이벤트 드리븐 아키텍처",
+      "Redis 캐싱 및 WebSocket 실시간 통신",
+      "Docker 스케일 아웃 구성"
+    ]
+  },
+  {
+    "id": "project-payment-refactor",
+    "type": "project",
+    "name": "결제 시스템 리팩토링",
+    "company": "company-theswing",
+    "description": "서로 다른 PG사의 결제 로직을 공통 인터페이스로 추상화하여 통합. Kotlin으로 구현했습니다.",
+    "projectType": "결제 시스템",
+    "period": "2022.05 ~ 2022.10",
+    "skills": ["skill-kotlin"],
+    "tags": ["tag-payment", "tag-refactoring", "tag-backend"],
+    "achievements": [
+      "다중 PG사 결제 로직 공통 인터페이스로 추상화",
+      "주니어 개발자 기술 강의 (주 1회, 4주)"
+    ]
+  },
+  {
+    "id": "project-kolon-pipeline",
+    "type": "project",
+    "name": "비동기 마이그레이션 파이프라인",
+    "company": "company-kolon",
+    "description": "AWS SQS + Lambda를 활용한 비동기 데이터 마이그레이션 파이프라인. 리뷰 데이터를 배치로 처리하는 시스템을 설계 및 구현했습니다.",
+    "projectType": "데이터 파이프라인",
+    "period": "2019.02 ~ 2019.12",
+    "skills": ["skill-nodejs", "skill-lambda", "skill-sqs", "skill-aws"],
+    "tags": ["tag-async", "tag-migration", "tag-batch"],
+    "achievements": [
+      "AWS SQS + Lambda 비동기 파이프라인 구축",
+      "리뷰 데이터 이전 배치 시스템 설계 및 구현"
+    ]
+  },
+  {
+    "id": "project-suites-vegas",
+    "type": "project",
+    "name": "Suites in Vegas",
+    "company": "company-octave",
+    "description": "Facebook 소셜 카지노 게임 서버 (북미 출시). 게임 서버 및 관리자 콘솔을 설계하고 Jenkins CI/CD와 TDD를 도입했습니다.",
+    "projectType": "소셜 게임 서버",
+    "period": "2016.03 ~ 2017.07",
+    "skills": ["skill-java", "skill-aws", "skill-jenkins", "skill-cicd"],
+    "tags": ["tag-gameserver", "tag-cicd"],
+    "achievements": [
+      "게임 서버 및 관리자 콘솔 설계/개발",
+      "Jenkins CI/CD 파이프라인 구축",
+      "TDD 도입"
+    ]
+  },
+  {
+    "id": "project-rebirth-m",
+    "type": "project",
+    "name": "Rebirth M",
+    "company": "company-carrot",
+    "description": "모바일 MMORPG 서버 개발 (글로벌 출시). 멀티스레드 기반 실시간 게임 서버를 설계 및 구현했습니다.",
+    "projectType": "MMORPG 게임 서버",
+    "period": "2014.10 ~ 2016.02",
+    "skills": ["skill-csharp", "skill-tcpip"],
+    "tags": ["tag-gameserver", "tag-mmorpg"],
+    "achievements": [
+      "멀티스레드 기반 실시간 게임 서버 설계 및 구현",
+      "TCP/IP 소켓 통신, 동시 접속자 관리"
+    ]
+  },
+  {
+    "id": "project-dragonnest",
+    "type": "project",
+    "name": "Dragon Nest Wonderland",
+    "company": "company-cube",
+    "description": "모바일 보드게임 서버 개발 (중화권 출시). 스케일 아웃으로 40,000 req/s 대규모 트래픽을 처리했습니다.",
+    "projectType": "모바일 게임 서버",
+    "period": "2013.04 ~ 2014.09",
+    "skills": ["skill-csharp", "skill-tcpip", "skill-python"],
+    "tags": ["tag-gameserver", "tag-performance"],
+    "achievements": [
+      "스케일 아웃을 통한 40,000 req/s 대규모 트래픽 처리",
+      "멀티스레드 TCP/IP 게임 서버 설계",
+      "클라이언트 네트워크 라이브러리 설계",
+      "Python 코드 제너레이터로 Mono 제네릭 제한 해결"
+    ]
+  },
+  {
+    "id": "project-secret-garden",
+    "type": "project",
+    "name": "Secret Garden",
+    "company": "company-kidari",
+    "description": "Facebook 소셜 게임 서버 개발 (글로벌 출시). Java/Spring/AWS 기반으로 게임 서버 및 관리자 콘솔을 개발했습니다.",
+    "projectType": "소셜 게임 서버",
+    "period": "2012.04 ~ 2013.04",
+    "skills": ["skill-java", "skill-spring", "skill-aws"],
+    "tags": ["tag-gameserver"],
+    "achievements": [
+      "게임 서버 및 관리자 콘솔 개발",
+      "글로벌 출시 지원"
+    ]
+  },
+  {
+    "id": "project-groupon-batch",
+    "type": "project",
+    "name": "파트너 수입관리 최적화",
+    "company": "company-groupon",
+    "description": "파트너 수입관리 쿼리를 최적화하여 응답 시간을 5분에서 즉시 조회로 개선. Spring Batch 기반 데이터 처리 파이프라인을 구현했습니다.",
+    "projectType": "쿼리 최적화 / 배치 처리",
+    "period": "2011.10 ~ 2012.03",
+    "skills": ["skill-java", "skill-spring", "skill-springbatch", "skill-mysql"],
+    "tags": ["tag-performance", "tag-batch"],
+    "achievements": [
+      "쿼리 최적화: 응답 시간 5분 → 즉시 조회",
+      "Spring Batch 기반 데이터 처리 파이프라인 구현"
+    ]
+  },
+  {
+    "id": "project-ace",
+    "type": "project",
+    "name": "ACE 전적관리 시스템",
+    "company": "company-airforce",
+    "description": "공군 게임팀 'ACE' 전적관리 시스템. Java/JSP 기반 웹 시스템을 개발했습니다.",
+    "projectType": "군 내부 시스템",
+    "period": "2009.12 ~ 2011.10",
+    "skills": ["skill-java"],
+    "tags": ["tag-backend"],
+    "achievements": [
+      "공군 게임팀 전적관리 시스템 개발"
+    ]
+  }
+]

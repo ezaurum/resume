@@ -1,0 +1,17 @@
+{
+  "id": "person",
+  "type": "person",
+  "skills": [
+    "skill-go", "skill-java", "skill-kotlin", "skill-csharp", "skill-python",
+    "skill-typescript", "skill-javascript", "skill-php",
+    "skill-spring", "skill-nodejs", "skill-vue", "skill-react",
+    "skill-springbatch", "skill-grpc", "skill-websocket", "skill-tcpip",
+    "skill-mysql", "skill-redis", "skill-mssql",
+    "skill-docker", "skill-kubernetes", "skill-aws", "skill-jenkins",
+    "skill-cicd", "skill-lambda", "skill-sqs"
+  ],
+  "tags": [
+    "tag-backend", "tag-performance", "tag-architecture", "tag-leadership",
+    "tag-gameserver", "tag-b2b", "tag-microservice"
+  ]
+}

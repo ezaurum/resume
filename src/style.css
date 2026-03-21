@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.entity-badge {
+  @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+}
+
+.google-search-bar {
+  @apply flex items-center w-full max-w-xl bg-white border border-gray-200 rounded-full px-4 py-3 shadow-sm hover:shadow-md transition-shadow duration-200;
+}
+
+.google-search-bar:focus-within {
+  @apply shadow-md outline-none border-transparent;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.16);
+}

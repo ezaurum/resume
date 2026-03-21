@@ -1,0 +1,313 @@
+{
+  "person": {
+    "name": "チョ・ソクギュ",
+    "nameEn": "Jo Seokgyu",
+    "title": "15年目バックエンドエンジニア",
+    "summary": "15年のキャリアを持つバックエンドエンジニア。サービス設計から大規模トラフィック処理・運用まで全工程を経験。リアルタイムゲームサーバーからB2B SaaSプラットフォーム、AIサービスまで多様なドメインでパフォーマンス最適化とアーキテクチャ設計をリードしてきました。",
+    "highlights": [
+      "PHP → Go移行で処理量100倍向上（30 → 3,000 req/s）、インフラコスト50%削減",
+      "スケールアウトで40,000 req/sの大規模トラフィック処理（Dragon Nest Wonderland）",
+      "クエリ最適化でパートナー収益管理レスポンス時間5分→即時照会",
+      "CTOとして6年9ヶ月間チームビルディング・CI/CD構築・アーキテクチャ設計をリード",
+      "K8sマイクロサービス環境でポリグロット（Node.js/Python/Kotlin）サービスを開発中"
+    ],
+    "strengths": [
+      "大規模トラフィック処理",
+      "パフォーマンス最適化",
+      "アーキテクチャ設計",
+      "技術リーダーシップ",
+      "高い適応力",
+      "ポリグロット開発"
+    ],
+    "education": [
+      { "school": "韓国教員大学校", "major": "コンピュータ教育学科", "degree": "学士" }
+    ],
+    "certifications": ["中等学校教員資格証（2級）", "日本語能力試験 N1"]
+  },
+  "companies": {
+    "company-muple": {
+      "name": "マプル株式会社",
+      "role": "フルスタックエンジニア",
+      "period": "2024.07 ~ 現在",
+      "description": "AIベースのLaTeX Web IDE Murfyのフルスタック開発。Kubernetes環境でマイクロサービスを設計・運用し、Node.js/Python/KotlinによるポリグロットバックエンドとVueベースのフロントエンドを開発しています。",
+      "achievements": [
+        "Kubernetes環境でのマイクロサービス設計・運用",
+        "Node.js、Python、Kotlinによるポリグロットマイクロサービスアーキテクチャ開発",
+        "Vueベースのフロントエンド開発",
+        "コンテナオーケストレーションとサービスデプロイ管理"
+      ]
+    },
+    "company-bebecook": {
+      "name": "ベベクック",
+      "role": "バックエンドエンジニア",
+      "period": "2023.09 ~ 2024.06（9ヶ月）",
+      "description": "Azure MSSQLベースのシステムをAWS MySQLに移行し、CI/CDパイプラインを構築しました。",
+      "achievements": [
+        "Azure MSSQL + ストアドプロシージャベースのシステムをAWS MySQLへ移行",
+        "ストアドプロシージャのロジックをアプリケーションレイヤーに移行し保守性・可視性を向上",
+        "CI/CDパイプライン構築"
+      ]
+    },
+    "company-revivallabs": {
+      "name": "リバイバルラボ",
+      "role": "CTO",
+      "period": "2017.08 ~ 2024.04",
+      "description": "イベント運営B2BプラットフォームのKongKongを設計・開発・運用。PHPからGoへ移行し処理量100倍向上、インフラコスト50%削減を達成しました。",
+      "achievements": [
+        "PHP → Go移行で性能100倍向上（30 → 3,000 req/s）",
+        "月間インフラコスト50%削減",
+        "Goチャネルベースのイベントドリブンアーキテクチャでサービス間結合度を最小化",
+        "Dockerスケールアウト、Redisキャッシュ、WebSocketリアルタイム通信の実装",
+        "CI/CDパイプライン構築で1〜2週間サイクルの継続的デプロイ体制確立",
+        "未経験メンバーの育成とチームビルディング、要件収集からリリースまでの開発サイクルをリード"
+      ]
+    },
+    "company-theswing": {
+      "name": "ザ・スウィング",
+      "role": "バックエンドエンジニア",
+      "period": "2022.05 ~ 2022.10",
+      "description": "異なる決済代行会社の決済ロジックを共通インターフェースに抽象化し、決済システムを統合しました。",
+      "achievements": [
+        "複数PG社の決済ロジックを共通インターフェースに抽象化・統合",
+        "ジュニア開発者向け技術講義（週1回、4週間）"
+      ]
+    },
+    "company-kolon": {
+      "name": "コロンモール（パープルワークス）",
+      "role": "バックエンドエンジニア",
+      "period": "2019.02 ~ 2019.12",
+      "description": "AWS SQS + Lambdaベースの非同期データ移行パイプラインを構築し、ショッピングモールのバックエンドを開発しました。",
+      "achievements": [
+        "AWS SQS + Lambda非同期データ移行パイプライン構築",
+        "レビューデータ移行バッチシステムの設計・実装"
+      ]
+    },
+    "company-octave": {
+      "name": "オクターブゲームズ",
+      "role": "チームリーダー",
+      "period": "2016.03 ~ 2017.07",
+      "description": "FacebookソーシャルカジノゲームSuites in Vegasのサーバーを設計・開発。創業メンバーとしてチームをリードしました。",
+      "achievements": [
+        "ゲームサーバーと管理コンソールの設計・開発",
+        "創業メンバーとしてチームをリード",
+        "JenkinsベースのCI/CDパイプライン構築",
+        "TDD導入"
+      ]
+    },
+    "company-carrot": {
+      "name": "キャロットゲームズ",
+      "role": "バックエンドエンジニア",
+      "period": "2014.10 ~ 2016.02",
+      "description": "モバイルMMORPGのRebirth Mのサーバーを開発。グローバルリリースに向けたリアルタイムゲームサーバーを実装しました。",
+      "achievements": [
+        "マルチスレッドベースのリアルタイムゲームサーバーの設計・実装",
+        "TCP/IPソケット通信と同時接続者管理"
+      ]
+    },
+    "company-cube": {
+      "name": "キューブゲームズ",
+      "role": "バックエンドエンジニア",
+      "period": "2013.04 ~ 2014.09",
+      "description": "モバイルボードゲームDragon Nest Wonderlandのサーバーを開発。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
+      "achievements": [
+        "スケールアウトによる40,000 req/s大規模トラフィック処理",
+        "マルチスレッドTCP/IPゲームサーバーとクライアントネットワークライブラリの設計",
+        "PythonコードジェネレーターでMonoのジェネリック制限を解決"
+      ]
+    },
+    "company-kidari": {
+      "name": "キダリスタジオ",
+      "role": "バックエンドエンジニア",
+      "period": "2012.04 ~ 2013.04",
+      "description": "FacebookソーシャルゲームSecret Gardenのサーバーを開発。グローバルリリース対応のゲームサーバーと管理コンソールを実装しました。",
+      "achievements": [
+        "ゲームサーバーと管理コンソールの開発",
+        "グローバルリリースサポート"
+      ]
+    },
+    "company-groupon": {
+      "name": "グルーポンコリア",
+      "role": "バックエンドエンジニア",
+      "period": "2011.10 ~ 2012.03",
+      "description": "ショッピングモールのバックエンド開発。パートナー収益管理クエリを最適化し、レスポンス時間を5分から即時照会に改善しました。",
+      "achievements": [
+        "クエリ最適化：リアルタイムSQLをバッチ+結果キャッシュ方式に変換、レスポンス時間5分→即時照会",
+        "Spring Batchベースのデータ処理パイプライン実装"
+      ]
+    },
+    "company-airforce": {
+      "name": "韓国空軍中央電算所",
+      "role": "軍服務（開発兵）",
+      "period": "2009.12 ~ 2011.10",
+      "description": "空軍ゲームチームACEの戦績管理システムを開発しました。",
+      "achievements": [
+        "空軍ゲームチームACE戦績管理システム開発",
+        "Java/JSPベースのウェブシステム実装"
+      ]
+    }
+  },
+  "projects": {
+    "project-latex-ide": {
+      "name": "Murfy (AI LaTeX Web IDE)",
+      "projectType": "バックエンド / マイクロサービス",
+      "period": "2024.07 ~ 現在",
+      "description": "AIベースのLaTeXウェブエディタMurfyのバックエンド。Kubernetes環境でマイクロサービスアーキテクチャを採用し、多言語ポリグロットサービスを運用しています。",
+      "achievements": [
+        "K8sマイクロサービスの設計・運用",
+        "Node.js/Python/Kotlinポリグロットサービス開発",
+        "コンテナオーケストレーションとデプロイ管理"
+      ]
+    },
+    "project-bebecook-migration": {
+      "name": "DB移行（Azure→AWS）",
+      "projectType": "データベース移行",
+      "period": "2024",
+      "description": "Azure MSSQLのストアドプロシージャベースのシステムをAWS MySQLに移行。ストアドプロシージャのロジックをアプリケーションレイヤーに移行し保守性を向上させました。",
+      "achievements": [
+        "Azure MSSQL → AWS MySQL移行",
+        "ストアドプロシージャのロジックをアプリケーションレイヤーに移行",
+        "CI/CDパイプライン構築"
+      ]
+    },
+    "project-kongkong": {
+      "name": "KongKong（イベントB2Bプラットフォーム）",
+      "projectType": "B2B SaaSプラットフォーム",
+      "period": "2017.08 ~ 2024.04",
+      "description": "イベント運営B2B SaaSプラットフォーム。PHPからGoへ移行し、処理量を30から3,000 req/sへ100倍向上させ、インフラコストを50%削減しました。",
+      "achievements": [
+        "PHP → Go移行で処理量100倍向上（30 → 3,000 req/s）",
+        "月間インフラコスト50%削減",
+        "Goチャネルベースのイベントドリブンアーキテクチャ",
+        "Redisキャッシュ & WebSocketリアルタイム通信",
+        "Dockerスケールアウト構成"
+      ]
+    },
+    "project-payment-refactor": {
+      "name": "決済システムリファクタリング",
+      "projectType": "決済システム",
+      "period": "2022.05 ~ 2022.10",
+      "description": "異なるPG社の決済ロジックを共通インターフェースに抽象化して統合。Kotlinで実装しました。",
+      "achievements": [
+        "複数PG社の決済ロジックを共通インターフェースに抽象化",
+        "ジュニア開発者向け技術講義（週1回、4週間）"
+      ]
+    },
+    "project-kolon-pipeline": {
+      "name": "非同期移行パイプライン",
+      "projectType": "データパイプライン",
+      "period": "2019.02 ~ 2019.12",
+      "description": "AWS SQS + Lambdaを活用した非同期データ移行パイプライン。レビューデータをバッチ処理するシステムを設計・実装しました。",
+      "achievements": [
+        "AWS SQS + Lambda非同期パイプライン構築",
+        "レビューデータ移行バッチシステムの設計・実装"
+      ]
+    },
+    "project-suites-vegas": {
+      "name": "Suites in Vegas",
+      "projectType": "ソーシャルゲームサーバー",
+      "period": "2016.03 ~ 2017.07",
+      "description": "Facebookソーシャルカジノゲームサーバー（北米リリース）。ゲームサーバーと管理コンソールを設計し、Jenkins CI/CDとTDDを導入しました。",
+      "achievements": [
+        "ゲームサーバーと管理コンソールの設計・開発",
+        "JenkinsベースのCI/CDパイプライン構築",
+        "TDD導入"
+      ]
+    },
+    "project-rebirth-m": {
+      "name": "Rebirth M",
+      "projectType": "MMORPGゲームサーバー",
+      "period": "2014.10 ~ 2016.02",
+      "description": "モバイルMMORPGサーバー開発（グローバルリリース）。マルチスレッドベースのリアルタイムゲームサーバーを設計・実装しました。",
+      "achievements": [
+        "マルチスレッドベースのリアルタイムゲームサーバーの設計・実装",
+        "TCP/IPソケット通信と同時接続管理"
+      ]
+    },
+    "project-dragonnest": {
+      "name": "Dragon Nest Wonderland",
+      "projectType": "モバイルゲームサーバー",
+      "period": "2013.04 ~ 2014.09",
+      "description": "モバイルボードゲームサーバー開発（中華圏リリース）。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
+      "achievements": [
+        "スケールアウトによる40,000 req/s大規模トラフィック処理",
+        "マルチスレッドTCP/IPゲームサーバー設計",
+        "クライアントネットワークライブラリ設計",
+        "PythonコードジェネレーターでMonoのジェネリック制限を解決"
+      ]
+    },
+    "project-secret-garden": {
+      "name": "Secret Garden",
+      "projectType": "ソーシャルゲームサーバー",
+      "period": "2012.04 ~ 2013.04",
+      "description": "FacebookソーシャルゲームサーバーをJava/Spring/AWSで開発（グローバルリリース対応）。",
+      "achievements": [
+        "ゲームサーバーと管理コンソールの開発",
+        "グローバルリリースサポート"
+      ]
+    },
+    "project-groupon-batch": {
+      "name": "パートナー収益管理最適化",
+      "projectType": "クエリ最適化 / バッチ処理",
+      "period": "2011.10 ~ 2012.03",
+      "description": "パートナー収益管理クエリを最適化し、レスポンス時間を5分から即時照会に改善。Spring Batchデータ処理パイプラインを実装しました。",
+      "achievements": [
+        "クエリ最適化：レスポンス時間5分→即時照会",
+        "Spring Batchベースのデータ処理パイプライン実装"
+      ]
+    },
+    "project-ace": {
+      "name": "ACE戦績管理システム",
+      "projectType": "軍内部システム",
+      "period": "2009.12 ~ 2011.10",
+      "description": "空軍ゲームチームACEの戦績管理システム。Java/JSPベースのウェブシステムを開発しました。",
+      "achievements": [
+        "空軍ゲームチームの戦績管理システム開発"
+      ]
+    }
+  },
+  "skills": {
+    "skill-go":         { "description": "リバイバルラボでPHPレガシーをGoへ移行し処理量100倍を達成。Goチャネルベースのイベントドリブンアーキテクチャを設計しました。" },
+    "skill-java":       { "description": "キダリスタジオ、オクターブゲームズ、グルーポンなどでSpringベースのバックエンドを開発。10年以上の使用経験。" },
+    "skill-kotlin":     { "description": "ザ・スウィングでの決済システムリファクタリングや、マプルでのマイクロサービス開発に活用。" },
+    "skill-csharp":     { "description": "キューブゲームズとキャロットゲームズでTCP/IPゲームサーバー開発に使用。40,000 req/sを処理するシステムを実装。" },
+    "skill-python":     { "description": "コードジェネレーター、スクリプト自動化、マプルでのマイクロサービス開発に活用。" },
+    "skill-typescript": { "description": "Node.jsプロジェクトで型安全性のために使用。" },
+    "skill-javascript": { "description": "フロントエンドおよびNode.jsバックエンド開発に活用。" },
+    "skill-php":        { "description": "リバイバルラボでレガシーシステムを運用後、Goへ移行。" },
+    "skill-spring":     { "description": "Javaバックエンド開発の主要フレームワーク。キダリスタジオ、グルーポンなどで使用。" },
+    "skill-nodejs":     { "description": "コロンモールでAWS Lambdaと共に、マプルでマイクロサービス開発に活用。" },
+    "skill-vue":        { "description": "リバイバルラボでB2BプラットフォームのフロントエンドをVueで開発。" },
+    "skill-react":      { "description": "フロントエンド開発経験あり。" },
+    "skill-springbatch":{ "description": "グルーポンコリアでデータ処理パイプライン構築に使用。" },
+    "skill-grpc":       { "description": "マイクロサービス間の通信プロトコルとして活用。" },
+    "skill-websocket":  { "description": "リバイバルラボでリアルタイムイベント通知システムにWebSocketを実装。" },
+    "skill-tcpip":      { "description": "ゲームサーバー開発でTCP/IPソケット通信を直接実装。マルチスレッド環境での同時接続者管理を担当。" },
+    "skill-mysql":      { "description": "主要RDBMS。クエリ最適化、インデックス設計、マイグレーションの豊富な経験。" },
+    "skill-redis":      { "description": "リバイバルラボでキャッシュレイヤーとして活用し、パフォーマンスを大幅に向上。" },
+    "skill-mssql":      { "description": "ベベクックでAzure MSSQLシステムを運用し、AWS MySQLへ移行。" },
+    "skill-docker":     { "description": "コンテナ化とスケールアウト構成に活用。リバイバルラボでDockerベースのインフラを設計。" },
+    "skill-kubernetes": { "description": "マプルでK8sマイクロサービス環境を運用中。" },
+    "skill-aws":        { "description": "EC2、S3、Lambda、SQSなど多様なAWSサービスを活用。複数企業でAWSベースのインフラを設計。" },
+    "skill-jenkins":    { "description": "オクターブゲームズでJenkinsベースのCI/CDパイプラインを構築。" },
+    "skill-cicd":       { "description": "複数企業でCI/CDパイプラインを構築し、継続的デプロイ体制を確立。" },
+    "skill-lambda":     { "description": "コロンモールでSQSと組み合わせた非同期データパイプラインを実装。" },
+    "skill-sqs":        { "description": "コロンモールでLambdaと組み合わせた非同期メッセージキューシステムを実装。" }
+  },
+  "tags": {
+    "tag-backend":      { "name": "バックエンド",          "description": "サーバーサイド開発全般" },
+    "tag-performance":  { "name": "パフォーマンス最適化",  "description": "処理量向上、レイテンシ削減、コスト削減などのパフォーマンス改善" },
+    "tag-architecture": { "name": "アーキテクチャ設計",    "description": "システムアーキテクチャ設計と技術的意思決定" },
+    "tag-leadership":   { "name": "技術リーダーシップ",    "description": "チームビルディング、技術教育、CTO役割" },
+    "tag-gameserver":   { "name": "ゲームサーバー",        "description": "リアルタイムゲームサーバー開発経験" },
+    "tag-b2b":          { "name": "B2B",                   "description": "企業向けサービス開発" },
+    "tag-microservice": { "name": "マイクロサービス",      "description": "MSAベースのサービス設計・運用" },
+    "tag-migration":    { "name": "マイグレーション",      "description": "レガシーシステムまたはデータベースの移行" },
+    "tag-cicd":         { "name": "CI/CD",                 "description": "継続的インテグレーションとデプロイのパイプライン構築" },
+    "tag-ai":           { "name": "AIサービス",            "description": "AIベースの製品バックエンド開発" },
+    "tag-payment":      { "name": "決済システム",          "description": "PG連携と決済システム開発" },
+    "tag-refactoring":  { "name": "リファクタリング",      "description": "レガシーコードの改善と設計改善" },
+    "tag-async":        { "name": "非同期処理",            "description": "イベントドリブンとメッセージキューベースの非同期処理" },
+    "tag-batch":        { "name": "バッチ処理",            "description": "大規模データバッチ処理システム" },
+    "tag-mmorpg":       { "name": "MMORPG",                "description": "大規模多人数オンラインRPG" }
+  }
+}

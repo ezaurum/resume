@@ -1,0 +1,101 @@
+[
+  {
+    "id": "company-muple",
+    "type": "company",
+    "startYear": 2024,
+    "endYear": null,
+    "projects": ["project-latex-ide"],
+    "skills": ["skill-nodejs", "skill-python", "skill-kotlin", "skill-kubernetes", "skill-docker", "skill-vue"],
+    "tags": ["tag-microservice", "tag-backend", "tag-ai"]
+  },
+  {
+    "id": "company-bebecook",
+    "type": "company",
+    "startYear": 2023,
+    "endYear": 2024,
+    "projects": ["project-bebecook-migration"],
+    "skills": ["skill-mysql", "skill-mssql", "skill-aws", "skill-cicd"],
+    "tags": ["tag-migration", "tag-backend", "tag-cicd"]
+  },
+  {
+    "id": "company-revivallabs",
+    "type": "company",
+    "startYear": 2017,
+    "endYear": 2024,
+    "projects": ["project-kongkong"],
+    "skills": ["skill-go", "skill-redis", "skill-vue", "skill-docker", "skill-aws", "skill-websocket"],
+    "tags": ["tag-b2b", "tag-performance", "tag-leadership", "tag-backend"]
+  },
+  {
+    "id": "company-theswing",
+    "type": "company",
+    "startYear": 2022,
+    "endYear": 2022,
+    "projects": ["project-payment-refactor"],
+    "skills": ["skill-kotlin"],
+    "tags": ["tag-backend", "tag-payment", "tag-refactoring"]
+  },
+  {
+    "id": "company-kolon",
+    "type": "company",
+    "startYear": 2019,
+    "endYear": 2019,
+    "projects": ["project-kolon-pipeline"],
+    "skills": ["skill-nodejs", "skill-lambda", "skill-sqs", "skill-aws"],
+    "tags": ["tag-backend", "tag-async", "tag-migration"]
+  },
+  {
+    "id": "company-octave",
+    "type": "company",
+    "startYear": 2016,
+    "endYear": 2017,
+    "projects": ["project-suites-vegas"],
+    "skills": ["skill-java", "skill-aws", "skill-jenkins", "skill-cicd"],
+    "tags": ["tag-gameserver", "tag-leadership", "tag-cicd"]
+  },
+  {
+    "id": "company-carrot",
+    "type": "company",
+    "startYear": 2014,
+    "endYear": 2016,
+    "projects": ["project-rebirth-m"],
+    "skills": ["skill-csharp", "skill-tcpip"],
+    "tags": ["tag-gameserver", "tag-backend", "tag-mmorpg"]
+  },
+  {
+    "id": "company-cube",
+    "type": "company",
+    "startYear": 2013,
+    "endYear": 2014,
+    "projects": ["project-dragonnest"],
+    "skills": ["skill-csharp", "skill-tcpip", "skill-python"],
+    "tags": ["tag-gameserver", "tag-performance", "tag-backend"]
+  },
+  {
+    "id": "company-kidari",
+    "type": "company",
+    "startYear": 2012,
+    "endYear": 2013,
+    "projects": ["project-secret-garden"],
+    "skills": ["skill-java", "skill-spring", "skill-aws"],
+    "tags": ["tag-gameserver", "tag-backend"]
+  },
+  {
+    "id": "company-groupon",
+    "type": "company",
+    "startYear": 2011,
+    "endYear": 2012,
+    "projects": ["project-groupon-batch"],
+    "skills": ["skill-java", "skill-spring", "skill-springbatch", "skill-mysql"],
+    "tags": ["tag-backend", "tag-performance", "tag-batch"]
+  },
+  {
+    "id": "company-airforce",
+    "type": "company",
+    "startYear": 2009,
+    "endYear": 2011,
+    "projects": ["project-ace"],
+    "skills": ["skill-java"],
+    "tags": ["tag-backend"]
+  }
+]
