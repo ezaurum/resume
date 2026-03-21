@@ -4,6 +4,9 @@ export default {
   nav: {
     graph: 'Graph',
     profile: 'Profile',
+    timeline: 'Career',
+    projects: 'Projects',
+    tags: 'Tags',
   },
   search: {
     placeholder: 'Search...',
@@ -19,6 +22,7 @@ export default {
       career: 'All Career',
       projects: 'Projects',
       techStack: 'Tech Stack',
+      tags: 'Tags',
       largeScale: 'Large-scale Traffic',
       gameServer: 'Game Server',
       graph: 'View Graph',
@@ -60,10 +64,26 @@ export default {
       tag: 'Tag',
     },
   },
+  skill: {
+    categories: {
+      language: 'Language',
+      framework: 'Framework',
+      database: 'Database',
+      infrastructure: 'Infrastructure',
+      protocol: 'Protocol',
+    },
+  },
   timeline: {
     title: 'Career Timeline',
     subtitle: '{years} yrs experience · {count} companies',
     current: 'Current',
+  },
+  projects: {
+    subtitle: '{count} projects total',
+  },
+  tags: {
+    subtitle: '{count} tags total',
+    entities: '{count} items',
   },
   graph: {
     filter: 'Filter:',

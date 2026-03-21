@@ -4,6 +4,9 @@ export default {
   nav: {
     graph: 'グラフ',
     profile: 'プロフィール',
+    timeline: '経歴',
+    projects: 'プロジェクト',
+    tags: 'タグ',
   },
   search: {
     placeholder: '検索...',
@@ -19,6 +22,7 @@ export default {
       career: '全経歴',
       projects: 'プロジェクト',
       techStack: '技術スタック',
+      tags: 'タグ',
       largeScale: '大規模トラフィック',
       gameServer: 'ゲームサーバー',
       graph: 'グラフを見る',
@@ -60,10 +64,26 @@ export default {
       tag: 'タグ',
     },
   },
+  skill: {
+    categories: {
+      language: '言語',
+      framework: 'フレームワーク',
+      database: 'データベース',
+      infrastructure: 'インフラ',
+      protocol: 'プロトコル',
+    },
+  },
   timeline: {
     title: '全経歴',
     subtitle: '{years}年の経験 · {count}社',
     current: '在職中',
+  },
+  projects: {
+    subtitle: '全{count}件のプロジェクト',
+  },
+  tags: {
+    subtitle: '全{count}件のタグ',
+    entities: '{count}件',
   },
   graph: {
     filter: 'フィルター:',

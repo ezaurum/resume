@@ -4,6 +4,9 @@ export default {
   nav: {
     graph: '그래프',
     profile: '프로필',
+    timeline: '경력',
+    projects: '프로젝트',
+    tags: '태그',
   },
   search: {
     placeholder: '검색...',
@@ -19,6 +22,7 @@ export default {
       career: '전체 경력',
       projects: '프로젝트',
       techStack: '기술 스택',
+      tags: '태그',
       largeScale: '대규모 트래픽',
       gameServer: '게임 서버',
       graph: '그래프 보기',
@@ -60,10 +64,26 @@ export default {
       tag: '태그',
     },
   },
+  skill: {
+    categories: {
+      language: '언어',
+      framework: '프레임워크',
+      database: '데이터베이스',
+      infrastructure: '인프라',
+      protocol: '프로토콜',
+    },
+  },
   timeline: {
     title: '전체 경력',
     subtitle: '{years}년 경력 · {count}개 회사',
     current: '재직중',
+  },
+  projects: {
+    subtitle: '전체 {count}개 프로젝트',
+  },
+  tags: {
+    subtitle: '전체 {count}개 태그',
+    entities: '{count}개 연결',
   },
   graph: {
     filter: '필터:',

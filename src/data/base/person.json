@@ -1,6 +1,5 @@
 {
   "id": "person",
-  "type": "person",
   "skills": [
     "skill-go", "skill-java", "skill-kotlin", "skill-csharp", "skill-python",
     "skill-typescript", "skill-javascript", "skill-php",

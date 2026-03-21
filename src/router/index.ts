@@ -4,6 +4,9 @@ import SearchView from '@/views/SearchView.vue'
 import EntityView from '@/views/EntityView.vue'
 import GraphView from '@/views/GraphView.vue'
 import TimelineView from '@/views/TimelineView.vue'
+import ProfileView from '@/views/ProfileView.vue'
+import ProjectListView from '@/views/ProjectListView.vue'
+import TagListView from '@/views/TagListView.vue'
 import { i18n } from '@/i18n'
 
 const VALID_LANGS = ['ko', 'en', 'ja'] as const
@@ -16,7 +19,20 @@ const router = createRouter({
     { path: '/', name: 'home', component: HomeView },
     { path: '/search', name: 'search', component: SearchView },
     { path: '/timeline', name: 'timeline', component: TimelineView },
-    { path: '/entity/:id', name: 'entity', component: EntityView },
+    { path: '/profile', name: 'profile', component: ProfileView },
+    { path: '/projects', name: 'projectList', component: ProjectListView },
+    { path: '/tags', name: 'tagList', component: TagListView },
+    { path: '/companies', redirect: { name: 'timeline' } },
+    {
+      path: '/entity/:id',
+      name: 'entity',
+      component: EntityView,
+      beforeEnter: (to) => {
+        if (to.params.id === 'person') {
+          return { name: 'profile', query: to.query }
+        }
+      }
+    },
     { path: '/graph', name: 'graph', component: GraphView }
   ]
 })

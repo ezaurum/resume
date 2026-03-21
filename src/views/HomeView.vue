@@ -22,8 +22,9 @@ type QuickLink = { label: string; query?: string; filter?: string; route?: strin
 
 const quickLinks = computed((): QuickLink[] => [
   { label: t('home.quickLinks.career'), route: 'timeline' },
-  { label: t('home.quickLinks.projects'), filter: 'project' },
+  { label: t('home.quickLinks.projects'), route: 'projectList' },
   { label: t('home.quickLinks.techStack'), filter: 'skill' },
+  { label: t('home.quickLinks.tags'), route: 'tagList' },
   { label: t('home.quickLinks.largeScale'), query: 'large-scale-traffic' },
   { label: t('home.quickLinks.gameServer'), query: 'game-server' },
 ])

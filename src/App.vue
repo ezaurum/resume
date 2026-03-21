@@ -51,8 +51,11 @@ function goHome() {
 
       <!-- Nav Links -->
       <nav class="hidden md:flex items-center gap-4 text-sm text-gray-600">
-        <router-link to="/graph" class="hover:text-gray-900 transition-colors">{{ t('nav.graph') }}</router-link>
-        <router-link :to="{ name: 'entity', params: { id: 'person' } }" class="hover:text-gray-900 transition-colors">{{ t('nav.profile') }}</router-link>
+        <router-link :to="{ name: 'timeline' }" class="hover:text-gray-900 transition-colors">{{ t('nav.timeline') }}</router-link>
+        <router-link :to="{ name: 'projectList' }" class="hover:text-gray-900 transition-colors">{{ t('nav.projects') }}</router-link>
+        <router-link :to="{ name: 'tagList' }" class="hover:text-gray-900 transition-colors">{{ t('nav.tags') }}</router-link>
+        <router-link :to="{ name: 'graph' }" class="hover:text-gray-900 transition-colors">{{ t('nav.graph') }}</router-link>
+        <router-link :to="{ name: 'profile' }" class="hover:text-gray-900 transition-colors">{{ t('nav.profile') }}</router-link>
       </nav>
 
       <LangSwitcher />
