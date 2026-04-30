@@ -23,7 +23,7 @@ export default {
       projects: '프로젝트',
       techStack: '기술 스택',
       tags: '태그',
-      largeScale: '성능 최적화',
+      performance: '성능 최적화',
       gameServer: '게임 서버',
       graph: '그래프 보기',
     },

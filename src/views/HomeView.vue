@@ -26,7 +26,7 @@ const quickLinks = computed((): QuickLink[] => [
   { label: t('home.quickLinks.projects'), route: 'projectList' },
   { label: t('home.quickLinks.techStack'), filter: 'skill' },
   { label: t('home.quickLinks.tags'), route: 'tagList' },
-  { label: t('home.quickLinks.largeScale'), entityId: 'tag-performance' },
+  { label: t('home.quickLinks.performance'), entityId: 'tag-performance' },
   { label: t('home.quickLinks.gameServer'), entityId: 'tag-gameserver' },
 ])
 
