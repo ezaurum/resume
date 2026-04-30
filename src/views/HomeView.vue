@@ -17,21 +17,22 @@ function handleSearch(q: string) {
   }
 }
 
-// type 필터가 있으면 해당 타입 목록으로, 없으면 쿼리 검색으로 이동
-type QuickLink = { label: string; query?: string; filter?: string; route?: string }
+type QuickLink = { label: string; query?: string; filter?: string; route?: string; entityId?: string }
 
 const quickLinks = computed((): QuickLink[] => [
   { label: t('home.quickLinks.career'), route: 'timeline' },
   { label: t('home.quickLinks.projects'), route: 'projectList' },
   { label: t('home.quickLinks.techStack'), filter: 'skill' },
   { label: t('home.quickLinks.tags'), route: 'tagList' },
-  { label: t('home.quickLinks.largeScale'), query: 'large-scale-traffic' },
-  { label: t('home.quickLinks.gameServer'), query: 'game-server' },
+  { label: t('home.quickLinks.largeScale'), entityId: 'tag-performance' },
+  { label: t('home.quickLinks.gameServer'), entityId: 'tag-gameserver' },
 ])
 
 function handleQuickLink(link: QuickLink) {
   if (link.route) {
     router.push({ name: link.route })
+  } else if (link.entityId) {
+    router.push({ name: 'entity', params: { id: link.entityId } })
   } else if (link.filter) {
     router.push({ name: 'search', query: { filter: link.filter } })
   } else if (link.query) {
