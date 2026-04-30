@@ -15,18 +15,18 @@ export function useFuzzySearch(itemsRef: ComputedRef<SearchItem[]>) {
 
   const fuse = computed(() => new Fuse(itemsRef.value, {
     keys: [
-      { name: 'name', weight: 0.45 },
-      { name: 'skills', weight: 0.25 },
-      { name: 'tags', weight: 0.2 },
+      { name: 'name', weight: 0.4 },
+      { name: 'skills', weight: 0.2 },
+      { name: 'tags', weight: 0.15 },
       { name: 'description', weight: 0.1 },
+      { name: 'searchText', weight: 0.15 },
     ],
     threshold: getThreshold(query.value),
-    distance: 50,
     includeScore: true,
     minMatchCharLength: 1,
     shouldSort: true,
     useExtendedSearch: false,
-    ignoreLocation: false,
+    ignoreLocation: true,
   }))
 
   function runSearch(q: string): SearchItem[] {
@@ -45,6 +45,7 @@ export function useFuzzySearch(itemsRef: ComputedRef<SearchItem[]>) {
       if (matched.has(item.id)) return false
       return item.skills.some(s => s.toLowerCase().includes(ql))
         || item.tags.some(t => t.toLowerCase().includes(ql))
+        || item.searchText.toLowerCase().includes(ql)
     })
 
     return [...fuseResults, ...skillTagMatches]
