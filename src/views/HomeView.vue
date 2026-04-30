@@ -1,19 +1,21 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataStore } from '@/stores/useDataStore'
 import SearchBar from '@/components/SearchBar.vue'
 import LangSwitcher from '@/components/LangSwitcher.vue'
 
 const router = useRouter()
+const route = useRoute()
 const store = useDataStore()
 const { t } = useI18n()
 const searchQuery = ref('')
 
 function handleSearch(q: string) {
   if (q.trim()) {
-    router.push({ name: 'search', query: { q } })
+    const langQuery = route.query.lang ? { lang: route.query.lang } : {}
+    router.push({ name: 'search', query: { ...langQuery, q } })
   }
 }
 
@@ -29,14 +31,15 @@ const quickLinks = computed((): QuickLink[] => [
 ])
 
 function handleQuickLink(link: QuickLink) {
+  const langQuery = route.query.lang ? { lang: route.query.lang } : {}
   if (link.route) {
-    router.push({ name: link.route })
+    router.push({ name: link.route, query: langQuery })
   } else if (link.entityId) {
-    router.push({ name: 'entity', params: { id: link.entityId } })
+    router.push({ name: 'entity', params: { id: link.entityId }, query: langQuery })
   } else if (link.filter) {
-    router.push({ name: 'search', query: { filter: link.filter } })
+    router.push({ name: 'search', query: { ...langQuery, filter: link.filter } })
   } else if (link.query) {
-    router.push({ name: 'search', query: { q: link.query } })
+    router.push({ name: 'search', query: { ...langQuery, q: link.query } })
   }
 }
 </script>
@@ -79,7 +82,7 @@ function handleQuickLink(link: QuickLink) {
           {{ link.label }}
         </button>
         <router-link
-          to="/graph"
+          :to="{ name: 'graph', query: route.query.lang ? { lang: route.query.lang } : {} }"
           class="px-4 py-2 bg-gray-900 hover:bg-gray-700 text-white rounded-full text-sm transition-colors"
         >
           {{ t('home.quickLinks.graph') }}
