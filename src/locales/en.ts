@@ -23,7 +23,7 @@ export default {
       projects: 'Projects',
       techStack: 'Tech Stack',
       tags: 'Tags',
-      largeScale: 'Large-scale Traffic',
+      largeScale: 'Performance',
       gameServer: 'Game Server',
       graph: 'View Graph',
     },
