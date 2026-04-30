@@ -201,7 +201,11 @@ export const useDataStore = defineStore('data', () => {
   })
 
   const stats = computed(() => {
-    const earliestYear = Math.min(...companies.value.map(c => c.startYear))
+    const earliestYear = Math.min(
+      ...companies.value
+        .filter(c => c.id !== 'company-airforce')
+        .map(c => c.startYear)
+    )
     const yearsOfExperience = new Date().getFullYear() - earliestYear
     return {
       yearsOfExperience,

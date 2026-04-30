@@ -52,7 +52,7 @@ function handleQuickLink(link: QuickLink) {
       <!-- Logo -->
       <div class="text-center">
         <h1 class="text-6xl font-bold tracking-tight mb-2 text-gray-900">
-          조석규
+          {{ store.person.name }}
         </h1>
         <p class="text-gray-500 text-lg">{{ t('title') }}</p>
       </div>
