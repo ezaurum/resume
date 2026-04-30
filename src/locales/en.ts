@@ -1,5 +1,5 @@
 export default {
-  name: 'Jo Seokgyu',
+  name: 'Cho Seokgyu',
   title: 'Software Engineer',
   nav: {
     graph: 'Graph',
@@ -50,6 +50,7 @@ export default {
     achievements: 'Responsibilities & Achievements',
     modules: 'Feature Modules',
     modulesCount: '{n} modules shipped',
+    lessons: 'Lessons Learned',
     education: 'Education & Certifications',
     techStack: 'Tech Stack',
     tags: 'Tags',

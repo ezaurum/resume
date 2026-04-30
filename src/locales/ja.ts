@@ -1,5 +1,5 @@
 export default {
-  name: '趙錫圭',
+  name: '趙錫奎',
   title: 'ソフトウェアエンジニア',
   nav: {
     graph: 'グラフ',
@@ -50,6 +50,7 @@ export default {
     achievements: '業務内容・実績',
     modules: '実装機能一覧',
     modulesCount: '{n}種の機能を実装',
+    lessons: '教訓・失敗から学んだこと',
     education: '学歴・資格',
     techStack: '技術スタック',
     tags: 'タグ',

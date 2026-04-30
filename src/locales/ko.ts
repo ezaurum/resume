@@ -50,6 +50,7 @@ export default {
     achievements: '주요 업무 및 성과',
     modules: '구현 기능 목록',
     modulesCount: '{n}개 기능 모듈',
+    lessons: '배운 점 / 실패 교훈',
     education: '학력 및 자격',
     techStack: '기술 스택',
     tags: '태그',

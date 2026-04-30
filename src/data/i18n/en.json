@@ -1,7 +1,7 @@
 {
   "person": {
-    "name": "Jo Seokgyu",
-    "nameEn": "Jo Seokgyu",
+    "name": "Cho Seokgyu",
+    "nameEn": "Cho Seokgyu",
     "title": "15-Year Backend Engineer",
     "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services.",
     "highlights": [
@@ -49,6 +49,9 @@
         "Resolved cross-apply/pivot gaps, procedure return type differences, and collation mismatches",
         "Moved stored procedure logic to application layer, improving maintainability and visibility",
         "Established CI/CD pipeline"
+      ],
+      "lessons": [
+        "Without defining acceptance criteria and exit conditions at the contract stage, you can solve every technical problem and still massively overrun — define done before you start"
       ]
     },
     "company-revivallabs": {
@@ -64,6 +67,11 @@
         "Docker scale-out, Redis caching, WebSocket real-time dashboard",
         "CI/CD pipeline enabling bi-weekly continuous deployment",
         "Grew 2 non-CS team members to independent full-stack developers over 7 years"
+      ],
+      "lessons": [
+        "Skipping tests and observability early compounds over time — bug fixes became increasingly costly and releases slowed as the codebase grew",
+        "Bus factor 1 is fundamentally a knowledge transfer failure, not just a stamina problem — when structure is concentrated in one person, their departure breaks the system",
+        "B2B event platforms face structural scaling limits: each customer's requirements are subtly different, making true platformization hard without LLM-level adaptability"
       ]
     },
     "company-theswing": {
@@ -167,6 +175,10 @@
         "PDF viewer implementation",
         "CloudWatch CPU-based Slack alert setup",
         "Container orchestration and deployment management"
+      ],
+      "lessons": [
+        "Forcing stateful services (Yjs documents) into a stateless K8s architecture made scale-out impossible — sandbox-per-project from the start would have eliminated the problem entirely",
+        "Polyglot (Node.js/Python/Kotlin) was accumulated rather than designed — without clear language selection criteria, cognitive load on the team grows rapidly"
       ]
     },
     "project-muple-ts-migration": {
@@ -191,6 +203,9 @@
         "Resolved cross-apply/pivot gaps, procedure return type differences, and collation mismatches",
         "Stored procedure logic moved to application layer",
         "CI/CD pipeline setup"
+      ],
+      "lessons": [
+        "Acceptance criteria and exit conditions must be locked in the contract, not assumed — every technical problem was solved but the effort massively overran due to undefined scope"
       ]
     },
     "project-kongkong": {
@@ -259,8 +274,11 @@
       "description": "Built an internal platform where writing an entity spec JSON auto-generates API, routes, and CRUD admin pages — to eliminate the bottleneck of repetitively building similar structures. Early productivity gains were significant, but as reusability was pushed further, domain-specific exceptions and options accumulated until the structure became too complex for the team to maintain, eventually collapsing.",
       "achievements": [
         "Initial developer productivity improvement: eliminated repetitive boilerplate",
-        "Lesson: derived the principle 'only what's needed now, reuse proven frameworks, keep it team-readable'",
-        "Applied over-abstraction avoidance in subsequent designs"
+        "Applied over-abstraction avoidance principle in subsequent designs"
+      ],
+      "lessons": [
+        "Every attempt to increase reusability added more edge cases and options — complexity exploded until no one could maintain it. Build only what you need now, at a level the team can understand",
+        "Trying to solve all possible cases upfront is almost always premature abstraction"
       ]
     },
     "project-payment-refactor": {

@@ -31,6 +31,7 @@ export interface Company {
   skills: string[]
   tags: string[]
   achievements: string[]
+  lessons?: string[]
 }
 
 export interface Project {
@@ -45,6 +46,7 @@ export interface Project {
   tags: string[]
   achievements: string[]
   modules?: string[]
+  lessons?: string[]
 }
 
 export interface Skill {

@@ -117,6 +117,23 @@ function getCompanyName(id: string): string {
             </div>
           </section>
 
+          <section v-if="(asCompany?.lessons || asProject?.lessons)?.length">
+            <h2 class="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <span class="text-base">💡</span>
+              {{ t('entity.lessons') }}
+            </h2>
+            <ul class="space-y-2.5">
+              <li
+                v-for="lesson in (asCompany?.lessons || asProject?.lessons)"
+                :key="lesson"
+                class="flex items-start gap-2.5 text-sm text-indigo-900 bg-indigo-50 border border-indigo-100 rounded-lg px-3 py-2.5"
+              >
+                <span class="text-indigo-400 mt-0.5 shrink-0">→</span>
+                {{ lesson }}
+              </li>
+            </ul>
+          </section>
+
           <section v-if="asPerson">
             <h2 class="text-lg font-semibold text-gray-900 mb-3">{{ t('entity.education') }}</h2>
             <div class="space-y-2">
