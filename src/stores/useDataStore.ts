@@ -48,7 +48,7 @@ export const useDataStore = defineStore('data', () => {
       description: person.value.summary,
       tags: tagNames(person.value.tags),
       skills: skillNames(person.value.skills),
-      searchText: [person.value.name, person.value.nameEn, person.value.title, ...person.value.strengths].join(' '),
+      searchText: [person.value.name, person.value.nameEn, person.value.title, person.value.summary, ...person.value.strengths, ...(person.value.highlights ?? [])].join(' '),
       entity: person.value
     })
 
@@ -61,7 +61,7 @@ export const useDataStore = defineStore('data', () => {
         description: `${c.role} | ${c.description}`,
         tags: tagNames(c.tags),
         skills: skillNames(c.skills),
-        searchText: [c.name, c.role, c.period].join(' '),
+        searchText: [c.name, c.role, c.period, c.description, ...c.achievements, ...(c.lessons ?? [])].join(' '),
         entity: c
       })
     })
@@ -75,7 +75,7 @@ export const useDataStore = defineStore('data', () => {
         description: p.description,
         tags: tagNames(p.tags),
         skills: skillNames(p.skills),
-        searchText: [p.name, p.projectType].join(' '),
+        searchText: [p.name, p.projectType, p.description, ...p.achievements, ...(p.modules ?? []), ...(p.lessons ?? [])].join(' '),
         entity: p
       })
     })
@@ -89,7 +89,7 @@ export const useDataStore = defineStore('data', () => {
         description: s.description ?? '',
         tags: [s.category, s.level],
         skills: [],
-        searchText: s.name,
+        searchText: [s.name, s.description ?? '', s.category].join(' '),
         entity: s
       })
     })
@@ -103,7 +103,7 @@ export const useDataStore = defineStore('data', () => {
         description: t.description,
         tags: [],
         skills: [],
-        searchText: t.name,
+        searchText: [t.name, t.description].join(' '),
         entity: t
       })
     })
