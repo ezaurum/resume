@@ -96,5 +96,5 @@ export default {
     legend: '凡例',
     instructions: 'クリック：詳細 · ドラッグ：移動',
   },
-  breadcrumb: '趙錫圭 › {type} › {name}',
+  breadcrumb: '趙錫奎 › {type} › {name}',
 }

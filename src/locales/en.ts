@@ -96,5 +96,5 @@ export default {
     legend: 'Legend',
     instructions: 'Click: Details · Drag: Move',
   },
-  breadcrumb: 'Jo Seokgyu › {type} › {name}',
+  breadcrumb: 'Cho Seokgyu › {type} › {name}',
 }
