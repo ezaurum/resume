@@ -48,6 +48,8 @@ export default {
     yearsExp: '{n} yrs experience',
     highlights: 'Key Achievements',
     achievements: 'Responsibilities & Achievements',
+    modules: 'Feature Modules',
+    modulesCount: '{n} modules shipped',
     education: 'Education & Certifications',
     techStack: 'Tech Stack',
     tags: 'Tags',

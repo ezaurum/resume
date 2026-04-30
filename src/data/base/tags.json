@@ -13,5 +13,6 @@
   { "id": "tag-refactoring" },
   { "id": "tag-async" },
   { "id": "tag-batch" },
-  { "id": "tag-mmorpg" }
+  { "id": "tag-mmorpg" },
+  { "id": "tag-platform" }
 ]

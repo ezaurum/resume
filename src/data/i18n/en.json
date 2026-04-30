@@ -33,8 +33,10 @@
       "achievements": [
         "Microservice design and operation in Kubernetes environment",
         "Polyglot microservice architecture with Node.js, Python, Kotlin",
-        "Vue-based frontend development",
-        "Container orchestration and service deployment management"
+        "Yjs-based real-time collaborative editing integration",
+        "PDF viewer implementation",
+        "CloudWatch CPU-based Slack alerts and build failure notifications",
+        "Solo migration of 1-year Python codebase to TypeScript in 1 week using AI pipeline"
       ]
     },
     "company-bebecook": {
@@ -44,6 +46,7 @@
       "description": "Migrated Azure MSSQL-based system to AWS MySQL and established a CI/CD pipeline.",
       "achievements": [
         "Migrated Azure MSSQL + stored procedure-based system to AWS MySQL",
+        "Resolved cross-apply/pivot gaps, procedure return type differences, and collation mismatches",
         "Moved stored procedure logic to application layer, improving maintainability and visibility",
         "Established CI/CD pipeline"
       ]
@@ -52,14 +55,15 @@
       "name": "Revival Labs",
       "role": "CTO",
       "period": "2017.08 ~ 2024.04",
-      "description": "Designed, developed, and operated 'KongKong', an event management B2B platform. Achieved 100x throughput improvement and 50% infrastructure cost reduction by migrating from PHP to Go.",
+      "description": "Designed, developed, and operated 'KongKong', an event management B2B platform. Achieved 100x throughput improvement and 50% infrastructure cost reduction by migrating from PHP to Go. Built and shipped 30+ feature modules over 7 years.",
       "achievements": [
-        "PHP → Go migration: 100x performance improvement (30 → 3,000 req/s)",
+        "PHP → Go migration: 100x performance improvement (30 → 3,000 req/s, single-core 512MB RAM)",
         "50% monthly infrastructure cost reduction",
         "Go channel-based event-driven architecture to minimize service coupling",
-        "Docker scale-out, Redis caching, WebSocket real-time communication",
+        "Designed and shipped 30+ feature modules for event operators and attendees",
+        "Docker scale-out, Redis caching, WebSocket real-time dashboard",
         "CI/CD pipeline enabling bi-weekly continuous deployment",
-        "Team building and mentoring; led full dev cycle from requirements to release"
+        "Grew 2 non-CS team members to independent full-stack developers over 7 years"
       ]
     },
     "company-theswing": {
@@ -76,19 +80,22 @@
       "name": "Kolon Mall (PurpleWorks)",
       "role": "Backend Engineer",
       "period": "2019.02 ~ 2019.12",
-      "description": "Built an asynchronous data migration pipeline with AWS SQS + Lambda and developed the shopping mall backend.",
+      "description": "Built an asynchronous data migration pipeline with AWS SQS + Lambda, implemented a React-based back-office admin console, and migrated SAP delivery functionality to a Spring application.",
       "achievements": [
-        "Built async data migration pipeline with AWS SQS + Lambda",
-        "Designed and implemented review data migration batch system"
+        "Built async large-scale review data migration pipeline with AWS SQS + Lambda",
+        "Designed and implemented React-based back-office admin console",
+        "Migrated SAP delivery functionality to Spring-based application",
+        "Micronaut framework R&D"
       ]
     },
     "company-octave": {
       "name": "Octave Games",
       "role": "Team Leader",
       "period": "2016.03 ~ 2017.07",
-      "description": "Designed and developed the server for Facebook social casino game 'Suites in Vegas'. Led the team as a founding member.",
+      "description": "Developed client and server for Facebook social casino game 'Suites in Vegas'. Led the team as a founding member.",
       "achievements": [
-        "Game server and admin console design/development",
+        "Flash/ActionScript game client development",
+        "Java/Spring game server and admin console design/development",
         "Led team as founding member",
         "Built Jenkins-based CI/CD pipeline",
         "Introduced TDD"
@@ -108,11 +115,11 @@
       "name": "Cube Games",
       "role": "Backend Engineer",
       "period": "2013.04 ~ 2014.09",
-      "description": "Developed server for mobile board game 'Dragon Nest Wonderland'. Handled massive traffic of 40,000 req/s through scale-out.",
+      "description": "Developed server and Unity3D client network library for mobile board game 'Dragon Nest Wonderland'. Handled massive traffic of 40,000 req/s through scale-out.",
       "achievements": [
         "Handled 40,000 req/s massive traffic via scale-out",
-        "Multi-threaded TCP/IP game server and client network library design",
-        "Solved Mono generic limitations with a Python code generator"
+        "Multi-threaded TCP/IP game server and Unity3D client network library design",
+        "Solved iOS Mono generic limitations with a Python code generator"
       ]
     },
     "company-kidari": {
@@ -129,10 +136,11 @@
       "name": "Groupon Korea",
       "role": "Backend Engineer",
       "period": "2011.10 ~ 2012.03",
-      "description": "Shopping mall backend development. Optimized partner revenue management queries, reducing response time from 5 minutes to instant.",
+      "description": "Shopping mall backend development. Identified the root cause of partner revenue management data inconsistency and switched to a Spring Batch-based confirmed data storage structure, reducing response time from 5+ minutes to instant.",
       "achievements": [
-        "Query optimization: converted real-time SQL to batch + cached results, 5 min → instant",
-        "Spring Batch-based data processing pipeline implementation"
+        "Identified root cause: real-time aggregation mixing finalized and live data caused both performance and consistency issues",
+        "Switched to Spring Batch-based confirmed data storage, eliminating query-time dependency",
+        "Response time 5 min+ → instant; data consistency restored"
       ]
     },
     "company-airforce": {
@@ -155,7 +163,22 @@
       "achievements": [
         "K8s microservice design and operation",
         "Node.js/Python/Kotlin polyglot service development",
+        "Yjs-based real-time collaborative editing integration",
+        "PDF viewer implementation",
+        "CloudWatch CPU-based Slack alert setup",
         "Container orchestration and deployment management"
+      ]
+    },
+    "project-muple-ts-migration": {
+      "name": "Python → TypeScript Codebase Migration",
+      "projectType": "Codebase Migration",
+      "period": "2025",
+      "description": "When the only Python developer left the team, 1 year of Python backend needed to be migrated to TypeScript. Treated as a verification problem rather than a translation problem — extracted specs, wrote tests to document behavior, converted with AI (Claude Code), validated with deterministic hooks, and combined with human review.",
+      "achievements": [
+        "Migrated 1-year codebase to TypeScript solo in 1 week",
+        "Extracted specs from existing code, documented behavior with tests before conversion",
+        "AI conversion pipeline + deterministic hooks to block hallucinations",
+        "Surfaced latent bugs in the original code through the testing process"
       ]
     },
     "project-bebecook-migration": {
@@ -165,6 +188,7 @@
       "description": "Migrated Azure MSSQL stored procedure-based system to AWS MySQL. Improved maintainability by moving stored procedure logic to the application layer.",
       "achievements": [
         "Azure MSSQL → AWS MySQL migration",
+        "Resolved cross-apply/pivot gaps, procedure return type differences, and collation mismatches",
         "Stored procedure logic moved to application layer",
         "CI/CD pipeline setup"
       ]
@@ -173,42 +197,103 @@
       "name": "KongKong (Event B2B Platform)",
       "projectType": "B2B SaaS Platform",
       "period": "2017.08 ~ 2024.04",
-      "description": "Event management B2B SaaS platform. Migrated from PHP to Go, achieving 100x throughput improvement (30 → 3,000 req/s) and 50% infrastructure cost reduction.",
+      "description": "Event management B2B SaaS platform. Migrated from PHP to Go, achieving 100x throughput improvement and 50% infrastructure cost reduction. Built and operated 30+ feature modules over 7 years in a live environment.",
       "achievements": [
         "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s)",
         "50% monthly infrastructure cost reduction",
         "Go channel-based event-driven architecture",
         "Redis caching and WebSocket real-time communication",
-        "Docker scale-out configuration"
+        "Docker scale-out configuration",
+        "30+ feature modules built and operated over 7 years"
+      ]
+    },
+    "project-kongkong-rewrite": {
+      "name": "KongKong — PHP → Go Full Rewrite",
+      "projectType": "Performance / Architecture Migration",
+      "period": "2017.08 ~ 2018",
+      "description": "The inherited PHP platform couldn't exceed 30 req/s under even light traffic, with CPU+DB on a single server. Migrated to Go to reduce runtime overhead, separated DB to RDS, and secured local reproducibility with Docker.",
+      "achievements": [
+        "Achieved 3,000 req/s on a single-core 512MB RAM — 100x throughput",
+        "50% monthly infrastructure cost reduction even after RDS separation",
+        "Docker-based local environment reproducibility",
+        "Foundation that supported 30+ feature modules over the next 7 years"
+      ]
+    },
+    "project-kongkong-event-driven": {
+      "name": "KongKong — Go Channel Event-Driven Architecture",
+      "projectType": "Architecture Design",
+      "period": "2019 ~ 2020",
+      "description": "As feature modules grew, a single check-in action needed to trigger SMS, stamp rewards, and score credits depending on event type. Separated concerns by having check-in only publish an event, with each module independently subscribing via Go channels.",
+      "achievements": [
+        "Established architecture where new modules can be added without touching check-in code",
+        "Stable addition of 30+ feature modules over 7 years on this foundation",
+        "Minimized coupling between services"
+      ]
+    },
+    "project-kongkong-modules": {
+      "name": "KongKong — 30+ Feature Module Development",
+      "projectType": "B2B Platform Feature Development",
+      "period": "2017.08 ~ 2024.04",
+      "description": "Designed and implemented 30+ feature modules for event operators and attendees over 7 years in a live production environment. Directly gathered customer requirements, managed backlogs, prioritized, and ran hundreds of release cycles without downtime.",
+      "achievements": [
+        "30+ modules shipped and operated in live events without service interruptions over 7 years",
+        "Hundreds of release cycles with no production outages",
+        "Go channel event-driven architecture enabled adding new modules without touching existing code",
+        "Full ownership of customer requirement gathering → backlog → prioritization → release"
+      ],
+      "modules": [
+        "GPS Check-in", "Attendance", "QR Login", "Magic Link",
+        "Prize Draw", "Live Quiz", "Voting", "Stamp Tour", "Stamp Rewards",
+        "Live Q&A", "Live Messaging", "Live Board", "Word Cloud",
+        "Photo Board", "Photo Sliding Wall", "Live Signing",
+        "LMS", "Course Registration", "Video Completion", "Mini Homepage",
+        "Landing Page Builder", "Rating Board", "Announcements",
+        "Meal Ticket", "Name Badge Print", "Kiosk", "Scheduled SMS",
+        "Sponsor Booth", "Academic Program Mgmt", "Poster Q&A"
+      ]
+    },
+    "project-kongkong-codegen": {
+      "name": "KongKong — JSON-Based API/CRUD Auto-Generation",
+      "projectType": "Developer Productivity / Internal Platform",
+      "period": "2020 ~ 2022",
+      "description": "Built an internal platform where writing an entity spec JSON auto-generates API, routes, and CRUD admin pages — to eliminate the bottleneck of repetitively building similar structures. Early productivity gains were significant, but as reusability was pushed further, domain-specific exceptions and options accumulated until the structure became too complex for the team to maintain, eventually collapsing.",
+      "achievements": [
+        "Initial developer productivity improvement: eliminated repetitive boilerplate",
+        "Lesson: derived the principle 'only what's needed now, reuse proven frameworks, keep it team-readable'",
+        "Applied over-abstraction avoidance in subsequent designs"
       ]
     },
     "project-payment-refactor": {
       "name": "Payment System Refactoring",
       "projectType": "Payment System",
       "period": "2022.05 ~ 2022.10",
-      "description": "Unified payment system by abstracting multiple PG payment logics behind a common interface. Implemented in Kotlin.",
+      "description": "Each PG provider had different payment flows and parameter structures, causing the codebase to branch per provider. Abstracted all PG logics behind a common interface, so adding a new PG requires only writing a new implementation.",
       "achievements": [
         "Abstracted multiple PG payment logics into a common interface",
+        "Adding/swapping PGs now requires only a new implementation class",
         "Technical lectures for junior developers (once a week, 4 weeks)"
       ]
     },
     "project-kolon-pipeline": {
-      "name": "Async Migration Pipeline",
-      "projectType": "Data Pipeline",
+      "name": "Async Migration Pipeline & Back-Office",
+      "projectType": "Data Pipeline / Admin Console",
       "period": "2019.02 ~ 2019.12",
-      "description": "Asynchronous data migration pipeline using AWS SQS + Lambda. Designed and implemented a batch system for review data migration.",
+      "description": "Built an async large-scale review data migration pipeline using AWS SQS + Lambda, implemented a React-based back-office admin console, and migrated SAP delivery functionality to a Spring application.",
       "achievements": [
-        "AWS SQS + Lambda async pipeline",
-        "Review data migration batch system design and implementation"
+        "AWS SQS + Lambda async pipeline for large-scale review data migration",
+        "React-based back-office admin console design and implementation",
+        "SAP delivery functionality migrated to Spring-based application",
+        "Micronaut framework R&D"
       ]
     },
     "project-suites-vegas": {
       "name": "Suites in Vegas",
-      "projectType": "Social Game Server",
+      "projectType": "Social Game Client/Server",
       "period": "2016.03 ~ 2017.07",
-      "description": "Facebook social casino game server (North America launch). Designed game server and admin console, introduced Jenkins CI/CD and TDD.",
+      "description": "Facebook social casino game (North America launch). Developed Flash/ActionScript game client and Java/Spring game server with admin console. Introduced Jenkins CI/CD and TDD.",
       "achievements": [
-        "Game server and admin console design/development",
+        "Flash/ActionScript game client development",
+        "Java/Spring game server and admin console design/development",
         "Jenkins CI/CD pipeline setup",
         "Introduced TDD"
       ]
@@ -225,14 +310,14 @@
     },
     "project-dragonnest": {
       "name": "Dragon Nest Wonderland",
-      "projectType": "Mobile Game Server",
+      "projectType": "Mobile Game Server/Client",
       "period": "2013.04 ~ 2014.09",
-      "description": "Mobile board game server development (Chinese market launch). Handled massive traffic of 40,000 req/s through scale-out.",
+      "description": "Mobile board game server and Unity3D client network library development (Chinese market launch). Handled massive traffic of 40,000 req/s through scale-out.",
       "achievements": [
         "Handled 40,000 req/s massive traffic via scale-out",
         "Multi-threaded TCP/IP game server design",
-        "Client network library design",
-        "Solved Mono generic limitations with a Python code generator"
+        "Unity3D client network library design and implementation",
+        "Solved iOS Mono generic limitations with a Python code generator"
       ]
     },
     "project-secret-garden": {
@@ -246,13 +331,14 @@
       ]
     },
     "project-groupon-batch": {
-      "name": "Partner Revenue Optimization",
+      "name": "Partner Revenue Data Integrity Fix",
       "projectType": "Query Optimization / Batch Processing",
       "period": "2011.10 ~ 2012.03",
-      "description": "Optimized partner revenue management queries, reducing response time from 5 minutes to instant. Implemented Spring Batch data processing pipeline.",
+      "description": "Partner revenue management was slow (5+ min) and inconsistent. Root cause: finalized revenue data was being aggregated from live, changing data in real time. Switched to Spring Batch-based confirmed data storage to eliminate query-time dependency.",
       "achievements": [
-        "Query optimization: response time 5 min → instant",
-        "Spring Batch data processing pipeline implementation"
+        "Identified root cause: real-time aggregation of data that should be finalized by prior day",
+        "Spring Batch-based confirmed data pre-computation introduced",
+        "Response time 5 min+ → instant; data consistency restored"
       ]
     },
     "project-ace": {
@@ -266,32 +352,38 @@
     }
   },
   "skills": {
-    "skill-go":         { "description": "Migrated PHP legacy to Go at Revival Labs, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
-    "skill-java":       { "description": "Built Spring-based backends at Kidari Studio, Octave Games, and Groupon. 10+ years of experience." },
-    "skill-kotlin":     { "description": "Used for payment system refactoring at The Swing; leveraged for microservice development at Muple." },
-    "skill-csharp":     { "description": "Used for TCP/IP game server development at Cube Games and Carrot Games. Implemented systems handling 40,000 req/s." },
-    "skill-python":     { "description": "Used for code generators, scripting automation, and microservice development at Muple." },
-    "skill-typescript": { "description": "Used for type safety in Node.js projects." },
-    "skill-javascript": { "description": "Used for frontend and Node.js backend development." },
-    "skill-php":        { "description": "Maintained legacy system at Revival Labs before migrating to Go." },
-    "skill-spring":     { "description": "Primary Java backend framework. Used at Kidari Studio, Groupon, and more." },
-    "skill-nodejs":     { "description": "Used with AWS Lambda at Kolon Mall; used for microservice development at Muple." },
-    "skill-vue":        { "description": "Used for B2B platform frontend development at Revival Labs." },
-    "skill-react":      { "description": "Frontend development experience." },
-    "skill-springbatch":{ "description": "Used for data processing pipeline implementation at Groupon Korea." },
-    "skill-grpc":       { "description": "Used as a communication protocol between microservices." },
-    "skill-websocket":  { "description": "Implemented real-time event notification system using WebSocket at Revival Labs." },
-    "skill-tcpip":      { "description": "Directly implemented TCP/IP socket communication in game server development. Managed concurrent connections in multi-threaded environments." },
-    "skill-mysql":      { "description": "Primary RDBMS. Extensive experience in query optimization, index design, and migration." },
-    "skill-redis":      { "description": "Used as a caching layer at Revival Labs to significantly boost performance." },
-    "skill-mssql":      { "description": "Operated Azure MSSQL system at Bebecook and migrated it to AWS MySQL." },
-    "skill-docker":     { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at Revival Labs." },
-    "skill-kubernetes": { "description": "Currently operating K8s microservices environment at Muple." },
-    "skill-aws":        { "description": "Leveraged EC2, S3, Lambda, SQS, and more. Designed AWS-based infrastructure at multiple companies." },
-    "skill-jenkins":    { "description": "Built Jenkins-based CI/CD pipeline at Octave Games." },
-    "skill-cicd":       { "description": "Established continuous deployment pipelines at multiple companies." },
-    "skill-lambda":     { "description": "Implemented async data pipeline combined with SQS at Kolon Mall." },
-    "skill-sqs":        { "description": "Implemented async message queue system combined with Lambda at Kolon Mall." }
+    "skill-go":           { "description": "Migrated PHP legacy to Go at Revival Labs, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
+    "skill-java":         { "description": "Built Spring-based backends at Kidari Studio, Octave Games, and Groupon. 10+ years of experience." },
+    "skill-kotlin":       { "description": "Used for payment system refactoring at The Swing; leveraged for microservice development at Muple." },
+    "skill-csharp":       { "description": "Used for TCP/IP game server development at Cube Games and Carrot Games. Implemented systems handling 40,000 req/s." },
+    "skill-python":       { "description": "Used for code generators, scripting automation, and microservice development at Muple." },
+    "skill-typescript":   { "description": "Solo-migrated 1-year Python codebase to TypeScript at Muple. Also used with Node.js at Kolon Mall." },
+    "skill-javascript":   { "description": "Used for frontend and Node.js backend development." },
+    "skill-php":          { "description": "Maintained legacy system at Revival Labs before migrating to Go." },
+    "skill-actionscript": { "description": "Developed Flash/ActionScript-based Facebook social casino game client at Octave Games." },
+    "skill-spring":       { "description": "Primary Java backend framework. Used at Kidari Studio, Groupon, Octave Games, and Kolon Mall." },
+    "skill-nodejs":       { "description": "Used with AWS Lambda at Kolon Mall; used for microservice development at Muple." },
+    "skill-vue":          { "description": "Built B2B platform frontend as a Vue SPA at Revival Labs. Also used at Muple." },
+    "skill-react":        { "description": "Designed and implemented back-office admin console frontend with React at Kolon Mall." },
+    "skill-springbatch":  { "description": "Used for partner revenue data processing pipeline at Groupon Korea." },
+    "skill-jpa":          { "description": "Used with Spring at The Swing, Octave Games, and Kidari Studio." },
+    "skill-mybatis":      { "description": "Used for data access layer implementation at Groupon Korea." },
+    "skill-yjs":          { "description": "Integrated Yjs-based real-time collaborative editing at Muple." },
+    "skill-unity3d":      { "description": "Designed and implemented Unity3D client network library for Dragon Nest Wonderland at Cube Games." },
+    "skill-grpc":         { "description": "Used as a communication protocol between microservices." },
+    "skill-websocket":    { "description": "Implemented real-time event dashboard using WebSocket at Revival Labs." },
+    "skill-tcpip":        { "description": "Directly implemented TCP/IP socket communication in game server development. Managed concurrent connections in multi-threaded environments." },
+    "skill-mysql":        { "description": "Primary RDBMS. Extensive experience in query optimization, index design, and migration." },
+    "skill-redis":        { "description": "Used as a caching layer at Revival Labs to significantly boost performance." },
+    "skill-mssql":        { "description": "Operated Azure MSSQL system at Bebecook and migrated it to AWS MySQL." },
+    "skill-postgresql":   { "description": "Used as the primary database at Muple." },
+    "skill-docker":       { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at Revival Labs." },
+    "skill-kubernetes":   { "description": "Currently operating K8s microservices environment at Muple." },
+    "skill-aws":          { "description": "Leveraged EC2, S3, RDS, Lambda, SQS, and more. Designed AWS-based infrastructure at multiple companies." },
+    "skill-jenkins":      { "description": "Built Jenkins-based CI/CD pipeline at Octave Games." },
+    "skill-cicd":         { "description": "Established continuous deployment pipelines at multiple companies." },
+    "skill-lambda":       { "description": "Implemented async data pipeline combined with SQS at Kolon Mall." },
+    "skill-sqs":          { "description": "Implemented async message queue system combined with Lambda at Kolon Mall." }
   },
   "tags": {
     "tag-backend":      { "name": "Backend",          "description": "Server-side development" },
@@ -308,6 +400,7 @@
     "tag-refactoring":  { "name": "Refactoring",      "description": "Legacy code improvement and design enhancement" },
     "tag-async":        { "name": "Async Processing", "description": "Event-driven and message queue-based async processing" },
     "tag-batch":        { "name": "Batch Processing", "description": "Large-scale data batch processing" },
-    "tag-mmorpg":       { "name": "MMORPG",           "description": "Massively multiplayer online role-playing game" }
+    "tag-mmorpg":       { "name": "MMORPG",           "description": "Massively multiplayer online role-playing game" },
+    "tag-platform":     { "name": "Platform",         "description": "Platform development integrating multiple feature modules" }
   }
 }

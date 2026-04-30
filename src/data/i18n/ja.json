@@ -33,8 +33,10 @@
       "achievements": [
         "Kubernetes環境でのマイクロサービス設計・運用",
         "Node.js、Python、Kotlinによるポリグロットマイクロサービスアーキテクチャ開発",
-        "Vueベースのフロントエンド開発",
-        "コンテナオーケストレーションとサービスデプロイ管理"
+        "Yjsベースのリアルタイム共同編集機能の連携",
+        "PDFビューワー実装",
+        "CloudWatch CPU指標ベースのSlack通知・ビルド失敗通知の連携",
+        "1年分のPythonコードベースを1週間でTypeScriptへ単独移行（AIパイプライン活用）"
       ]
     },
     "company-bebecook": {
@@ -44,6 +46,7 @@
       "description": "Azure MSSQLベースのシステムをAWS MySQLに移行し、CI/CDパイプラインを構築しました。",
       "achievements": [
         "Azure MSSQL + ストアドプロシージャベースのシステムをAWS MySQLへ移行",
+        "cross apply/pivot非対応、プロシージャ戻り値型の差異、照合順序不一致などDB間の構造的差異を解決",
         "ストアドプロシージャのロジックをアプリケーションレイヤーに移行し保守性・可視性を向上",
         "CI/CDパイプライン構築"
       ]
@@ -52,14 +55,15 @@
       "name": "リバイバルラボ",
       "role": "CTO",
       "period": "2017.08 ~ 2024.04",
-      "description": "イベント運営B2BプラットフォームのKongKongを設計・開発・運用。PHPからGoへ移行し処理量100倍向上、インフラコスト50%削減を達成しました。",
+      "description": "イベント運営B2BプラットフォームのKongKongを設計・開発・運用。PHPからGoへ移行し処理量100倍向上、インフラコスト50%削減を達成。7年間で30種以上の機能モジュールを本番環境で直接設計・実装しました。",
       "achievements": [
-        "PHP → Go移行で性能100倍向上（30 → 3,000 req/s）",
+        "PHP → Go移行で性能100倍向上（30 → 3,000 req/s、シングルコア512MB RAM）",
         "月間インフラコスト50%削減",
         "Goチャネルベースのイベントドリブンアーキテクチャでサービス間結合度を最小化",
-        "Dockerスケールアウト、Redisキャッシュ、WebSocketリアルタイム通信の実装",
+        "参加者・運営者向け機能モジュールを30種以上直接設計・実装",
+        "Dockerスケールアウト、Redisキャッシュ、WebSocketリアルタイムダッシュボード",
         "CI/CDパイプライン構築で1〜2週間サイクルの継続的デプロイ体制確立",
-        "未経験メンバーの育成とチームビルディング、要件収集からリリースまでの開発サイクルをリード"
+        "非専攻メンバー2名をフルスタック独立開発レベルに育成、7年間安定したリリースサイクルを維持"
       ]
     },
     "company-theswing": {
@@ -76,19 +80,22 @@
       "name": "コロンモール（パープルワークス）",
       "role": "バックエンドエンジニア",
       "period": "2019.02 ~ 2019.12",
-      "description": "AWS SQS + Lambdaベースの非同期データ移行パイプラインを構築し、ショッピングモールのバックエンドを開発しました。",
+      "description": "AWS SQS + Lambdaベースの非同期大量データ移行パイプラインを構築し、Reactベースのバックオフィス管理コンソールを実装。SAP配送機能をSpringベースのアプリケーションへ移行しました。",
       "achievements": [
-        "AWS SQS + Lambda非同期データ移行パイプライン構築",
-        "レビューデータ移行バッチシステムの設計・実装"
+        "AWS SQS + Lambda非同期大量レビューデータ移行パイプライン構築",
+        "Reactベースのバックオフィス管理コンソール設計・実装",
+        "SAP配送機能をSpringベースのアプリケーションへ移行",
+        "Monautフレームワーク R&D"
       ]
     },
     "company-octave": {
       "name": "オクターブゲームズ",
       "role": "チームリーダー",
       "period": "2016.03 ~ 2017.07",
-      "description": "FacebookソーシャルカジノゲームSuites in Vegasのサーバーを設計・開発。創業メンバーとしてチームをリードしました。",
+      "description": "FacebookソーシャルカジノゲームSuites in Vegasのクライアント・サーバーを設計・開発。創業メンバーとしてチームをリードしました。",
       "achievements": [
-        "ゲームサーバーと管理コンソールの設計・開発",
+        "Flash/ActionScriptゲームクライアント開発",
+        "Java/Springゲームサーバーと管理コンソールの設計・開発",
         "創業メンバーとしてチームをリード",
         "JenkinsベースのCI/CDパイプライン構築",
         "TDD導入"
@@ -108,11 +115,11 @@
       "name": "キューブゲームズ",
       "role": "バックエンドエンジニア",
       "period": "2013.04 ~ 2014.09",
-      "description": "モバイルボードゲームDragon Nest Wonderlandのサーバーを開発。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
+      "description": "モバイルボードゲームDragon Nest WonderlandのサーバーとUnity3Dクライアントネットワークライブラリを開発。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
       "achievements": [
         "スケールアウトによる40,000 req/s大規模トラフィック処理",
-        "マルチスレッドTCP/IPゲームサーバーとクライアントネットワークライブラリの設計",
-        "PythonコードジェネレーターでMonoのジェネリック制限を解決"
+        "マルチスレッドTCP/IPゲームサーバーとUnity3Dクライアントネットワークライブラリの同時設計",
+        "iOSのMonoジェネリック制限をPythonコードジェネレーターで解決"
       ]
     },
     "company-kidari": {
@@ -129,10 +136,11 @@
       "name": "グルーポンコリア",
       "role": "バックエンドエンジニア",
       "period": "2011.10 ~ 2012.03",
-      "description": "ショッピングモールのバックエンド開発。パートナー収益管理クエリを最適化し、レスポンス時間を5分から即時照会に改善しました。",
+      "description": "ショッピングモールのバックエンド開発。パートナー収益管理のデータ整合性問題を特定し、Spring Batchベースの確定データ保存構造に切り替え、レスポンス時間を5分から即時照会に改善しました。",
       "achievements": [
-        "クエリ最適化：リアルタイムSQLをバッチ+結果キャッシュ方式に変換、レスポンス時間5分→即時照会",
-        "Spring Batchベースのデータ処理パイプライン実装"
+        "根本原因の特定：前日基準で確定すべきデータをリアルタイム変動データから集計する構造が整合性問題を引き起こしていた",
+        "Spring Batchで前日基準確定データを別途保存する構造に切り替え",
+        "レスポンス時間5分+→即時照会、データ整合性を回復"
       ]
     },
     "company-airforce": {
@@ -151,11 +159,26 @@
       "name": "Murfy (AI LaTeX Web IDE)",
       "projectType": "バックエンド / マイクロサービス",
       "period": "2024.07 ~ 現在",
-      "description": "AIベースのLaTeXウェブエディタMurfyのバックエンド。Kubernetes環境でマイクロサービスアーキテクチャを採用し、多言語ポリグロットサービスを運用しています。",
+      "description": "AIベースのLaTeXウェブエディタMurfyのフルスタック開発。Kubernetes環境でマイクロサービスアーキテクチャを採用し、多言語ポリグロットサービスを運用しています。",
       "achievements": [
         "K8sマイクロサービスの設計・運用",
         "Node.js/Python/Kotlinポリグロットサービス開発",
+        "Yjsベースのリアルタイム共同編集機能の連携",
+        "PDFビューワー実装",
+        "CloudWatch CPU指標ベースのSlack通知設定",
         "コンテナオーケストレーションとデプロイ管理"
+      ]
+    },
+    "project-muple-ts-migration": {
+      "name": "Python → TypeScript コードベース移行",
+      "projectType": "コードベース移行",
+      "period": "2025",
+      "description": "Pythonを扱えるメンバーが離脱するタイミングで、1年分のPythonバックエンドをTypeScriptへ移行。単純な翻訳ではなく検証問題として捉え、スペック抽出 → テスト作成 → AI（Claude Code）変換 → 決定論的フック検証 → 人間レビューのパイプラインで完成させました。",
+      "achievements": [
+        "1年分のコードベースを1週間で単独移行完了",
+        "既存コードからスペックを抽出しテストで振る舞いを仕様化してから変換",
+        "Claude CodeベースのAI変換パイプライン + 決定論的フックで幻覚を遮断",
+        "移行過程で既存コードの潜在バグをテストで確認可能な状態に転換"
       ]
     },
     "project-bebecook-migration": {
@@ -165,6 +188,7 @@
       "description": "Azure MSSQLのストアドプロシージャベースのシステムをAWS MySQLに移行。ストアドプロシージャのロジックをアプリケーションレイヤーに移行し保守性を向上させました。",
       "achievements": [
         "Azure MSSQL → AWS MySQL移行",
+        "cross apply/pivot非対応、プロシージャ戻り値型の差異、照合順序不一致などDB間の構造的差異を解決",
         "ストアドプロシージャのロジックをアプリケーションレイヤーに移行",
         "CI/CDパイプライン構築"
       ]
@@ -173,42 +197,103 @@
       "name": "KongKong（イベントB2Bプラットフォーム）",
       "projectType": "B2B SaaSプラットフォーム",
       "period": "2017.08 ~ 2024.04",
-      "description": "イベント運営B2B SaaSプラットフォーム。PHPからGoへ移行し、処理量を30から3,000 req/sへ100倍向上させ、インフラコストを50%削減しました。",
+      "description": "イベント運営B2B SaaSプラットフォーム。PHPからGoへ移行し、処理量を30から3,000 req/sへ100倍向上させ、インフラコストを50%削減。7年間で30種以上の機能モジュールを本番環境で設計・実装・運用しました。",
       "achievements": [
         "PHP → Go移行で処理量100倍向上（30 → 3,000 req/s）",
         "月間インフラコスト50%削減",
         "Goチャネルベースのイベントドリブンアーキテクチャ",
         "Redisキャッシュ & WebSocketリアルタイム通信",
-        "Dockerスケールアウト構成"
+        "Dockerスケールアウト構成",
+        "7年間で30種以上の機能モジュールを開発・運用"
+      ]
+    },
+    "project-kongkong-rewrite": {
+      "name": "KongKong — PHP → Go 全面書き直し",
+      "projectType": "パフォーマンス最適化 / アーキテクチャ移行",
+      "period": "2017.08 ~ 2018",
+      "description": "引き継いだPHPプラットフォームが軽いトラフィックでも30 req/sを超えられない状況。GoへのランタイムオーバーヘッドをなくしつつDBをRDSに分離、Dockerでローカル再現性を確保しました。",
+      "achievements": [
+        "シングルコア512MB RAMで3,000 req/sを達成 — 処理量100倍",
+        "RDS分離後もインフラコスト50%削減",
+        "Dockerでローカル開発環境の再現性を確保",
+        "この基盤の上で7年間30種以上の機能モジュールを追加・安定運用"
+      ]
+    },
+    "project-kongkong-event-driven": {
+      "name": "KongKong — Goチャネルベースのイベントドリブンアーキテクチャ",
+      "projectType": "アーキテクチャ設計",
+      "period": "2019 ~ 2020",
+      "description": "機能モジュールが増えるにつれ、チェックイン一つにSMS送信・スタンプ付与・スコア積算などがイベント種別によって組み合わさる複雑なフローが生まれました。チェックインはイベントを発行するだけに限定し、各モジュールがGoチャネルを通じて独立して購読・処理する構造に分離しました。",
+      "achievements": [
+        "チェックインコードを触らずに新モジュールを追加できる構造を確立",
+        "この構造の上で7年間30種以上の機能モジュールを安定して追加",
+        "サービス間結合度を最小化"
+      ]
+    },
+    "project-kongkong-modules": {
+      "name": "KongKong — 30種以上の機能モジュール開発",
+      "projectType": "B2Bプラットフォーム機能開発",
+      "period": "2017.08 ~ 2024.04",
+      "description": "イベント現場の運営者・参加者向け機能モジュールを7年間で30種以上、本番環境で直接設計・実装。顧客要件を直接収集してバックログで管理し、優先順位を決めて反映、数百回のリリースサイクルを無停止で安定運営しました。",
+      "achievements": [
+        "7年間30種以上のモジュールをライブ本番環境で無停止追加・運営",
+        "数百回のリリースサイクルにわたりサービス障害ゼロを維持",
+        "Goチャネルイベントドリブンアーキテクチャにより既存コードを変更せずにモジュールを追加",
+        "顧客要件収集 → バックログ管理 → 優先順位決定 → リリースまで完全オーナーシップ"
+      ],
+      "modules": [
+        "GPS チェックイン", "出欠確認", "QR ログイン", "マジックリンク",
+        "景品抽選", "リアルタイムクイズ", "投票", "スタンプツアー", "スタンプ景品",
+        "ライブQ&A", "ライブメッセージ", "リアルタイム掲示板", "ワードクラウド",
+        "フォト共有掲示板", "フォトスライディングウォール", "ライブ署名式",
+        "LMS", "受講申請", "動画記録確認", "ミニホームページ",
+        "ランディングページ作成ツール", "評価掲示板", "お知らせ",
+        "食事チケット", "名札印刷", "キオスク", "SMS予約送信",
+        "スポンサーブース", "学術大会プログラム管理", "論文ポスターQ&A管理"
+      ]
+    },
+    "project-kongkong-codegen": {
+      "name": "KongKong — JSONベースAPI/CRUD自動生成システム",
+      "projectType": "開発生産性 / 内部プラットフォーム",
+      "period": "2020 ~ 2022",
+      "description": "類似した構造のAPIと管理ページを繰り返し作成するボトルネックを解消するため、エンティティスペックJSONを書くとAPI・ルート・CRUD管理ページが自動生成される内部プラットフォームを設計・実装。初期は開発生産性が向上したが、再利用性を高めようとするほどドメイン固有の例外とオプションが蓄積され構造が複雑化、最終的に崩壊しました。",
+      "achievements": [
+        "初期の開発生産性向上：繰り返し作業を排除",
+        "失敗の教訓：「今必要なものだけ、検証済みのフレームワーク再利用、チームが理解可能なレベル」という原則を導出",
+        "その後の設計で過剰な抽象化を回避する原則として適用"
       ]
     },
     "project-payment-refactor": {
       "name": "決済システムリファクタリング",
       "projectType": "決済システム",
       "period": "2022.05 ~ 2022.10",
-      "description": "異なるPG社の決済ロジックを共通インターフェースに抽象化して統合。Kotlinで実装しました。",
+      "description": "PG社ごとに決済フローとパラメータ構造が異なり、コードがPG社別に分岐していた問題を解消。全PG社の決済ロジックを共通インターフェースに抽象化し、PG社追加時は実装クラスを書くだけで済む構造に転換しました。",
       "achievements": [
         "複数PG社の決済ロジックを共通インターフェースに抽象化",
+        "PG社の追加・交換時は実装クラスを追加するだけで対応可能な構造に転換",
         "ジュニア開発者向け技術講義（週1回、4週間）"
       ]
     },
     "project-kolon-pipeline": {
-      "name": "非同期移行パイプライン",
-      "projectType": "データパイプライン",
+      "name": "非同期移行パイプライン & バックオフィス",
+      "projectType": "データパイプライン / 管理コンソール",
       "period": "2019.02 ~ 2019.12",
-      "description": "AWS SQS + Lambdaを活用した非同期データ移行パイプライン。レビューデータをバッチ処理するシステムを設計・実装しました。",
+      "description": "AWS SQS + Lambdaを活用した非同期大量レビューデータ移行パイプラインと、Reactベースのバックオフィス管理コンソールを開発。SAP配送機能をSpringベースのアプリケーションへ移行しました。",
       "achievements": [
-        "AWS SQS + Lambda非同期パイプライン構築",
-        "レビューデータ移行バッチシステムの設計・実装"
+        "AWS SQS + Lambda非同期パイプラインで大量レビューデータを移行",
+        "Reactベースのバックオフィス管理コンソール設計・実装",
+        "SAP配送機能をSpringベースのアプリケーションへ移行",
+        "Monautフレームワーク R&D"
       ]
     },
     "project-suites-vegas": {
       "name": "Suites in Vegas",
-      "projectType": "ソーシャルゲームサーバー",
+      "projectType": "ソーシャルゲームクライアント/サーバー",
       "period": "2016.03 ~ 2017.07",
-      "description": "Facebookソーシャルカジノゲームサーバー（北米リリース）。ゲームサーバーと管理コンソールを設計し、Jenkins CI/CDとTDDを導入しました。",
+      "description": "Facebookソーシャルカジノゲーム（北米リリース）。Flash/ActionScriptゲームクライアントとJava/Springゲームサーバー・管理コンソールを設計し、Jenkins CI/CDとTDDを導入しました。",
       "achievements": [
-        "ゲームサーバーと管理コンソールの設計・開発",
+        "Flash/ActionScriptゲームクライアント開発",
+        "Java/Springゲームサーバーと管理コンソールの設計・開発",
         "JenkinsベースのCI/CDパイプライン構築",
         "TDD導入"
       ]
@@ -225,14 +310,14 @@
     },
     "project-dragonnest": {
       "name": "Dragon Nest Wonderland",
-      "projectType": "モバイルゲームサーバー",
+      "projectType": "モバイルゲームサーバー/クライアント",
       "period": "2013.04 ~ 2014.09",
-      "description": "モバイルボードゲームサーバー開発（中華圏リリース）。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
+      "description": "モバイルボードゲームのサーバーとUnity3Dクライアントネットワークライブラリを開発（中華圏リリース）。スケールアウトで40,000 req/sの大規模トラフィックを処理しました。",
       "achievements": [
         "スケールアウトによる40,000 req/s大規模トラフィック処理",
         "マルチスレッドTCP/IPゲームサーバー設計",
-        "クライアントネットワークライブラリ設計",
-        "PythonコードジェネレーターでMonoのジェネリック制限を解決"
+        "Unity3Dクライアントネットワークライブラリ設計・実装",
+        "iOSのMonoジェネリック制限をPythonコードジェネレーターで解決"
       ]
     },
     "project-secret-garden": {
@@ -246,13 +331,14 @@
       ]
     },
     "project-groupon-batch": {
-      "name": "パートナー収益管理最適化",
+      "name": "パートナー収益データ整合性改善",
       "projectType": "クエリ最適化 / バッチ処理",
       "period": "2011.10 ~ 2012.03",
-      "description": "パートナー収益管理クエリを最適化し、レスポンス時間を5分から即時照会に改善。Spring Batchデータ処理パイプラインを実装しました。",
+      "description": "パートナー収益管理画面のレスポンス5分+問題の根本原因を分析。前日基準で確定されるべき収益データをリアルタイム変動データから直接集計する整合性問題が共存していることを特定。Spring Batchで確定データを別途保存する構造に切り替えました。",
       "achievements": [
-        "クエリ最適化：レスポンス時間5分→即時照会",
-        "Spring Batchベースのデータ処理パイプライン実装"
+        "根本原因の特定：確定データとリアルタイムデータを区別しない構造が両問題の共通原因",
+        "Spring Batchで前日基準確定データを別途保存する構造を導入",
+        "レスポンス時間5分+→即時照会、データ整合性を回復"
       ]
     },
     "project-ace": {
@@ -266,32 +352,38 @@
     }
   },
   "skills": {
-    "skill-go":         { "description": "リバイバルラボでPHPレガシーをGoへ移行し処理量100倍を達成。Goチャネルベースのイベントドリブンアーキテクチャを設計しました。" },
-    "skill-java":       { "description": "キダリスタジオ、オクターブゲームズ、グルーポンなどでSpringベースのバックエンドを開発。10年以上の使用経験。" },
-    "skill-kotlin":     { "description": "ザ・スウィングでの決済システムリファクタリングや、マプルでのマイクロサービス開発に活用。" },
-    "skill-csharp":     { "description": "キューブゲームズとキャロットゲームズでTCP/IPゲームサーバー開発に使用。40,000 req/sを処理するシステムを実装。" },
-    "skill-python":     { "description": "コードジェネレーター、スクリプト自動化、マプルでのマイクロサービス開発に活用。" },
-    "skill-typescript": { "description": "Node.jsプロジェクトで型安全性のために使用。" },
-    "skill-javascript": { "description": "フロントエンドおよびNode.jsバックエンド開発に活用。" },
-    "skill-php":        { "description": "リバイバルラボでレガシーシステムを運用後、Goへ移行。" },
-    "skill-spring":     { "description": "Javaバックエンド開発の主要フレームワーク。キダリスタジオ、グルーポンなどで使用。" },
-    "skill-nodejs":     { "description": "コロンモールでAWS Lambdaと共に、マプルでマイクロサービス開発に活用。" },
-    "skill-vue":        { "description": "リバイバルラボでB2BプラットフォームのフロントエンドをVueで開発。" },
-    "skill-react":      { "description": "フロントエンド開発経験あり。" },
-    "skill-springbatch":{ "description": "グルーポンコリアでデータ処理パイプライン構築に使用。" },
-    "skill-grpc":       { "description": "マイクロサービス間の通信プロトコルとして活用。" },
-    "skill-websocket":  { "description": "リバイバルラボでリアルタイムイベント通知システムにWebSocketを実装。" },
-    "skill-tcpip":      { "description": "ゲームサーバー開発でTCP/IPソケット通信を直接実装。マルチスレッド環境での同時接続者管理を担当。" },
-    "skill-mysql":      { "description": "主要RDBMS。クエリ最適化、インデックス設計、マイグレーションの豊富な経験。" },
-    "skill-redis":      { "description": "リバイバルラボでキャッシュレイヤーとして活用し、パフォーマンスを大幅に向上。" },
-    "skill-mssql":      { "description": "ベベクックでAzure MSSQLシステムを運用し、AWS MySQLへ移行。" },
-    "skill-docker":     { "description": "コンテナ化とスケールアウト構成に活用。リバイバルラボでDockerベースのインフラを設計。" },
-    "skill-kubernetes": { "description": "マプルでK8sマイクロサービス環境を運用中。" },
-    "skill-aws":        { "description": "EC2、S3、Lambda、SQSなど多様なAWSサービスを活用。複数企業でAWSベースのインフラを設計。" },
-    "skill-jenkins":    { "description": "オクターブゲームズでJenkinsベースのCI/CDパイプラインを構築。" },
-    "skill-cicd":       { "description": "複数企業でCI/CDパイプラインを構築し、継続的デプロイ体制を確立。" },
-    "skill-lambda":     { "description": "コロンモールでSQSと組み合わせた非同期データパイプラインを実装。" },
-    "skill-sqs":        { "description": "コロンモールでLambdaと組み合わせた非同期メッセージキューシステムを実装。" }
+    "skill-go":           { "description": "リバイバルラボでPHPレガシーをGoへ移行し処理量100倍を達成。Goチャネルベースのイベントドリブンアーキテクチャを設計しました。" },
+    "skill-java":         { "description": "キダリスタジオ、オクターブゲームズ、グルーポンなどでSpringベースのバックエンドを開発。10年以上の使用経験。" },
+    "skill-kotlin":       { "description": "ザ・スウィングでの決済システムリファクタリングや、マプルでのマイクロサービス開発に活用。" },
+    "skill-csharp":       { "description": "キューブゲームズとキャロットゲームズでTCP/IPゲームサーバー開発に使用。40,000 req/sを処理するシステムを実装。" },
+    "skill-python":       { "description": "コードジェネレーター、スクリプト自動化、マプルでのマイクロサービス開発に活用。" },
+    "skill-typescript":   { "description": "マプルで1年分のPythonコードベースをTypeScriptへ単独移行。コロンモールでもNode.jsプロジェクトに活用。" },
+    "skill-javascript":   { "description": "フロントエンドおよびNode.jsバックエンド開発に活用。" },
+    "skill-php":          { "description": "リバイバルラボでレガシーシステムを運用後、Goへ移行。" },
+    "skill-actionscript": { "description": "オクターブゲームズでFlash/ActionScriptベースのFacebookソーシャルカジノゲームクライアントを開発。" },
+    "skill-spring":       { "description": "Javaバックエンド開発の主要フレームワーク。キダリスタジオ、グルーポン、オクターブゲームズ、コロンモールなどで使用。" },
+    "skill-nodejs":       { "description": "コロンモールでAWS Lambdaと共に、マプルでマイクロサービス開発に活用。" },
+    "skill-vue":          { "description": "リバイバルラボでB2BプラットフォームのフロントエンドをVue SPAで設計・運用。マプルでも活用中。" },
+    "skill-react":        { "description": "コロンモールでバックオフィス管理コンソールのフロントエンドをReactで設計・実装。" },
+    "skill-springbatch":  { "description": "グルーポンコリアでパートナー収益管理データ処理パイプライン構築に使用。" },
+    "skill-jpa":          { "description": "ザ・スウィング、オクターブゲームズ、キダリスタジオでSpringと共にJPAを使用。" },
+    "skill-mybatis":      { "description": "グルーポンコリアでデータアクセスレイヤーの実装にMyBatisを活用。" },
+    "skill-yjs":          { "description": "マプルでYjsベースのリアルタイム共同編集機能を連携。" },
+    "skill-unity3d":      { "description": "キューブゲームズでDragon Nest WonderlandのUnity3Dクライアントネットワークライブラリを設計・実装。" },
+    "skill-grpc":         { "description": "マイクロサービス間の通信プロトコルとして活用。" },
+    "skill-websocket":    { "description": "リバイバルラボでリアルタイムイベントダッシュボードにWebSocketを実装。" },
+    "skill-tcpip":        { "description": "ゲームサーバー開発でTCP/IPソケット通信を直接実装。マルチスレッド環境での同時接続者管理を担当。" },
+    "skill-mysql":        { "description": "主要RDBMS。クエリ最適化、インデックス設計、マイグレーションの豊富な経験。" },
+    "skill-redis":        { "description": "リバイバルラボでキャッシュレイヤーとして活用し、パフォーマンスを大幅に向上。" },
+    "skill-mssql":        { "description": "ベベクックでAzure MSSQLシステムを運用し、AWS MySQLへ移行。" },
+    "skill-postgresql":   { "description": "マプルの主要データベースとして活用中。" },
+    "skill-docker":       { "description": "コンテナ化とスケールアウト構成に活用。リバイバルラボでDockerベースのインフラを設計。" },
+    "skill-kubernetes":   { "description": "マプルでK8sマイクロサービス環境を運用中。" },
+    "skill-aws":          { "description": "EC2、S3、RDS、Lambda、SQSなど多様なAWSサービスを活用。複数企業でAWSベースのインフラを設計。" },
+    "skill-jenkins":      { "description": "オクターブゲームズでJenkinsベースのCI/CDパイプラインを構築。" },
+    "skill-cicd":         { "description": "複数企業でCI/CDパイプラインを構築し、継続的デプロイ体制を確立。" },
+    "skill-lambda":       { "description": "コロンモールでSQSと組み合わせた非同期データパイプラインを実装。" },
+    "skill-sqs":          { "description": "コロンモールでLambdaと組み合わせた非同期メッセージキューシステムを実装。" }
   },
   "tags": {
     "tag-backend":      { "name": "バックエンド",          "description": "サーバーサイド開発全般" },
@@ -308,6 +400,7 @@
     "tag-refactoring":  { "name": "リファクタリング",      "description": "レガシーコードの改善と設計改善" },
     "tag-async":        { "name": "非同期処理",            "description": "イベントドリブンとメッセージキューベースの非同期処理" },
     "tag-batch":        { "name": "バッチ処理",            "description": "大規模データバッチ処理システム" },
-    "tag-mmorpg":       { "name": "MMORPG",                "description": "大規模多人数オンラインRPG" }
+    "tag-mmorpg":       { "name": "MMORPG",                "description": "大規模多人数オンラインRPG" },
+    "tag-platform":     { "name": "プラットフォーム",      "description": "複数の機能モジュールを統合したプラットフォーム開発" }
   }
 }

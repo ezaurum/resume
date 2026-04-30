@@ -48,6 +48,8 @@ export default {
     yearsExp: '{n}年の経験',
     highlights: '主な実績',
     achievements: '業務内容・実績',
+    modules: '実装機能一覧',
+    modulesCount: '{n}種の機能を実装',
     education: '学歴・資格',
     techStack: '技術スタック',
     tags: 'タグ',

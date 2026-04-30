@@ -44,6 +44,7 @@ export interface Project {
   skills: string[]
   tags: string[]
   achievements: string[]
+  modules?: string[]
 }
 
 export interface Skill {

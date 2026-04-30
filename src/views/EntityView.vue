@@ -103,6 +103,20 @@ function getCompanyName(id: string): string {
             </ul>
           </section>
 
+          <section v-if="asProject?.modules?.length">
+            <h2 class="text-lg font-semibold text-gray-900 mb-1">{{ t('entity.modules') }}</h2>
+            <p class="text-xs text-gray-400 mb-3">{{ t('entity.modulesCount', { n: asProject.modules.length }) }}</p>
+            <div class="flex flex-wrap gap-1.5">
+              <span
+                v-for="mod in asProject.modules"
+                :key="mod"
+                class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200"
+              >
+                {{ mod }}
+              </span>
+            </div>
+          </section>
+
           <section v-if="asPerson">
             <h2 class="text-lg font-semibold text-gray-900 mb-3">{{ t('entity.education') }}</h2>
             <div class="space-y-2">
