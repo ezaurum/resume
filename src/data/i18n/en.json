@@ -5,7 +5,7 @@
     "title": "15-Year Backend Engineer",
     "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
     "highlights": [
-      "Currently developing a medical imaging PACS solo in Go with Claude-based harness engineering, and deploying an AI CXR reading server on-premise",
+      "PACS development with Claude-based harness engineering; built on-premise servers running on intranets",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
       "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
       "Query optimization: partner revenue management response time 5 min → instant",
