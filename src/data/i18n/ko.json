@@ -30,7 +30,7 @@
       "name": "숨빗에이아이",
       "role": "PACS 개발",
       "period": "2026.08 ~ 현재",
-      "description": "의료영상 PACS 개발. Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 PACS를 혼자 맡아 Go로 DICOM 통신과 영상 저장·조회 서버, 뷰어를 개발하고, AI CXR 판독 서버의 온프레미스 배포·개발도 맡고 있습니다.",
+      "description": "의료영상 PACS 개발. Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 PACS를 단독으로 맡아 Go로 DICOM 통신과 영상 저장·조회 서버, 뷰어를 개발하고, AI CXR 판독 서버의 온프레미스 배포·개발도 맡고 있습니다.",
       "achievements": [
         "PACS 단독 개발 — Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 진행",
         "AI CXR 판독 서버 온프레미스 배포·개발",
@@ -194,7 +194,7 @@
       "name": "의료영상 PACS",
       "projectType": "의료영상 / 백엔드·뷰어",
       "period": "2026",
-      "description": "의료영상 PACS를 혼자 맡아 개발. Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 Go로 DICOM 통신과 영상 저장·조회 서버를 만들고, OHIF Viewer를 확장해 뷰어를 개발하고 있습니다. 병원 현장 설치와 PACS 연동도 맡고 있습니다.",
+      "description": "의료영상 PACS 단독 개발. Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 Go로 DICOM 통신과 영상 저장·조회 서버를 만들고, OHIF Viewer를 확장해 뷰어를 개발하고 있습니다. 병원 현장 설치와 PACS 연동도 맡고 있습니다.",
       "achievements": [
         "PACS 단독 개발 — Claude 기반 하네스 엔지니어링(훅·테스트·CI·문서 규칙)으로 진행",
         "DICOM 통신 개발",
