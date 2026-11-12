@@ -5,7 +5,7 @@
     "title": "15-Year Backend Engineer",
     "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
     "highlights": [
-      "Currently developing a medical imaging PACS in Go and deploying an AI CXR reading server on-premise",
+      "Currently developing a medical imaging PACS solo in Go with Claude-based harness engineering, and deploying an AI CXR reading server on-premise",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
       "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
       "Query optimization: partner revenue management response time 5 min → instant",
@@ -30,8 +30,9 @@
       "name": "Soombit AI",
       "role": "PACS Development",
       "period": "2026.08 ~ Present",
-      "description": "Medical imaging PACS development. Building DICOM communication, image storage/query servers, and viewers in Go, and handling on-premise deployment and development of an AI CXR reading server.",
+      "description": "Medical imaging PACS development. Solely responsible for the PACS, building DICOM communication, image storage/query servers, and viewers in Go with Claude-based harness engineering (hooks, tests, CI, documentation rules), and also handling on-premise deployment and development of an AI CXR reading server.",
       "achievements": [
+        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules)",
         "On-premise deployment and development of an AI CXR reading server",
         "DICOM communication development",
         "DICOM image storage/query server development (Orthanc integration)",
@@ -194,8 +195,9 @@
       "name": "Medical Imaging PACS",
       "projectType": "Medical Imaging / Backend & Viewer",
       "period": "2026",
-      "description": "Development of a medical imaging PACS. Building DICOM communication and image storage/query servers in Go, and developing the viewer by extending OHIF Viewer. Also responsible for on-site hospital installation and PACS integration.",
+      "description": "Sole development of a medical imaging PACS with Claude-based harness engineering (hooks, tests, CI, documentation rules). Building DICOM communication and image storage/query servers in Go, and developing the viewer by extending OHIF Viewer. Also responsible for on-site hospital installation and PACS integration.",
       "achievements": [
+        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules)",
         "DICOM communication development",
         "DICOM image storage/query server development (Orthanc integration)",
         "Image viewer frontend/backend development (OHIF Viewer extension)",
