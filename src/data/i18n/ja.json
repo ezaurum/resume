@@ -46,11 +46,12 @@
     "company-freelance": {
       "name": "フリーランス",
       "role": "業務委託開発",
-      "period": "2026",
-      "description": "LLMベースの音響・放送設備自動見積もりシステムの業務委託開発。",
+      "period": "2018 ~ 2026",
+      "description": "コンコンフレンズ在職中から続けてきた業務委託開発。ドアロック販売システム（2018）、ウィッグ工場生産管理システム（2020）、LLMベースの音響・放送設備自動見積もりシステム（2026）。",
       "achievements": [
         "自然言語の要件 → LLM（Function Calling）による品目選定 + 決定論的な検証・補正パイプラインで設計明細書（xlsx）を自動生成",
-        "Go（Fiber）バックエンド + Vue 3フロントエンド、非同期Job・SSEストリーミング、go:embedによる単一バイナリ配備"
+        "Go（Fiber）バックエンド + Vue 3フロントエンド、非同期Job・SSEストリーミング、go:embedによる単一バイナリ配備",
+        "ドアロック販売システム（3ヶ月）とウィッグ工場生産管理システム（2ヶ月）を Spring / Spring Data JPA でフロントエンド・バックエンドとも開発"
       ]
     },
     "company-muple": {
@@ -228,6 +229,24 @@
         "18段階の検証・補正：重複統合、アンプ出力/チャンネル、ブラケット互換、予算超過などのルール違反を自動で検証・補正",
         "自動リトライループ：コード修正を優先し、解決しない項目のみAIに再リクエスト（最大3回）",
         "非同期Job + SSEによるリアルタイム進捗ストリーミング、go:embedによる単一バイナリ配備"
+      ]
+    },
+    "project-wig-production": {
+      "name": "ウィッグ工場生産管理システム",
+      "projectType": "生産管理 / フルスタック",
+      "period": "2020（2ヶ月）",
+      "description": "ウィッグ工場向け生産管理ソフトウェアの業務委託開発。Spring / Spring Data JPA でフロントエンドとバックエンドの両方を担当しました。",
+      "achievements": [
+        "フロントエンド・バックエンドを両方開発（Spring / Spring Data JPA）"
+      ]
+    },
+    "project-doorlock-sales": {
+      "name": "ドアロック販売システム",
+      "projectType": "販売システム / フルスタック",
+      "period": "2018（3ヶ月）",
+      "description": "ドアロック販売システムの業務委託開発。Spring / Spring Data JPA でフロントエンドとバックエンドの両方を担当しました。",
+      "achievements": [
+        "フロントエンド・バックエンドを両方開発（Spring / Spring Data JPA）"
       ]
     },
     "project-latex-ide": {
@@ -498,7 +517,7 @@
   "domains": {
     "domain-game":      { "name": "ゲーム", "description": "ソーシャル・モバイルゲームのサーバーとクライアント" },
     "domain-commerce":  { "name": "ECサイト", "description": "ECサイト・ソーシャルコマースのバックエンドとバックオフィス" },
-    "domain-erp":       { "name": "ERP", "description": "企業の業務・運用システム（決済、見積、配送、業務DB、戦績管理）" },
+    "domain-erp":       { "name": "ERP", "description": "企業の業務・運用システム（生産管理、販売・決済、見積、配送、業務DB、戦績管理）" },
     "domain-eventtech": { "name": "イベントテック", "description": "イベント現場運営のB2Bプラットフォーム" },
     "domain-medical":   { "name": "医療", "description": "医療画像PACSとAI読影サーバー" },
     "domain-edutech":   { "name": "エドテック・学術", "description": "AIベースの学術文書（LaTeX）作成ツール" }

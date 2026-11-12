@@ -46,11 +46,12 @@
     "company-freelance": {
       "name": "Freelance",
       "role": "Contract Development",
-      "period": "2026",
-      "description": "Contract development of an LLM-based automatic quotation system for audio/broadcast equipment.",
+      "period": "2018 ~ 2026",
+      "description": "Contract development carried on since my time at KongKong Friends: a door lock sales system (2018), a wig factory production management system (2020), and an LLM-based automatic quotation system for audio/broadcast equipment (2026).",
       "achievements": [
         "Natural-language requirements → LLM (Function Calling) item selection + deterministic validation/correction pipeline that auto-generates design specifications (xlsx)",
-        "Go (Fiber) backend + Vue 3 frontend, async jobs with SSE streaming, single-binary deployment with go:embed"
+        "Go (Fiber) backend + Vue 3 frontend, async jobs with SSE streaming, single-binary deployment with go:embed",
+        "Built both frontend and backend of a door lock sales system (3 months) and a wig factory production management system (2 months) with Spring / Spring Data JPA"
       ]
     },
     "company-muple": {
@@ -228,6 +229,24 @@
         "18-step validation/correction: duplicate merging, amp output/channels, bracket compatibility, budget overrun and other rule violations are checked and corrected automatically",
         "Automatic retry loop: code fixes first; only unresolved items are re-requested from AI (up to 3 times)",
         "Async jobs with real-time SSE progress streaming, single-binary deployment with go:embed"
+      ]
+    },
+    "project-wig-production": {
+      "name": "Wig Factory Production Management System",
+      "projectType": "Production Management / Full-stack",
+      "period": "2020 (2 months)",
+      "description": "Contract development of production management software for a wig factory. Handled both frontend and backend with Spring / Spring Data JPA.",
+      "achievements": [
+        "Developed both frontend and backend (Spring / Spring Data JPA)"
+      ]
+    },
+    "project-doorlock-sales": {
+      "name": "Door Lock Sales System",
+      "projectType": "Sales System / Full-stack",
+      "period": "2018 (3 months)",
+      "description": "Contract development of a sales system for door locks. Handled both frontend and backend with Spring / Spring Data JPA.",
+      "achievements": [
+        "Developed both frontend and backend (Spring / Spring Data JPA)"
       ]
     },
     "project-latex-ide": {
@@ -498,7 +517,7 @@
   "domains": {
     "domain-game":      { "name": "Games", "description": "Social and mobile game servers and clients" },
     "domain-commerce":  { "name": "E-commerce", "description": "Online store and social commerce backends and back offices" },
-    "domain-erp":       { "name": "ERP", "description": "Business operations systems (payment, quotation, delivery, business DB, match records)" },
+    "domain-erp":       { "name": "ERP", "description": "Business operations systems (production management, sales and payment, quotation, delivery, business DB, match records)" },
     "domain-eventtech": { "name": "Event Tech", "description": "B2B platform for on-site event operations" },
     "domain-medical":   { "name": "Healthcare", "description": "Medical imaging PACS and AI reading server" },
     "domain-edutech":   { "name": "EdTech & Academic", "description": "AI-powered academic document (LaTeX) writing tool" }

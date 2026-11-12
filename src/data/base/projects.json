@@ -2,6 +2,8 @@
   { "id": "project-soombit-pacs",           "company": "company-soombit",     "skills": ["skill-go", "skill-react", "skill-dicom", "skill-orthanc", "skill-ohif", "skill-cicd"], "tags": ["tag-medical", "tag-backend", "tag-ai"] },
   { "id": "project-soombit-onprem",         "company": "company-soombit",     "skills": ["skill-go", "skill-linux", "skill-nixos"], "tags": ["tag-medical", "tag-onprem", "tag-ai"] },
   { "id": "project-doan-estimator",         "company": "company-freelance",   "skills": ["skill-go", "skill-vue", "skill-typescript"], "tags": ["tag-ai", "tag-backend"] },
+  { "id": "project-wig-production",         "company": "company-freelance",   "skills": ["skill-java", "skill-spring", "skill-jpa"], "tags": ["tag-backend"] },
+  { "id": "project-doorlock-sales",         "company": "company-freelance",   "skills": ["skill-java", "skill-spring", "skill-jpa"], "tags": ["tag-backend"] },
   { "id": "project-latex-ide",              "company": "company-muple",       "skills": ["skill-nodejs", "skill-python", "skill-kotlin", "skill-kubernetes", "skill-docker", "skill-vue", "skill-yjs", "skill-postgresql"], "tags": ["tag-microservice", "tag-ai", "tag-backend"] },
   { "id": "project-muple-ts-migration",     "company": "company-muple",       "skills": ["skill-typescript", "skill-nodejs"],                                                                                                 "tags": ["tag-migration", "tag-backend"] },
   { "id": "project-bebecook-migration",     "company": "company-bebecook",    "skills": ["skill-mysql", "skill-mssql", "skill-aws", "skill-cicd"],                                                                           "tags": ["tag-migration", "tag-cicd"] },

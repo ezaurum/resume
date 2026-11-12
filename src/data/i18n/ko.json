@@ -46,11 +46,12 @@
     "company-freelance": {
       "name": "프리랜서",
       "role": "외주 개발",
-      "period": "2026",
-      "description": "LLM 기반 음향·방송 설비 자동 견적 시스템(도안파비스) 외주 개발.",
+      "period": "2018 ~ 2026",
+      "description": "콩콩프렌즈 재직 중부터 이어 온 외주 개발. 도어락 판매 시스템(2018), 가발 공장 생산관리 시스템(2020), LLM 기반 음향·방송 설비 자동 견적 시스템(도안파비스, 2026).",
       "achievements": [
         "자연어 요구사항 → LLM(Function Calling) 품목 선택 + 결정론적 검증·보정 파이프라인으로 설계 내역서(xlsx) 자동 생성",
-        "Go(Fiber) 백엔드 + Vue 3 프론트엔드, 비동기 Job·SSE 스트리밍, go:embed 단일 바이너리 배포"
+        "Go(Fiber) 백엔드 + Vue 3 프론트엔드, 비동기 Job·SSE 스트리밍, go:embed 단일 바이너리 배포",
+        "도어락 판매 시스템(3개월)·가발 공장 생산관리 시스템(2개월)을 Spring / Spring Data JPA로 프론트엔드·백엔드 모두 개발"
       ]
     },
     "company-muple": {
@@ -227,6 +228,24 @@
         "18단계 검증·보정: 중복 병합, 앰프 출력/채널, 브래킷 호환, 예산 초과 등 규칙 위반 자동 검증·보정",
         "자동 재시도 루프: 코드 수정을 우선 적용하고, 해결 안 되는 항목만 AI 재요청(최대 3회)",
         "비동기 Job + SSE 실시간 진행 스트리밍, go:embed 단일 바이너리 배포"
+      ]
+    },
+    "project-wig-production": {
+      "name": "가발 공장 생산관리 시스템",
+      "projectType": "생산관리 / 풀스택",
+      "period": "2020 (2개월)",
+      "description": "가발 공장의 생산관리 소프트웨어 외주 개발. Spring / Spring Data JPA로 프론트엔드와 백엔드를 모두 맡았습니다.",
+      "achievements": [
+        "프론트엔드·백엔드 모두 개발 (Spring / Spring Data JPA)"
+      ]
+    },
+    "project-doorlock-sales": {
+      "name": "도어락 판매 시스템",
+      "projectType": "판매 시스템 / 풀스택",
+      "period": "2018 (3개월)",
+      "description": "도어락 판매 시스템 외주 개발. Spring / Spring Data JPA로 프론트엔드와 백엔드를 모두 맡았습니다.",
+      "achievements": [
+        "프론트엔드·백엔드 모두 개발 (Spring / Spring Data JPA)"
       ]
     },
     "project-latex-ide": {
@@ -497,7 +516,7 @@
   "domains": {
     "domain-game":      { "name": "게임", "description": "소셜·모바일 게임 서버와 클라이언트" },
     "domain-commerce":  { "name": "쇼핑몰", "description": "쇼핑몰·소셜커머스 백엔드와 백오피스" },
-    "domain-erp":       { "name": "ERP", "description": "기업 업무·운영 시스템 (결제, 견적, 배송, 업무 DB, 전적관리)" },
+    "domain-erp":       { "name": "ERP", "description": "기업 업무·운영 시스템 (생산관리, 판매·결제, 견적, 배송, 업무 DB, 전적관리)" },
     "domain-eventtech": { "name": "이벤트테크", "description": "행사 현장 운영 B2B 플랫폼" },
     "domain-medical":   { "name": "의료", "description": "의료영상 PACS와 AI 판독 서버" },
     "domain-edutech":   { "name": "에듀테크·학술", "description": "AI 기반 학술 문서(LaTeX) 작성 도구" }
