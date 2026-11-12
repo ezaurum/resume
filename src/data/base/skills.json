@@ -30,5 +30,10 @@
   { "id": "skill-jenkins",      "name": "Jenkins",       "category": "infrastructure", "level": "proficient" },
   { "id": "skill-cicd",         "name": "CI/CD",         "category": "infrastructure", "level": "expert" },
   { "id": "skill-lambda",       "name": "AWS Lambda",    "category": "infrastructure", "level": "proficient" },
-  { "id": "skill-sqs",          "name": "AWS SQS",       "category": "infrastructure", "level": "proficient" }
+  { "id": "skill-sqs",          "name": "AWS SQS",       "category": "infrastructure", "level": "proficient" },
+  { "id": "skill-linux",        "name": "Linux",         "category": "infrastructure", "level": "proficient" },
+  { "id": "skill-nixos",        "name": "NixOS",         "category": "infrastructure", "level": "proficient" },
+  { "id": "skill-dicom",        "name": "DICOM",         "category": "protocol",       "level": "familiar" },
+  { "id": "skill-orthanc",      "name": "Orthanc",       "category": "framework",      "level": "familiar" },
+  { "id": "skill-ohif",         "name": "OHIF Viewer",   "category": "framework",      "level": "familiar" }
 ]

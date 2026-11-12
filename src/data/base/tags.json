@@ -14,5 +14,7 @@
   { "id": "tag-async" },
   { "id": "tag-batch" },
   { "id": "tag-mmorpg" },
-  { "id": "tag-platform" }
+  { "id": "tag-platform" },
+  { "id": "tag-medical" },
+  { "id": "tag-onprem" }
 ]

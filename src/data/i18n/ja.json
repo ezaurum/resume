@@ -3,13 +3,14 @@
     "name": "趙錫奎",
     "nameEn": "Cho Seokgyu",
     "title": "15年目バックエンドエンジニア",
-    "summary": "15年のキャリアを持つバックエンドエンジニア。サービス設計から大規模トラフィック処理・運用まで全工程を経験。リアルタイムゲームサーバーからB2B SaaSプラットフォーム、AIサービスまで多様なドメインでパフォーマンス最適化とアーキテクチャ設計をリードしてきました。",
+    "summary": "15年のキャリアを持つバックエンドエンジニア。サービス設計から大規模トラフィック処理・運用まで全工程を経験。リアルタイムゲームサーバーからB2B SaaSプラットフォーム、AIサービス、医用画像PACSまで多様なドメインでパフォーマンス最適化とアーキテクチャ設計をリードしてきました。",
     "highlights": [
+      "現職で医用画像PACSをGoで開発、AI CXR読影サーバーのオンプレミス配備・開発",
       "PHP → Go移行で処理量100倍向上（30 → 3,000 req/s）、インフラコスト50%削減",
       "スケールアウトで40,000 req/sの大規模トラフィック処理（Dragon Nest Wonderland）",
       "クエリ最適化でパートナー収益管理レスポンス時間5分→即時照会",
       "CTOとして6年9ヶ月間チームビルディング・CI/CD構築・アーキテクチャ設計をリード",
-      "K8sマイクロサービス環境でポリグロット（Node.js/Python/Kotlin）サービスを開発中"
+      "K8sマイクロサービス環境でポリグロット（Node.js/Python/Kotlin）サービスを開発・運用"
     ],
     "strengths": [
       "大規模トラフィック処理",
@@ -25,11 +26,37 @@
     "certifications": ["中等学校教員資格証（2級）", "日本語能力試験 N1"]
   },
   "companies": {
+    "company-soombit": {
+      "name": "Soombit AI",
+      "role": "PACS開発",
+      "period": "2026.08 ~ 現在",
+      "description": "医用画像PACSの開発。GoでDICOM通信と画像保存・照会サーバー、ビューアを開発し、AI CXR読影サーバーのオンプレミス配備・開発を担当しています。",
+      "achievements": [
+        "AI CXR読影サーバーのオンプレミス配備・開発",
+        "DICOM通信の開発",
+        "DICOM画像保存・照会サーバーの開発（Orthanc連携）",
+        "画像ビューアのフロントエンド/バックエンド開発（OHIF Viewer拡張）",
+        "病院現地での導入およびPACS連携",
+        "Linuxオンプレミスシステム（NVIDIA, CUDA）の構築・閉域網への配備、NixOSベースの自動アップデートシステム構築",
+        "ライセンス・資産保護の仕組み、TPM、LUKS",
+        "CI/CDによるSOUP・SBOMファイル自動生成で規制対応"
+      ]
+    },
+    "company-freelance": {
+      "name": "フリーランス",
+      "role": "業務委託開発",
+      "period": "2026",
+      "description": "LLMベースの音響・放送設備自動見積もりシステムの業務委託開発。",
+      "achievements": [
+        "自然言語の要件 → LLM（Function Calling）による品目選定 + 決定論的な検証・補正パイプラインで設計明細書（xlsx）を自動生成",
+        "Go（Fiber）バックエンド + Vue 3フロントエンド、非同期Job・SSEストリーミング、go:embedによる単一バイナリ配備"
+      ]
+    },
     "company-muple": {
       "name": "マプル株式会社",
       "role": "フルスタックエンジニア",
-      "period": "2024.07 ~ 現在",
-      "description": "AIベースのLaTeX Web IDE Murfyのフルスタック開発。Kubernetes環境でマイクロサービスを設計・運用し、Node.js/Python/KotlinによるポリグロットバックエンドとVueベースのフロントエンドを開発しています。",
+      "period": "2024.07 ~ 2026.05（1年10ヶ月）",
+      "description": "AIベースのLaTeX Web IDE Murfyのフルスタック開発。Kubernetes環境でマイクロサービスを設計・運用し、Node.js/Python/KotlinによるポリグロットバックエンドとVueベースのフロントエンドを開発しました。",
       "achievements": [
         "Kubernetes環境でのマイクロサービス設計・運用",
         "Node.js、Python、Kotlinによるポリグロットマイクロサービスアーキテクチャ開発",
@@ -55,7 +82,7 @@
       ]
     },
     "company-revivallabs": {
-      "name": "リバイバルラボ",
+      "name": "コンコンフレンズ",
       "role": "CTO",
       "period": "2017.08 ~ 2024.04",
       "description": "イベント運営B2BプラットフォームのKongKongを設計・開発・運用。PHPからGoへ移行し処理量100倍向上、インフラコスト50%削減を達成。7年間で30種以上の機能モジュールを本番環境で直接設計・実装しました。",
@@ -163,10 +190,48 @@
     }
   },
   "projects": {
+    "project-soombit-pacs": {
+      "name": "医用画像PACS",
+      "projectType": "医用画像 / バックエンド・ビューア",
+      "period": "2026",
+      "description": "医用画像PACSの開発。GoでDICOM通信と画像保存・照会サーバーを構築し、OHIF Viewerを拡張してビューアを開発しています。病院現地での導入とPACS連携も担当しています。",
+      "achievements": [
+        "DICOM通信の開発",
+        "DICOM画像保存・照会サーバーの開発（Orthanc連携）",
+        "画像ビューアのフロントエンド/バックエンド開発（OHIF Viewer拡張）",
+        "病院現地での導入およびPACS連携",
+        "CI/CDによるSOUP・SBOMファイル自動生成で規制対応"
+      ]
+    },
+    "project-soombit-onprem": {
+      "name": "AI CXR読影サーバーのオンプレミス配備",
+      "projectType": "オンプレミス / インフラ",
+      "period": "2026",
+      "description": "AI CXR読影サーバーのオンプレミス配備・開発。Linuxオンプレミスシステムの構築と閉域網への配備、NixOSベースの自動アップデート、ライセンス・資産保護の仕組みを担当しています。",
+      "achievements": [
+        "AI CXR読影サーバーのオンプレミス配備・開発",
+        "Linuxオンプレミスシステム（NVIDIA, CUDA）の構築・閉域網への配備",
+        "NixOSベースの自動アップデートシステム構築",
+        "ライセンス・資産保護の仕組み、TPM、LUKS"
+      ]
+    },
+    "project-doan-estimator": {
+      "name": "LLMベースの音響・放送設備自動見積もりシステム",
+      "projectType": "AI自動化 / バックエンド",
+      "period": "2026",
+      "description": "自然言語の要件をLLMがカタログ品目に変換し、その出力をそのまま信頼せず決定論的な検証・補正で包む2段階パイプライン。AIが下書きを作り、ドメインルールをコード化した検証層が確定する構造。",
+      "achievements": [
+        "Stage 1（LLM）：主要品目のみ選定 — セクション専用の縮小カタログだけを提示してハルシネーションとトークンコストを削減、Function Callingで構造化スキーマ出力を強制",
+        "Stage 2（コード）：アンプ・ブラケット・ミキサー・ケーブル・電源・ラックを音響設計の公式をコード化して決定論的に組み立て",
+        "18段階の検証・補正：重複統合、アンプ出力/チャンネル、ブラケット互換、予算超過などのルール違反を自動で検証・補正",
+        "自動リトライループ：コード修正を優先し、解決しない項目のみAIに再リクエスト（最大3回）",
+        "非同期Job + SSEによるリアルタイム進捗ストリーミング、go:embedによる単一バイナリ配備"
+      ]
+    },
     "project-latex-ide": {
       "name": "Murfy (AI LaTeX Web IDE)",
       "projectType": "バックエンド / マイクロサービス",
-      "period": "2024.07 ~ 現在",
+      "period": "2024.07 ~ 2026.05（1年10ヶ月）",
       "description": "AIベースのLaTeXウェブエディタMurfyのフルスタック開発。Kubernetes環境でマイクロサービスアーキテクチャを採用し、多言語ポリグロットサービスを運用しています。",
       "achievements": [
         "K8sマイクロサービスの設計・運用",
@@ -370,18 +435,23 @@
     }
   },
   "skills": {
-    "skill-go":           { "description": "リバイバルラボでPHPレガシーをGoへ移行し処理量100倍を達成。Goチャネルベースのイベントドリブンアーキテクチャを設計しました。" },
+    "skill-linux": { "description": "Soombit AIでLinuxオンプレミスシステム（NVIDIA, CUDA）を構築し、閉域網に配備しました。" },
+    "skill-nixos": { "description": "Soombit AIでNixOSベースの自動アップデートシステムを構築しました。" },
+    "skill-dicom": { "description": "Soombit AIでGoによるDICOM通信と画像保存・照会サーバーを開発しました。" },
+    "skill-orthanc": { "description": "Soombit AIでDICOM画像保存・照会サーバーをOrthancと連携しました。" },
+    "skill-ohif": { "description": "Soombit AIでOHIF Viewerを拡張して画像ビューアを開発しました。" },
+    "skill-go":           { "description": "コンコンフレンズでPHPレガシーをGoへ移行し処理量100倍を達成。Goチャネルベースのイベントドリブンアーキテクチャを設計しました。" },
     "skill-java":         { "description": "キダリスタジオ、オクターブゲームズ、グルーポンなどでSpringベースのバックエンドを開発。10年以上の使用経験。" },
     "skill-kotlin":       { "description": "ザ・スウィングでの決済システムリファクタリングや、マプルでのマイクロサービス開発に活用。" },
     "skill-csharp":       { "description": "キューブゲームズとキャロットゲームズでTCP/IPゲームサーバー開発に使用。40,000 req/sを処理するシステムを実装。" },
     "skill-python":       { "description": "コードジェネレーター、スクリプト自動化、マプルでのマイクロサービス開発に活用。" },
     "skill-typescript":   { "description": "マプルで1年分のPythonコードベースをTypeScriptへ単独移行。コロンモールでもNode.jsプロジェクトに活用。" },
     "skill-javascript":   { "description": "フロントエンドおよびNode.jsバックエンド開発に活用。" },
-    "skill-php":          { "description": "リバイバルラボでレガシーシステムを運用後、Goへ移行。" },
+    "skill-php":          { "description": "コンコンフレンズでレガシーシステムを運用後、Goへ移行。" },
     "skill-actionscript": { "description": "オクターブゲームズでFlash/ActionScriptベースのFacebookソーシャルカジノゲームクライアントを開発。" },
     "skill-spring":       { "description": "Javaバックエンド開発の主要フレームワーク。キダリスタジオ、グルーポン、オクターブゲームズ、コロンモールなどで使用。" },
     "skill-nodejs":       { "description": "コロンモールでAWS Lambdaと共に、マプルでマイクロサービス開発に活用。" },
-    "skill-vue":          { "description": "リバイバルラボでB2BプラットフォームのフロントエンドをVue SPAで設計・運用。マプルでも活用中。" },
+    "skill-vue":          { "description": "コンコンフレンズでB2BプラットフォームのフロントエンドをVue SPAで設計・運用。マプルでも活用中。" },
     "skill-react":        { "description": "コロンモールでバックオフィス管理コンソールのフロントエンドをReactで設計・実装。" },
     "skill-springbatch":  { "description": "グルーポンコリアでパートナー収益管理データ処理パイプライン構築に使用。" },
     "skill-jpa":          { "description": "ザ・スウィング、オクターブゲームズ、キダリスタジオでSpringと共にJPAを使用。" },
@@ -389,13 +459,13 @@
     "skill-yjs":          { "description": "マプルでYjsベースのリアルタイム共同編集機能を連携。" },
     "skill-unity3d":      { "description": "キューブゲームズでDragon Nest WonderlandのUnity3Dクライアントネットワークライブラリを設計・実装。" },
     "skill-grpc":         { "description": "マイクロサービス間の通信プロトコルとして活用。" },
-    "skill-websocket":    { "description": "リバイバルラボでリアルタイムイベントダッシュボードにWebSocketを実装。" },
+    "skill-websocket":    { "description": "コンコンフレンズでリアルタイムイベントダッシュボードにWebSocketを実装。" },
     "skill-tcpip":        { "description": "ゲームサーバー開発でTCP/IPソケット通信を直接実装。マルチスレッド環境での同時接続者管理を担当。" },
     "skill-mysql":        { "description": "主要RDBMS。クエリ最適化、インデックス設計、マイグレーションの豊富な経験。" },
-    "skill-redis":        { "description": "リバイバルラボでキャッシュレイヤーとして活用し、パフォーマンスを大幅に向上。" },
+    "skill-redis":        { "description": "コンコンフレンズでキャッシュレイヤーとして活用し、パフォーマンスを大幅に向上。" },
     "skill-mssql":        { "description": "ベベクックでAzure MSSQLシステムを運用し、AWS MySQLへ移行。" },
     "skill-postgresql":   { "description": "マプルの主要データベースとして活用中。" },
-    "skill-docker":       { "description": "コンテナ化とスケールアウト構成に活用。リバイバルラボでDockerベースのインフラを設計。" },
+    "skill-docker":       { "description": "コンテナ化とスケールアウト構成に活用。コンコンフレンズでDockerベースのインフラを設計。" },
     "skill-kubernetes":   { "description": "マプルでK8sマイクロサービス環境を運用中。" },
     "skill-aws":          { "description": "EC2、S3、RDS、Lambda、SQSなど多様なAWSサービスを活用。複数企業でAWSベースのインフラを設計。" },
     "skill-jenkins":      { "description": "オクターブゲームズでJenkinsベースのCI/CDパイプラインを構築。" },
@@ -404,6 +474,8 @@
     "skill-sqs":          { "description": "コロンモールでLambdaと組み合わせた非同期メッセージキューシステムを実装。" }
   },
   "tags": {
+    "tag-medical": {"name": "医用画像", "description": "DICOM・PACSなどの医用画像ソフトウェア"},
+    "tag-onprem": {"name": "オンプレミス", "description": "顧客現場や閉域網に直接導入して運用するシステム"},
     "tag-backend":      { "name": "バックエンド",          "description": "サーバーサイド開発全般" },
     "tag-performance":  { "name": "パフォーマンス最適化",  "description": "処理量向上、レイテンシ削減、コスト削減などのパフォーマンス改善" },
     "tag-architecture": { "name": "アーキテクチャ設計",    "description": "システムアーキテクチャ設計と技術的意思決定" },

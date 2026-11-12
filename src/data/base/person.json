@@ -7,10 +7,12 @@
     "skill-springbatch", "skill-grpc", "skill-websocket", "skill-tcpip",
     "skill-mysql", "skill-redis", "skill-mssql",
     "skill-docker", "skill-kubernetes", "skill-aws", "skill-jenkins",
-    "skill-cicd", "skill-lambda", "skill-sqs"
+    "skill-cicd", "skill-lambda", "skill-sqs",
+    "skill-linux", "skill-nixos", "skill-dicom", "skill-orthanc", "skill-ohif"
   ],
   "tags": [
     "tag-backend", "tag-performance", "tag-architecture", "tag-leadership",
-    "tag-gameserver", "tag-b2b", "tag-microservice"
+    "tag-gameserver", "tag-b2b", "tag-microservice",
+    "tag-medical", "tag-onprem"
   ]
 }

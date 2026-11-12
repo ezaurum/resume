@@ -3,13 +3,14 @@
     "name": "Cho Seokgyu",
     "nameEn": "Cho Seokgyu",
     "title": "15-Year Backend Engineer",
-    "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services.",
+    "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
     "highlights": [
+      "Currently developing a medical imaging PACS in Go and deploying an AI CXR reading server on-premise",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
       "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
       "Query optimization: partner revenue management response time 5 min → instant",
       "As CTO, led team building, CI/CD setup, and architecture design for 6 years 9 months",
-      "Currently developing polyglot (Node.js/Python/Kotlin) services in K8s microservices environment"
+      "Developed and operated polyglot (Node.js/Python/Kotlin) services in a K8s microservices environment"
     ],
     "strengths": [
       "High-Traffic Processing",
@@ -25,11 +26,37 @@
     "certifications": ["Secondary School Teacher License (Grade 2)", "JLPT N1"]
   },
   "companies": {
+    "company-soombit": {
+      "name": "Soombit AI",
+      "role": "PACS Development",
+      "period": "2026.08 ~ Present",
+      "description": "Medical imaging PACS development. Building DICOM communication, image storage/query servers, and viewers in Go, and handling on-premise deployment and development of an AI CXR reading server.",
+      "achievements": [
+        "On-premise deployment and development of an AI CXR reading server",
+        "DICOM communication development",
+        "DICOM image storage/query server development (Orthanc integration)",
+        "Image viewer frontend/backend development (OHIF Viewer extension)",
+        "On-site hospital installation and PACS integration",
+        "Linux on-premise system (NVIDIA, CUDA) setup and air-gapped deployment; NixOS-based auto-update system",
+        "Licensing and asset protection, TPM, LUKS",
+        "Regulatory compliance through automatic SOUP/SBOM generation in CI/CD"
+      ]
+    },
+    "company-freelance": {
+      "name": "Freelance",
+      "role": "Contract Development",
+      "period": "2026",
+      "description": "Contract development of an LLM-based automatic quotation system for audio/broadcast equipment.",
+      "achievements": [
+        "Natural-language requirements → LLM (Function Calling) item selection + deterministic validation/correction pipeline that auto-generates design specifications (xlsx)",
+        "Go (Fiber) backend + Vue 3 frontend, async jobs with SSE streaming, single-binary deployment with go:embed"
+      ]
+    },
     "company-muple": {
       "name": "Muple Inc.",
       "role": "Fullstack Engineer",
-      "period": "2024.07 ~ Present",
-      "description": "Fullstack development of Murfy, an AI-based LaTeX Web IDE. Designing and operating microservices in Kubernetes with a polyglot backend (Node.js/Python/Kotlin) and Vue-based frontend.",
+      "period": "2024.07 ~ 2026.05 (1 year 10 months)",
+      "description": "Fullstack development of Murfy, an AI-based LaTeX Web IDE. Designed and operated microservices in Kubernetes with a polyglot backend (Node.js/Python/Kotlin) and Vue-based frontend.",
       "achievements": [
         "Microservice design and operation in Kubernetes environment",
         "Polyglot microservice architecture with Node.js, Python, Kotlin",
@@ -55,7 +82,7 @@
       ]
     },
     "company-revivallabs": {
-      "name": "Revival Labs",
+      "name": "KongKong Friends",
       "role": "CTO",
       "period": "2017.08 ~ 2024.04",
       "description": "Designed, developed, and operated 'KongKong', an event management B2B platform. Achieved 100x throughput improvement and 50% infrastructure cost reduction by migrating from PHP to Go. Built and shipped 30+ feature modules over 7 years.",
@@ -163,10 +190,48 @@
     }
   },
   "projects": {
+    "project-soombit-pacs": {
+      "name": "Medical Imaging PACS",
+      "projectType": "Medical Imaging / Backend & Viewer",
+      "period": "2026",
+      "description": "Development of a medical imaging PACS. Building DICOM communication and image storage/query servers in Go, and developing the viewer by extending OHIF Viewer. Also responsible for on-site hospital installation and PACS integration.",
+      "achievements": [
+        "DICOM communication development",
+        "DICOM image storage/query server development (Orthanc integration)",
+        "Image viewer frontend/backend development (OHIF Viewer extension)",
+        "On-site hospital installation and PACS integration",
+        "Regulatory compliance through automatic SOUP/SBOM generation in CI/CD"
+      ]
+    },
+    "project-soombit-onprem": {
+      "name": "On-Premise Deployment of an AI CXR Reading Server",
+      "projectType": "On-Premise / Infrastructure",
+      "period": "2026",
+      "description": "On-premise deployment and development of an AI CXR reading server. Responsible for Linux on-premise system setup, air-gapped deployment, NixOS-based auto-updates, and licensing/asset protection.",
+      "achievements": [
+        "On-premise deployment and development of an AI CXR reading server",
+        "Linux on-premise system (NVIDIA, CUDA) setup and air-gapped deployment",
+        "NixOS-based auto-update system",
+        "Licensing and asset protection, TPM, LUKS"
+      ]
+    },
+    "project-doan-estimator": {
+      "name": "LLM-Based Automatic Quotation System for Audio/Broadcast Equipment",
+      "projectType": "AI Automation / Backend",
+      "period": "2026",
+      "description": "A 2-stage pipeline in which an LLM converts natural-language requirements into catalog items, wrapped in deterministic validation and correction instead of trusting LLM output as-is. AI drafts; a validation layer that encodes domain rules finalizes.",
+      "achievements": [
+        "Stage 1 (LLM): selects only core items — exposes a reduced, section-specific catalog to cut hallucination and token cost; Function Calling enforces structured schema output",
+        "Stage 2 (code): amplifiers, brackets, mixers, cables, power, and racks are assembled deterministically from encoded audio design formulas",
+        "18-step validation/correction: duplicate merging, amp output/channels, bracket compatibility, budget overrun and other rule violations are checked and corrected automatically",
+        "Automatic retry loop: code fixes first; only unresolved items are re-requested from AI (up to 3 times)",
+        "Async jobs with real-time SSE progress streaming, single-binary deployment with go:embed"
+      ]
+    },
     "project-latex-ide": {
       "name": "Murfy (AI LaTeX Web IDE)",
       "projectType": "Backend / Microservices",
-      "period": "2024.07 ~ Present",
+      "period": "2024.07 ~ 2026.05 (1 year 10 months)",
       "description": "Backend for Murfy, an AI-based LaTeX web editor. Microservice architecture in Kubernetes with polyglot services across multiple languages.",
       "achievements": [
         "K8s microservice design and operation",
@@ -370,18 +435,23 @@
     }
   },
   "skills": {
-    "skill-go":           { "description": "Migrated PHP legacy to Go at Revival Labs, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
+    "skill-linux": { "description": "Set up Linux on-premise systems (NVIDIA, CUDA) and deployed them to air-gapped networks at Soombit AI." },
+    "skill-nixos": { "description": "Built a NixOS-based auto-update system at Soombit AI." },
+    "skill-dicom": { "description": "Developed DICOM communication and image storage/query servers in Go at Soombit AI." },
+    "skill-orthanc": { "description": "Integrated the DICOM image storage/query server with Orthanc at Soombit AI." },
+    "skill-ohif": { "description": "Developed the image viewer by extending OHIF Viewer at Soombit AI." },
+    "skill-go":           { "description": "Migrated PHP legacy to Go at KongKong Friends, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
     "skill-java":         { "description": "Built Spring-based backends at Kidari Studio, Octave Games, and Groupon. 10+ years of experience." },
     "skill-kotlin":       { "description": "Used for payment system refactoring at The Swing; leveraged for microservice development at Muple." },
     "skill-csharp":       { "description": "Used for TCP/IP game server development at Cube Games and Carrot Games. Implemented systems handling 40,000 req/s." },
     "skill-python":       { "description": "Used for code generators, scripting automation, and microservice development at Muple." },
     "skill-typescript":   { "description": "Solo-migrated 1-year Python codebase to TypeScript at Muple. Also used with Node.js at Kolon Mall." },
     "skill-javascript":   { "description": "Used for frontend and Node.js backend development." },
-    "skill-php":          { "description": "Maintained legacy system at Revival Labs before migrating to Go." },
+    "skill-php":          { "description": "Maintained legacy system at KongKong Friends before migrating to Go." },
     "skill-actionscript": { "description": "Developed Flash/ActionScript-based Facebook social casino game client at Octave Games." },
     "skill-spring":       { "description": "Primary Java backend framework. Used at Kidari Studio, Groupon, Octave Games, and Kolon Mall." },
     "skill-nodejs":       { "description": "Used with AWS Lambda at Kolon Mall; used for microservice development at Muple." },
-    "skill-vue":          { "description": "Built B2B platform frontend as a Vue SPA at Revival Labs. Also used at Muple." },
+    "skill-vue":          { "description": "Built B2B platform frontend as a Vue SPA at KongKong Friends. Also used at Muple." },
     "skill-react":        { "description": "Designed and implemented back-office admin console frontend with React at Kolon Mall." },
     "skill-springbatch":  { "description": "Used for partner revenue data processing pipeline at Groupon Korea." },
     "skill-jpa":          { "description": "Used with Spring at The Swing, Octave Games, and Kidari Studio." },
@@ -389,13 +459,13 @@
     "skill-yjs":          { "description": "Integrated Yjs-based real-time collaborative editing at Muple." },
     "skill-unity3d":      { "description": "Designed and implemented Unity3D client network library for Dragon Nest Wonderland at Cube Games." },
     "skill-grpc":         { "description": "Used as a communication protocol between microservices." },
-    "skill-websocket":    { "description": "Implemented real-time event dashboard using WebSocket at Revival Labs." },
+    "skill-websocket":    { "description": "Implemented real-time event dashboard using WebSocket at KongKong Friends." },
     "skill-tcpip":        { "description": "Directly implemented TCP/IP socket communication in game server development. Managed concurrent connections in multi-threaded environments." },
     "skill-mysql":        { "description": "Primary RDBMS. Extensive experience in query optimization, index design, and migration." },
-    "skill-redis":        { "description": "Used as a caching layer at Revival Labs to significantly boost performance." },
+    "skill-redis":        { "description": "Used as a caching layer at KongKong Friends to significantly boost performance." },
     "skill-mssql":        { "description": "Operated Azure MSSQL system at Bebecook and migrated it to AWS MySQL." },
     "skill-postgresql":   { "description": "Used as the primary database at Muple." },
-    "skill-docker":       { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at Revival Labs." },
+    "skill-docker":       { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at KongKong Friends." },
     "skill-kubernetes":   { "description": "Currently operating K8s microservices environment at Muple." },
     "skill-aws":          { "description": "Leveraged EC2, S3, RDS, Lambda, SQS, and more. Designed AWS-based infrastructure at multiple companies." },
     "skill-jenkins":      { "description": "Built Jenkins-based CI/CD pipeline at Octave Games." },
@@ -404,6 +474,8 @@
     "skill-sqs":          { "description": "Implemented async message queue system combined with Lambda at Kolon Mall." }
   },
   "tags": {
+    "tag-medical": {"name": "Medical Imaging", "description": "Medical imaging software such as DICOM and PACS"},
+    "tag-onprem": {"name": "On-Premise", "description": "Systems installed and operated directly at customer sites or on air-gapped networks"},
     "tag-backend":      { "name": "Backend",          "description": "Server-side development" },
     "tag-performance":  { "name": "Performance",      "description": "Throughput improvement, latency reduction, cost saving" },
     "tag-architecture": { "name": "Architecture",     "description": "System architecture design and technical decision-making" },
