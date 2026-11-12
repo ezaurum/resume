@@ -33,13 +33,45 @@ const visibleNodes = computed(() => {
   return props.nodes.filter(n => props.visibleTypes!.has(n.type))
 })
 
+// 엣지는 부모 → 자식 방향이다 (사람 → 회사 → 프로젝트 → 기술, 회사 → 태그).
+// 숨긴 노드는 건너뛰고 보이는 부모와 그 아래 보이는 자손을 바로 잇는다.
+// 예: 회사를 숨기면 사람 → (회사) → 프로젝트 가 사람 → 프로젝트 로 이어진다.
+// 기술·태그처럼 자식이 없는 노드를 숨기면 새 엣지가 생기지 않는다.
 const visibleEdges = computed(() => {
   const nodeIds = new Set(visibleNodes.value.map(n => n.id))
-  return props.edges.filter(e => {
-    const src = typeof e.source === 'string' ? e.source : (e.source as GraphNode).id
-    const tgt = typeof e.target === 'string' ? e.target : (e.target as GraphNode).id
-    return nodeIds.has(src) && nodeIds.has(tgt)
+  const idOf = (x: string | GraphNode) => (typeof x === 'string' ? x : x.id)
+
+  const childEdges = new Map<string, GraphEdge[]>()
+  props.edges.forEach(e => {
+    const src = idOf(e.source)
+    if (!childEdges.has(src)) childEdges.set(src, [])
+    childEdges.get(src)!.push(e)
   })
+
+  const result: GraphEdge[] = []
+  const added = new Set<string>()
+
+  nodeIds.forEach(from => {
+    const stack = [from]
+    const passed = new Set<string>()
+    while (stack.length) {
+      const cur = stack.pop()!
+      for (const e of childEdges.get(cur) ?? []) {
+        const to = idOf(e.target)
+        if (nodeIds.has(to)) {
+          const key = `${from}-${to}`
+          if (!added.has(key)) {
+            added.add(key)
+            result.push({ source: from, target: to, relation: e.relation })
+          }
+        } else if (!passed.has(to)) {
+          passed.add(to)
+          stack.push(to)
+        }
+      }
+    }
+  })
+  return result
 })
 
 // Store zoom/svg refs for external zoom controls
