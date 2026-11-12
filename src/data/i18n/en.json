@@ -47,11 +47,17 @@
       "name": "Freelance",
       "role": "Contract Development",
       "period": "2018 ~ 2026",
-      "description": "Contract development carried on since my time at KongKong Friends: a door lock sales system (2018), a wig factory production management system (2020), and an LLM-based automatic quotation system for audio/broadcast equipment (2026).",
+      "description": "Contract development carried on since my time at KongKong Friends: six engagements ranging from e-commerce, payments, DB migration, production management and sales systems to an LLM-based automatic quotation system.",
       "achievements": [
-        "Natural-language requirements → LLM (Function Calling) item selection + deterministic validation/correction pipeline that auto-generates design specifications (xlsx)",
-        "Go (Fiber) backend + Vue 3 frontend, async jobs with SSE streaming, single-binary deployment with go:embed",
-        "Built both frontend and backend of a door lock sales system (3 months) and a wig factory production management system (2 months) with Spring / Spring Data JPA"
+        "Audio/broadcast equipment quotation system (2026): natural-language requirements → LLM (Function Calling) item selection + deterministic validation/correction pipeline that auto-generates design specifications (xlsx); Go (Fiber) + Vue 3, single-binary deployment with go:embed",
+        "Bebecook (2023.09 ~ 2024.06): migrated a procedure-based Azure MSSQL system to AWS MySQL and built a CI/CD pipeline",
+        "The Swing (2022.05 ~ 2022.10): unified per-PG payment logic behind a common interface; ran technical lectures for junior developers",
+        "Wig factory production management system (2020, 2 months): built both frontend and backend with Spring / Spring Data JPA",
+        "Kolon Mall (PurpleWorks, 2019.02 ~ 2019.12): AWS SQS + Lambda async review-data migration pipeline, React back-office, moved SAP delivery features to a Spring application",
+        "Door lock sales system (2018, 3 months): built both frontend and backend with Spring / Spring Data JPA"
+      ],
+      "lessons": [
+        "Without defining acceptance criteria and exit conditions at the contract stage, you can solve every technical problem and still massively overrun — define done before you start"
       ]
     },
     "company-muple": {
@@ -66,21 +72,6 @@
         "PDF viewer implementation",
         "CloudWatch CPU-based Slack alerts and build failure notifications",
         "Solo migration of 1-year Python codebase to TypeScript in 1 week using AI pipeline"
-      ]
-    },
-    "company-bebecook": {
-      "name": "Bebecook",
-      "role": "Backend Engineer",
-      "period": "2023.09 ~ 2024.06 (9 months)",
-      "description": "Migrated Azure MSSQL-based system to AWS MySQL and established a CI/CD pipeline.",
-      "achievements": [
-        "Migrated Azure MSSQL + stored procedure-based system to AWS MySQL",
-        "Resolved cross-apply/pivot gaps, procedure return type differences, and collation mismatches",
-        "Moved stored procedure logic to application layer, improving maintainability and visibility",
-        "Established CI/CD pipeline"
-      ],
-      "lessons": [
-        "Without defining acceptance criteria and exit conditions at the contract stage, you can solve every technical problem and still massively overrun — define done before you start"
       ]
     },
     "company-revivallabs": {
@@ -101,28 +92,6 @@
         "Skipping tests and observability early compounds over time — bug fixes became increasingly costly and releases slowed as the codebase grew",
         "Bus factor 1 is fundamentally a knowledge transfer failure, not just a stamina problem — when structure is concentrated in one person, their departure breaks the system",
         "B2B event platforms face structural scaling limits: each customer's requirements are subtly different, making true platformization hard without LLM-level adaptability"
-      ]
-    },
-    "company-theswing": {
-      "name": "The Swing",
-      "role": "Backend Engineer",
-      "period": "2022.05 ~ 2022.10",
-      "description": "Unified payment system by abstracting multiple payment gateway logics behind a common interface.",
-      "achievements": [
-        "Abstracted multiple PG payment logics into a common interface",
-        "Technical lectures for junior developers (once a week, 4 weeks)"
-      ]
-    },
-    "company-kolon": {
-      "name": "Kolon Mall (PurpleWorks)",
-      "role": "Backend Engineer",
-      "period": "2019.02 ~ 2019.12",
-      "description": "Built an asynchronous data migration pipeline with AWS SQS + Lambda, implemented a React-based back-office admin console, and migrated SAP delivery functionality to a Spring application.",
-      "achievements": [
-        "Built async large-scale review data migration pipeline with AWS SQS + Lambda",
-        "Designed and implemented React-based back-office admin console",
-        "Migrated SAP delivery functionality to Spring-based application",
-        "Micronaut framework R&D"
       ]
     },
     "company-octave": {
@@ -280,9 +249,9 @@
       ]
     },
     "project-bebecook-migration": {
-      "name": "DB Migration (Azure→AWS)",
+      "name": "Bebecook — DB Migration (Azure→AWS)",
       "projectType": "Database Migration",
-      "period": "2024",
+      "period": "2023.09 ~ 2024.06 (9 months)",
       "description": "Migrated Azure MSSQL stored procedure-based system to AWS MySQL. Improved maintainability by moving stored procedure logic to the application layer.",
       "achievements": [
         "Azure MSSQL → AWS MySQL migration",
@@ -368,7 +337,7 @@
       ]
     },
     "project-payment-refactor": {
-      "name": "Payment System Refactoring",
+      "name": "The Swing — Payment System Refactoring",
       "projectType": "Payment System",
       "period": "2022.05 ~ 2022.10",
       "description": "Each PG provider had different payment flows and parameter structures, causing the codebase to branch per provider. Abstracted all PG logics behind a common interface, so adding a new PG requires only writing a new implementation.",
@@ -379,7 +348,7 @@
       ]
     },
     "project-kolon-pipeline": {
-      "name": "Async Migration Pipeline & Back-Office",
+      "name": "Kolon Mall — Async Migration Pipeline & Back-Office",
       "projectType": "Data Pipeline / Admin Console",
       "period": "2019.02 ~ 2019.12",
       "description": "Built an async large-scale review data migration pipeline using AWS SQS + Lambda, implemented a React-based back-office admin console, and migrated SAP delivery functionality to a Spring application.",
