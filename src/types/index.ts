@@ -1,4 +1,4 @@
-export type EntityType = 'person' | 'company' | 'project' | 'skill' | 'tag'
+export type EntityType = 'person' | 'company' | 'project' | 'skill' | 'tag' | 'domain'
 export type SkillCategory = 'language' | 'framework' | 'database' | 'infrastructure' | 'protocol'
 export type SkillLevel = 'expert' | 'proficient' | 'familiar'
 
@@ -30,6 +30,7 @@ export interface Company {
   projects: string[]
   skills: string[]
   tags: string[]
+  domains: string[]
   achievements: string[]
   lessons?: string[]
 }
@@ -65,7 +66,14 @@ export interface Tag {
   description: string
 }
 
-export type Entity = Person | Company | Project | Skill | Tag
+export interface Domain {
+  id: string
+  type: 'domain'
+  name: string
+  description: string
+}
+
+export type Entity = Person | Company | Project | Skill | Tag | Domain
 
 export interface SearchItem {
   id: string
@@ -102,7 +110,8 @@ export const ENTITY_COLORS: Record<EntityType, string> = {
   company: '#34A853',
   project: '#FBBC04',
   skill: '#EA4335',
-  tag: '#9C27B0'
+  tag: '#9C27B0',
+  domain: '#00ACC1'
 }
 
 export const ENTITY_LABELS: Record<EntityType, string> = {
@@ -110,7 +119,8 @@ export const ENTITY_LABELS: Record<EntityType, string> = {
   company: '경력/회사',
   project: '프로젝트',
   skill: '기술',
-  tag: '태그'
+  tag: '태그',
+  domain: '도메인'
 }
 
 export const NODE_SIZES: Record<EntityType, number> = {
@@ -118,5 +128,6 @@ export const NODE_SIZES: Record<EntityType, number> = {
   company: 20,
   project: 16,
   skill: 9,
-  tag: 8
+  tag: 8,
+  domain: 14
 }

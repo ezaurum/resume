@@ -494,5 +494,13 @@
     "tag-batch":        { "name": "バッチ処理",            "description": "大規模データバッチ処理システム" },
     "tag-mmorpg":       { "name": "MMORPG",                "description": "大規模多人数オンラインRPG" },
     "tag-platform":     { "name": "プラットフォーム",      "description": "複数の機能モジュールを統合したプラットフォーム開発" }
+  },
+  "domains": {
+    "domain-game":      { "name": "ゲーム", "description": "ソーシャル・モバイルゲームのサーバーとクライアント" },
+    "domain-commerce":  { "name": "ECサイト", "description": "ECサイト・ソーシャルコマースのバックエンドとバックオフィス" },
+    "domain-erp":       { "name": "ERP", "description": "企業の業務・運用システム（決済、見積、配送、業務DB、戦績管理）" },
+    "domain-eventtech": { "name": "イベントテック", "description": "イベント現場運営のB2Bプラットフォーム" },
+    "domain-medical":   { "name": "医療", "description": "医療画像PACSとAI読影サーバー" },
+    "domain-edutech":   { "name": "エドテック・学術", "description": "AIベースの学術文書（LaTeX）作成ツール" }
   }
 }

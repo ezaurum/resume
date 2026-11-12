@@ -4,13 +4,14 @@
  * Current: merges language-neutral base JSON with locale-specific i18n JSON.
  * Future:  replace merge functions with async API calls returning the same types.
  */
-import type { Person, Company, Project, Skill, Tag } from '@/types'
+import type { Person, Company, Project, Skill, Tag, Domain } from '@/types'
 
 import basePerson    from '@/data/base/person.json'
 import baseCompanies from '@/data/base/companies.json'
 import baseProjects  from '@/data/base/projects.json'
 import baseSkills    from '@/data/base/skills.json'
 import baseTags      from '@/data/base/tags.json'
+import baseDomains   from '@/data/base/domains.json'
 
 import koData from '@/data/i18n/ko.json'
 import enData from '@/data/i18n/en.json'
@@ -63,4 +64,13 @@ export function getTags(locale: string): Tag[] {
     ...base,
     ...(i18n.tags as Record<string, Partial<Tag>>)[base.id],
   })) as Tag[]
+}
+
+export function getDomains(locale: string): Domain[] {
+  const i18n = getI18n(locale)
+  return baseDomains.map(base => ({
+    type: 'domain' as const,
+    ...base,
+    ...(i18n.domains as Record<string, Partial<Domain>>)[base.id],
+  })) as Domain[]
 }

@@ -42,6 +42,7 @@ export default {
     project: '프로젝트',
     skill: '기술',
     tag: '태그',
+    domain: '도메인',
   },
   entity: {
     back: '뒤로',
@@ -53,6 +54,7 @@ export default {
     lessons: '배운 점 / 실패 교훈',
     education: '학력 및 자격',
     techStack: '기술 스택',
+    domains: '도메인',
     tags: '태그',
     strengths: '강점',
     viewInGraph: '그래프에서 보기',
@@ -65,6 +67,7 @@ export default {
       project: '프로젝트',
       skill: '기술',
       tag: '태그',
+      domain: '도메인',
     },
   },
   skill: {

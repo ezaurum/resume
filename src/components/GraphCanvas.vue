@@ -33,7 +33,7 @@ const visibleNodes = computed(() => {
   return props.nodes.filter(n => props.visibleTypes!.has(n.type))
 })
 
-// 엣지는 부모 → 자식 방향이다 (사람 → 회사 → 프로젝트 → 기술, 회사 → 태그).
+// 엣지는 부모 → 자식 방향이다 (사람 → 회사 → 프로젝트 → 기술, 회사 → 태그·도메인).
 // 숨긴 노드는 건너뛰고 보이는 부모와 그 아래 보이는 자손을 바로 잇는다.
 // 예: 회사를 숨기면 사람 → (회사) → 프로젝트 가 사람 → 프로젝트 로 이어진다.
 // 기술·태그처럼 자식이 없는 노드를 숨기면 새 엣지가 생기지 않는다.
@@ -141,6 +141,7 @@ function initGraph() {
     .force('charge', d3.forceManyBody<SimNode>().strength(d => {
       if (d.type === 'person') return -800
       if (d.type === 'company') return -400
+      if (d.type === 'domain') return -300
       if (d.type === 'project') return -200
       return -100
     }))
@@ -187,14 +188,14 @@ function initGraph() {
     .attr('stroke', d => ENTITY_COLORS[d.type])
     .attr('stroke-width', 2)
 
-  // Labels for person and company
-  node.filter(d => d.type === 'person' || d.type === 'company')
+  // Labels for person, company and domain
+  node.filter(d => d.type === 'person' || d.type === 'company' || d.type === 'domain')
     .append('text')
     .attr('text-anchor', 'middle')
     .attr('dy', d => NODE_SIZES[d.type] + 14)
     .attr('font-size', d => d.type === 'person' ? '13px' : '11px')
-    .attr('font-weight', d => d.type === 'person' ? 'bold' : 'normal')
-    .attr('fill', '#202124')
+    .attr('font-weight', d => d.type === 'person' || d.type === 'domain' ? 'bold' : 'normal')
+    .attr('fill', d => d.type === 'domain' ? ENTITY_COLORS.domain : '#202124')
     .text(d => d.name.length > 8 ? d.name.slice(0, 8) + '...' : d.name)
 
   // Hover events

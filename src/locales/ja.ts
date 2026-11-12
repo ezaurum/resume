@@ -42,6 +42,7 @@ export default {
     project: 'プロジェクト',
     skill: 'スキル',
     tag: 'タグ',
+    domain: 'ドメイン',
   },
   entity: {
     back: '戻る',
@@ -53,6 +54,7 @@ export default {
     lessons: '教訓・失敗から学んだこと',
     education: '学歴・資格',
     techStack: '技術スタック',
+    domains: 'ドメイン',
     tags: 'タグ',
     strengths: '強み',
     viewInGraph: 'グラフで見る',
@@ -65,6 +67,7 @@ export default {
       project: 'プロジェクト',
       skill: 'スキル',
       tag: 'タグ',
+      domain: 'ドメイン',
     },
   },
   skill: {

@@ -10,7 +10,8 @@ const store = useDataStore()
 const { t } = useI18n()
 const graphCanvas = ref<InstanceType<typeof GraphCanvas>>()
 
-const visibleTypes = ref<Set<EntityType>>(new Set(['person', 'company', 'project', 'skill', 'tag']))
+const TYPES: EntityType[] = ['person', 'company', 'domain', 'project', 'skill', 'tag']
+const visibleTypes = ref<Set<EntityType>>(new Set(TYPES))
 const { nodes, edges } = store.graphData
 
 function toggleType(type: EntityType) {
@@ -21,13 +22,9 @@ function toggleType(type: EntityType) {
   visibleTypes.value = next
 }
 
-const entityCounts = computed(() => ({
-  person: nodes.filter((n: GraphNode) => n.type === 'person').length,
-  company: nodes.filter((n: GraphNode) => n.type === 'company').length,
-  project: nodes.filter((n: GraphNode) => n.type === 'project').length,
-  skill: nodes.filter((n: GraphNode) => n.type === 'skill').length,
-  tag: nodes.filter((n: GraphNode) => n.type === 'tag').length,
-}))
+const entityCounts = computed(() =>
+  Object.fromEntries(TYPES.map(type => [type, nodes.filter((n: GraphNode) => n.type === type).length])) as Record<EntityType, number>
+)
 </script>
 
 <template>
@@ -38,7 +35,7 @@ const entityCounts = computed(() => ({
       <span class="text-sm font-medium text-gray-600">{{ t('graph.filter') }}</span>
 
       <button
-        v-for="type in (['person', 'company', 'project', 'skill', 'tag'] as EntityType[])"
+        v-for="type in TYPES"
         :key="type"
         @click="toggleType(type)"
         :disabled="type === 'person'"
@@ -88,7 +85,7 @@ const entityCounts = computed(() => ({
         <p class="text-xs font-medium text-gray-600 mb-2">{{ t('graph.legend') }}</p>
         <div class="space-y-1.5">
           <div
-            v-for="type in (['person', 'company', 'project', 'skill', 'tag'] as EntityType[])"
+            v-for="type in TYPES"
             :key="type"
             class="flex items-center gap-2 text-xs text-gray-600"
           >

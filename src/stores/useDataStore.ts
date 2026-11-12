@@ -1,8 +1,8 @@
 import { defineStore } from 'pinia'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import type { Entity, Company, Project, Skill, Tag, Person, GraphNode, GraphEdge, SearchItem } from '@/types'
-import { getPerson, getCompanies, getProjects, getSkills, getTags } from '@/services/dataService'
+import type { Entity, Company, Project, Skill, Tag, Domain, Person, GraphNode, GraphEdge, SearchItem } from '@/types'
+import { getPerson, getCompanies, getProjects, getSkills, getTags, getDomains } from '@/services/dataService'
 
 export const useDataStore = defineStore('data', () => {
   const { locale } = useI18n()
@@ -13,6 +13,7 @@ export const useDataStore = defineStore('data', () => {
   const projects  = computed((): Project[] => getProjects(locale.value))
   const skills    = computed((): Skill[]   => getSkills(locale.value))
   const tags      = computed((): Tag[]     => getTags(locale.value))
+  const domains   = computed((): Domain[]  => getDomains(locale.value))
 
   // Build entity map
   const entityMap = computed(() => {
@@ -22,6 +23,7 @@ export const useDataStore = defineStore('data', () => {
     projects.value.forEach(p => map.set(p.id, p))
     skills.value.forEach(s => map.set(s.id, s))
     tags.value.forEach(t => map.set(t.id, t))
+    domains.value.forEach(d => map.set(d.id, d))
     return map
   })
 
@@ -108,6 +110,20 @@ export const useDataStore = defineStore('data', () => {
       })
     })
 
+    // Domains
+    domains.value.forEach(d => {
+      items.push({
+        id: d.id,
+        type: 'domain',
+        name: d.name,
+        description: d.description,
+        tags: [],
+        skills: [],
+        searchText: [d.name, d.description].join(' '),
+        entity: d
+      })
+    })
+
     return items
   })
 
@@ -123,6 +139,7 @@ export const useDataStore = defineStore('data', () => {
     } else if (entity.type === 'company') {
       const company = entity as Company
       relatedIds.add(person.value.id)
+      company.domains.forEach(did => relatedIds.add(did))
       company.projects.forEach(pid => relatedIds.add(pid))
       company.skills.forEach(sid => relatedIds.add(sid))
       const myTags = new Set(company.tags)
@@ -143,6 +160,13 @@ export const useDataStore = defineStore('data', () => {
     } else if (entity.type === 'tag') {
       companies.value.forEach(c => { if (c.tags.includes(id)) relatedIds.add(c.id) })
       projects.value.forEach(p => { if (p.tags.includes(id)) relatedIds.add(p.id) })
+    } else if (entity.type === 'domain') {
+      companies.value.forEach(c => {
+        if (c.domains.includes(id)) {
+          relatedIds.add(c.id)
+          c.projects.forEach(pid => relatedIds.add(pid))
+        }
+      })
     }
 
     return Array.from(relatedIds)
@@ -173,6 +197,7 @@ export const useDataStore = defineStore('data', () => {
       addEdge(person.value.id, c.id, '근무')
       c.projects.forEach(pid => addEdge(c.id, pid, '프로젝트'))
       c.tags.slice(0, 3).forEach(tid => addEdge(c.id, tid, '태그'))
+      c.domains.forEach(did => addEdge(c.id, did, '도메인'))
     })
 
     projects.value.forEach(p => {
@@ -194,6 +219,13 @@ export const useDataStore = defineStore('data', () => {
     tags.value.forEach(t => {
       if (usedTagIds.has(t.id)) {
         nodes.push({ id: t.id, type: 'tag', name: t.name, description: t.description })
+      }
+    })
+
+    const usedDomainIds = new Set(companies.value.flatMap(c => c.domains))
+    domains.value.forEach(d => {
+      if (usedDomainIds.has(d.id)) {
+        nodes.push({ id: d.id, type: 'domain', name: d.name, description: d.description })
       }
     })
 
@@ -221,6 +253,7 @@ export const useDataStore = defineStore('data', () => {
     projects,
     skills,
     tags,
+    domains,
     entityMap,
     searchItems,
     getEntityById,

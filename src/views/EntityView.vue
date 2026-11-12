@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useDataStore } from '@/stores/useDataStore'
-import type { Company, Project, Skill, Tag, Person } from '@/types'
+import type { Company, Project, Skill, Tag, Domain, Person } from '@/types'
 import { ENTITY_COLORS } from '@/types'
 import TagBadge from '@/components/TagBadge.vue'
 import EntityCard from '@/components/EntityCard.vue'
@@ -23,10 +23,14 @@ const asCompany = computed(() => entity.value?.type === 'company' ? entity.value
 const asProject = computed(() => entity.value?.type === 'project' ? entity.value as Project : null)
 const asSkill = computed(() => entity.value?.type === 'skill' ? entity.value as Skill : null)
 const asTag = computed(() => entity.value?.type === 'tag' ? entity.value as Tag : null)
+const asDomain = computed(() => entity.value?.type === 'domain' ? entity.value as Domain : null)
 const asPerson = computed(() => entity.value?.type === 'person' ? entity.value as Person : null)
 
 function getTagName(id: string): string {
   return store.tags.find(tg => tg.id === id)?.name ?? id
+}
+function getDomainName(id: string): string {
+  return store.domains.find(d => d.id === id)?.name ?? id
 }
 function getSkillName(id: string): string {
   return store.skills.find(s => s.id === id)?.name ?? id
@@ -76,7 +80,7 @@ function getCompanyName(id: string): string {
         <div class="md:col-span-2 space-y-6">
           <section>
             <p class="text-gray-700 leading-relaxed">
-              {{ asCompany?.description || asProject?.description || asSkill?.description || asTag?.description || asPerson?.summary }}
+              {{ asCompany?.description || asProject?.description || asSkill?.description || asTag?.description || asDomain?.description || asPerson?.summary }}
             </p>
           </section>
 
@@ -149,6 +153,20 @@ function getCompanyName(id: string): string {
 
         <!-- Sidebar -->
         <div class="space-y-6">
+          <section v-if="asCompany?.domains?.length">
+            <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">{{ t('entity.domains') }}</h3>
+            <div class="flex flex-wrap gap-1.5">
+              <TagBadge
+                v-for="domainId in asCompany.domains"
+                :key="domainId"
+                :label="getDomainName(domainId)"
+                type="domain"
+                :entity-id="domainId"
+                clickable
+              />
+            </div>
+          </section>
+
           <section v-if="(asCompany?.skills || asProject?.skills || asPerson?.skills)?.length">
             <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">{{ t('entity.techStack') }}</h3>
             <div class="flex flex-wrap gap-1.5">

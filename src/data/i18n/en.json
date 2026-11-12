@@ -494,5 +494,13 @@
     "tag-batch":        { "name": "Batch Processing", "description": "Large-scale data batch processing" },
     "tag-mmorpg":       { "name": "MMORPG",           "description": "Massively multiplayer online role-playing game" },
     "tag-platform":     { "name": "Platform",         "description": "Platform development integrating multiple feature modules" }
+  },
+  "domains": {
+    "domain-game":      { "name": "Games", "description": "Social and mobile game servers and clients" },
+    "domain-commerce":  { "name": "E-commerce", "description": "Online store and social commerce backends and back offices" },
+    "domain-erp":       { "name": "ERP", "description": "Business operations systems (payment, quotation, delivery, business DB, match records)" },
+    "domain-eventtech": { "name": "Event Tech", "description": "B2B platform for on-site event operations" },
+    "domain-medical":   { "name": "Healthcare", "description": "Medical imaging PACS and AI reading server" },
+    "domain-edutech":   { "name": "EdTech & Academic", "description": "AI-powered academic document (LaTeX) writing tool" }
   }
 }

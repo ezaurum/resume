@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import type { Entity, Company, Project, Skill, Tag } from '@/types'
+import type { Entity, Company, Project, Skill, Tag, Domain } from '@/types'
 import { ENTITY_COLORS } from '@/types'
 import { useDataStore } from '@/stores/useDataStore'
 import TagBadge from './TagBadge.vue'
@@ -23,6 +23,7 @@ const description = computed(() => {
   if (e.type === 'project') return (e as Project).description
   if (e.type === 'skill') return (e as Skill).description
   if (e.type === 'tag') return (e as Tag).description
+  if (e.type === 'domain') return (e as Domain).description
   return ''
 })
 

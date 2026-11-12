@@ -28,6 +28,7 @@ watch(filterParam, (f) => { if (f) setFilter(f) })
 const filterTabs = computed((): Array<{ key: EntityType | 'all'; label: string }> => [
   { key: 'all', label: t('filter.all') },
   { key: 'company', label: t('filter.company') },
+  { key: 'domain', label: t('filter.domain') },
   { key: 'project', label: t('filter.project') },
   { key: 'skill', label: t('filter.skill') },
   { key: 'tag', label: t('filter.tag') },

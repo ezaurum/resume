@@ -493,5 +493,13 @@
     "tag-batch":        { "name": "배치 처리",     "description": "대용량 데이터 배치 처리 시스템" },
     "tag-mmorpg":       { "name": "MMORPG",        "description": "대규모 멀티플레이어 온라인 역할 수행 게임" },
     "tag-platform":     { "name": "플랫폼",        "description": "다양한 기능 모듈을 통합한 플랫폼 개발" }
+  },
+  "domains": {
+    "domain-game":      { "name": "게임", "description": "소셜·모바일 게임 서버와 클라이언트" },
+    "domain-commerce":  { "name": "쇼핑몰", "description": "쇼핑몰·소셜커머스 백엔드와 백오피스" },
+    "domain-erp":       { "name": "ERP", "description": "기업 업무·운영 시스템 (결제, 견적, 배송, 업무 DB, 전적관리)" },
+    "domain-eventtech": { "name": "이벤트테크", "description": "행사 현장 운영 B2B 플랫폼" },
+    "domain-medical":   { "name": "의료", "description": "의료영상 PACS와 AI 판독 서버" },
+    "domain-edutech":   { "name": "에듀테크·학술", "description": "AI 기반 학술 문서(LaTeX) 작성 도구" }
   }
 }

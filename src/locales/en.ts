@@ -42,6 +42,7 @@ export default {
     project: 'Projects',
     skill: 'Skills',
     tag: 'Tags',
+    domain: 'Domains',
   },
   entity: {
     back: 'Back',
@@ -53,6 +54,7 @@ export default {
     lessons: 'Lessons Learned',
     education: 'Education & Certifications',
     techStack: 'Tech Stack',
+    domains: 'Domains',
     tags: 'Tags',
     strengths: 'Strengths',
     viewInGraph: 'View in Graph',
@@ -65,6 +67,7 @@ export default {
       project: 'Project',
       skill: 'Skill',
       tag: 'Tag',
+      domain: 'Domain',
     },
   },
   skill: {

@@ -74,6 +74,7 @@ export function useFuzzySearch(itemsRef: ComputedRef<SearchItem[]>) {
       project: all.filter(i => i.type === 'project'),
       skill: all.filter(i => i.type === 'skill'),
       tag: all.filter(i => i.type === 'tag'),
+      domain: all.filter(i => i.type === 'domain'),
       person: all.filter(i => i.type === 'person')
     }
   })
