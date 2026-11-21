@@ -2,8 +2,8 @@
   "person": {
     "name": "Cho Seokgyu",
     "nameEn": "Cho Seokgyu",
-    "title": "15-Year Backend Engineer",
-    "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
+    "title": "Someone Who Builds Services",
+    "summary": "I have been building services for 15 years, through the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
     "highlights": [
       "Sole PACS development with Claude-based harness engineering — about 14,000 commits and 4,000 PRs in three months; built on-premise servers running on intranets",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
