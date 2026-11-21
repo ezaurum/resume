@@ -16,5 +16,7 @@
   { "id": "tag-mmorpg" },
   { "id": "tag-platform" },
   { "id": "tag-medical" },
-  { "id": "tag-onprem" }
+  { "id": "tag-onprem" },
+  { "id": "tag-harness" },
+  { "id": "tag-fullstack" }
 ]

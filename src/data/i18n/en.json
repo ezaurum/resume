@@ -5,7 +5,7 @@
     "title": "15-Year Backend Engineer",
     "summary": "A 15-year veteran backend engineer who has experienced the full cycle from service design to large-scale traffic handling and operations. Led performance optimization and architecture design across diverse domains — from real-time game servers and B2B SaaS platforms to AI-based services and medical imaging PACS.",
     "highlights": [
-      "PACS development with Claude-based harness engineering; built on-premise servers running on intranets",
+      "Sole PACS development with Claude-based harness engineering — about 14,000 commits and 4,000 PRs in three months; built on-premise servers running on intranets",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
       "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
       "Query optimization: partner revenue management response time 5 min → instant",
@@ -18,7 +18,9 @@
       "Architecture Design",
       "Technical Leadership",
       "Fast Adaptability",
-      "Polyglot Development"
+      "Polyglot Development",
+      "AI Harness Engineering",
+      "On-Premise & Air-Gapped Deployment"
     ],
     "education": [
       { "school": "Korea National University of Education", "major": "Computer Education", "degree": "B.S." }
@@ -32,7 +34,7 @@
       "period": "2026.08 ~ Present",
       "description": "Medical imaging PACS development. Solely responsible for the PACS, building DICOM communication, image storage/query servers, and viewers in Go with Claude-based harness engineering (hooks, tests, CI, documentation rules), and also handling on-premise deployment and development of an AI CXR reading server.",
       "achievements": [
-        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules)",
+        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules) — about 14,000 commits and 4,000 PRs in three months",
         "On-premise deployment and development of an AI CXR reading server",
         "DICOM communication development",
         "DICOM image storage/query server development (Orthanc integration)",
@@ -167,7 +169,7 @@
       "period": "2026",
       "description": "Sole development of a medical imaging PACS with Claude-based harness engineering (hooks, tests, CI, documentation rules). Building DICOM communication and image storage/query servers in Go, and developing the viewer by extending OHIF Viewer. Also responsible for on-site hospital installation and PACS integration.",
       "achievements": [
-        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules)",
+        "Sole PACS development with Claude-based harness engineering (hooks, tests, CI, documentation rules) — about 14,000 commits and 4,000 PRs in three months",
         "DICOM communication development",
         "DICOM image storage/query server development (Orthanc integration)",
         "Image viewer frontend/backend development (OHIF Viewer extension)",
@@ -430,11 +432,12 @@
     "skill-dicom": { "description": "Developed DICOM communication and image storage/query servers in Go at Soombit AI." },
     "skill-orthanc": { "description": "Integrated the DICOM image storage/query server with Orthanc at Soombit AI." },
     "skill-ohif": { "description": "Developed the image viewer by extending OHIF Viewer at Soombit AI." },
+    "skill-fastapi":      { "description": "Used FastAPI for Python microservice development at Muple." },
     "skill-go":           { "description": "Migrated PHP legacy to Go at KongKong Friends, achieving 100x throughput. Designed Go channel-based event-driven architecture." },
     "skill-java":         { "description": "Built Spring-based backends at Kidari Studio, Octave Games, and Groupon. 10+ years of experience." },
     "skill-kotlin":       { "description": "Used for payment system refactoring at The Swing; leveraged for microservice development at Muple." },
     "skill-csharp":       { "description": "Used for TCP/IP game server development at Cube Games and Carrot Games. Implemented systems handling 40,000 req/s." },
-    "skill-python":       { "description": "Used for code generators, scripting automation, and microservice development at Muple." },
+    "skill-python":       { "description": "Used for code generators and scripting automation, and for FastAPI-based microservice development at Muple." },
     "skill-typescript":   { "description": "Solo-migrated 1-year Python codebase to TypeScript at Muple. Also used with Node.js at Kolon Mall." },
     "skill-javascript":   { "description": "Used for frontend and Node.js backend development." },
     "skill-php":          { "description": "Maintained legacy system at KongKong Friends before migrating to Go." },
@@ -454,9 +457,9 @@
     "skill-mysql":        { "description": "Primary RDBMS. Extensive experience in query optimization, index design, and migration." },
     "skill-redis":        { "description": "Used as a caching layer at KongKong Friends to significantly boost performance." },
     "skill-mssql":        { "description": "Operated Azure MSSQL system at Bebecook and migrated it to AWS MySQL." },
-    "skill-postgresql":   { "description": "Used as the primary database at Muple." },
+    "skill-postgresql":   { "description": "Used as the database at Muple." },
     "skill-docker":       { "description": "Used for containerization and scale-out configurations. Designed Docker-based infrastructure at KongKong Friends." },
-    "skill-kubernetes":   { "description": "Currently operating K8s microservices environment at Muple." },
+    "skill-kubernetes":   { "description": "Developed and operated a K8s (GKE) microservices environment at Muple." },
     "skill-aws":          { "description": "Leveraged EC2, S3, RDS, Lambda, SQS, and more. Designed AWS-based infrastructure at multiple companies." },
     "skill-jenkins":      { "description": "Built Jenkins-based CI/CD pipeline at Octave Games." },
     "skill-cicd":         { "description": "Established continuous deployment pipelines at multiple companies." },
@@ -466,6 +469,8 @@
   "tags": {
     "tag-medical": {"name": "Medical Imaging", "description": "Medical imaging software such as DICOM and PACS"},
     "tag-onprem": {"name": "On-Premise", "description": "Systems installed and operated directly at customer sites or on air-gapped networks"},
+    "tag-harness": {"name": "Harness Engineering", "description": "Developing with AI coding agents under hooks, tests, CI, and documentation rules that verify their output"},
+    "tag-fullstack": {"name": "Full-Stack", "description": "Developing both backend and frontend"},
     "tag-backend":      { "name": "Backend",          "description": "Server-side development" },
     "tag-performance":  { "name": "Performance",      "description": "Throughput improvement, latency reduction, cost saving" },
     "tag-architecture": { "name": "Architecture",     "description": "System architecture design and technical decision-making" },

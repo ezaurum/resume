@@ -10,6 +10,7 @@
   { "id": "skill-actionscript", "name": "ActionScript",  "category": "language",       "level": "familiar" },
   { "id": "skill-spring",       "name": "Spring",        "category": "framework",      "level": "expert" },
   { "id": "skill-nodejs",       "name": "Node.js",       "category": "framework",      "level": "proficient" },
+  { "id": "skill-fastapi",      "name": "FastAPI",       "category": "framework",      "level": "familiar" },
   { "id": "skill-vue",          "name": "Vue",           "category": "framework",      "level": "proficient" },
   { "id": "skill-react",        "name": "React",         "category": "framework",      "level": "familiar" },
   { "id": "skill-springbatch",  "name": "Spring Batch",  "category": "framework",      "level": "proficient" },
