@@ -18,5 +18,7 @@
   { "id": "tag-medical" },
   { "id": "tag-onprem" },
   { "id": "tag-harness" },
-  { "id": "tag-fullstack" }
+  { "id": "tag-fullstack" },
+  { "id": "tag-fde" },
+  { "id": "tag-ax" }
 ]

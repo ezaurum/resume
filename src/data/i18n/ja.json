@@ -471,6 +471,8 @@
     "tag-onprem": {"name": "オンプレミス", "description": "顧客現場や閉域網に直接導入して運用するシステム"},
     "tag-harness": {"name": "ハーネスエンジニアリング", "description": "AIコーディングエージェントにフック・テスト・CI・ドキュメントルールをかけ、結果を検証しながら開発する方式"},
     "tag-fullstack": {"name": "フルスタック", "description": "バックエンドとフロントエンドの両方を担当して開発"},
+    "tag-fde": {"name": "FDE", "description": "Forward Deployed Engineering — 顧客の現場に出向いて導入・連携を行い、現場の要望を製品に反映"},
+    "tag-ax": {"name": "AX", "description": "AIトランスフォーメーション — AIで既存の業務と開発プロセスを変える取り組み"},
     "tag-backend":      { "name": "バックエンド",          "description": "サーバーサイド開発全般" },
     "tag-performance":  { "name": "パフォーマンス最適化",  "description": "処理量向上、レイテンシ削減、コスト削減などのパフォーマンス改善" },
     "tag-architecture": { "name": "アーキテクチャ設計",    "description": "システムアーキテクチャ設計と技術的意思決定" },

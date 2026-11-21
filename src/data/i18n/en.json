@@ -471,6 +471,8 @@
     "tag-onprem": {"name": "On-Premise", "description": "Systems installed and operated directly at customer sites or on air-gapped networks"},
     "tag-harness": {"name": "Harness Engineering", "description": "Developing with AI coding agents under hooks, tests, CI, and documentation rules that verify their output"},
     "tag-fullstack": {"name": "Full-Stack", "description": "Developing both backend and frontend"},
+    "tag-fde": {"name": "FDE", "description": "Forward Deployed Engineering — going on site to install and integrate, and feeding field requirements back into the product"},
+    "tag-ax": {"name": "AX", "description": "AI Transformation — changing existing work and development processes with AI"},
     "tag-backend":      { "name": "Backend",          "description": "Server-side development" },
     "tag-performance":  { "name": "Performance",      "description": "Throughput improvement, latency reduction, cost saving" },
     "tag-architecture": { "name": "Architecture",     "description": "System architecture design and technical decision-making" },

@@ -470,6 +470,8 @@
     "tag-onprem": {"name": "온프레미스", "description": "고객 현장·폐쇄망에 직접 설치해 운영하는 시스템"},
     "tag-harness": {"name": "하네스 엔지니어링", "description": "AI 코딩 에이전트에 훅·테스트·CI·문서 규칙을 걸어 결과를 검증하며 개발하는 방식"},
     "tag-fullstack": {"name": "풀스택", "description": "백엔드와 프론트엔드를 함께 맡아 개발"},
+    "tag-fde": {"name": "FDE", "description": "Forward Deployed Engineering — 고객 현장에 직접 나가 설치·연동하고 현장 요구를 제품에 반영"},
+    "tag-ax": {"name": "AX", "description": "AI 전환(AI Transformation) — AI로 기존 업무와 개발 프로세스를 바꾸는 작업"},
     "tag-backend":      { "name": "백엔드",        "description": "서버 사이드 개발 전반" },
     "tag-performance":  { "name": "성능 최적화",   "description": "처리량 향상, 레이턴시 감소, 비용 절감 등 성능 관련 작업" },
     "tag-architecture": { "name": "아키텍처 설계", "description": "시스템 아키텍처 설계 및 기술 의사결정" },
