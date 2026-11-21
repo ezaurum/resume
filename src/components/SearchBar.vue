@@ -42,7 +42,7 @@ function clear() {
 </script>
 
 <template>
-  <div :class="['google-search-bar', large ? 'max-w-2xl py-4 px-6' : 'max-w-xl py-3 px-4']">
+  <div :class="['google-search-bar', large ? 'max-w-2xl py-3 px-4 sm:py-4 sm:px-6' : 'max-w-xl py-3 px-4']">
     <svg
       :class="['text-gray-400 mr-3 shrink-0', large ? 'w-5 h-5' : 'w-4 h-4']"
       fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ function clear() {
       type="text"
       :placeholder="large ? t('search.placeholderLarge') : t('search.placeholder')"
       :autofocus="autofocus"
-      :class="['flex-1 outline-none bg-transparent text-gray-800', large ? 'text-base' : 'text-sm']"
+      :class="['flex-1 min-w-0 outline-none bg-transparent text-gray-800', large ? 'text-base' : 'text-base md:text-sm']"
     />
     <button v-if="localValue" @click="clear" class="ml-2 text-gray-400 hover:text-gray-600 transition-colors">
       <svg :class="large ? 'w-5 h-5' : 'w-4 h-4'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ function clear() {
     </button>
     <button
       @click="handleSearch"
-      :class="['ml-3 px-4 bg-gray-900 text-white rounded-full text-sm hover:bg-gray-700 transition-colors shrink-0', large ? 'py-2' : 'py-1']"
+      :class="['ml-3 px-4 bg-gray-900 text-white rounded-full text-sm whitespace-nowrap hover:bg-gray-700 transition-colors shrink-0', large ? 'py-2' : 'py-1']"
     >
       {{ t('search.button') }}
     </button>

@@ -39,7 +39,7 @@ function goHome() {
             @keyup.enter="handleSearch(searchQuery)"
             type="text"
             :placeholder="t('search.placeholder')"
-            class="flex-1 outline-none text-sm text-gray-800 bg-transparent"
+            class="flex-1 min-w-0 outline-none text-base md:text-sm text-gray-800 bg-transparent"
           />
           <button v-if="searchQuery" @click="searchQuery = ''" class="ml-2 text-gray-400 hover:text-gray-600">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
