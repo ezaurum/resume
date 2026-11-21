@@ -8,7 +8,7 @@
       "Sole PACS development with Claude-based harness engineering — about 14,000 commits and 4,000 PRs in three months; built on-premise servers running on intranets",
       "PHP → Go migration: 100x throughput improvement (30 → 3,000 req/s), 50% infrastructure cost reduction",
       "Scale-out handling 40,000 req/s massive traffic (Dragon Nest Wonderland)",
-      "Query optimization: partner revenue management response time 5 min → instant",
+      "Structural optimization: partner revenue management response time 5 min → instant",
       "As CTO, led team building, CI/CD setup, and architecture design for 6 years 9 months",
       "Developed and operated polyglot (Node.js/Python/Kotlin) services in a K8s microservices environment"
     ],
@@ -407,7 +407,7 @@
     },
     "project-groupon-batch": {
       "name": "Partner Revenue Data Integrity Fix",
-      "projectType": "Query Optimization / Batch Processing",
+      "projectType": "Structural Optimization / Batch Processing",
       "period": "2011.10 ~ 2012.03",
       "description": "Partner revenue management was slow (5+ min) and inconsistent. Root cause: finalized revenue data was being aggregated from live, changing data in real time. Switched to Spring Batch-based confirmed data storage to eliminate query-time dependency.",
       "achievements": [

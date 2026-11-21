@@ -45,20 +45,20 @@ function handleQuickLink(link: QuickLink) {
 </script>
 
 <template>
-  <div class="min-h-screen bg-white flex flex-col items-center justify-center px-4">
-    <!-- Lang Switcher top-right -->
-    <div class="absolute top-4 right-4">
+  <div class="min-h-screen bg-white flex flex-col items-center px-4 pb-8">
+    <!-- 언어 칩은 이름 위 별도 줄에 둔다 (좁은 화면에서 이름을 가리지 않게) -->
+    <div class="w-full flex justify-end py-4">
       <LangSwitcher />
     </div>
 
-    <div class="w-full max-w-2xl flex flex-col items-center gap-8">
+    <div class="w-full max-w-2xl flex flex-col items-center gap-8 my-auto">
 
       <!-- Logo -->
       <div class="text-center">
         <h1 class="text-6xl font-bold tracking-tight mb-2 text-gray-900">
           {{ store.person.name }}
         </h1>
-        <p class="text-gray-500 text-lg">{{ t('title') }}</p>
+        <p class="text-gray-500 text-lg">{{ store.person.title }}</p>
       </div>
 
       <!-- Search Bar -->

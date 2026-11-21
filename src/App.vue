@@ -22,14 +22,14 @@ function goHome() {
 
 <template>
   <header v-if="route.name !== 'home'" class="sticky top-0 z-50 bg-white border-b border-gray-200 px-4 py-3">
-    <div class="max-w-6xl mx-auto flex items-center gap-6">
+    <div class="max-w-6xl mx-auto flex items-center gap-3 md:gap-6">
       <!-- Mini Logo -->
-      <button @click="goHome" class="text-xl font-bold shrink-0 hover:opacity-70 transition-opacity text-gray-900">
+      <button @click="goHome" class="text-xl font-bold shrink-0 whitespace-nowrap hover:opacity-70 transition-opacity text-gray-900">
         조석규
       </button>
 
       <!-- Search Bar -->
-      <div class="flex-1 max-w-xl">
+      <div class="flex-1 min-w-0 max-w-xl">
         <div class="google-search-bar">
           <svg class="w-4 h-4 text-gray-400 mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
