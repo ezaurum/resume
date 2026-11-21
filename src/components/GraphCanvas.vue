@@ -188,15 +188,19 @@ function initGraph() {
     .attr('stroke', d => ENTITY_COLORS[d.type])
     .attr('stroke-width', 2)
 
-  // Labels for person, company and domain
-  node.filter(d => d.type === 'person' || d.type === 'company' || d.type === 'domain')
-    .append('text')
+  // 모든 노드에 이름을 붙인다. 기술·태그·프로젝트는 작고 흐리게.
+  const major = (d: SimNode) => d.type === 'person' || d.type === 'company' || d.type === 'domain'
+  node.append('text')
     .attr('text-anchor', 'middle')
-    .attr('dy', d => NODE_SIZES[d.type] + 14)
-    .attr('font-size', d => d.type === 'person' ? '13px' : '11px')
+    .attr('dy', d => NODE_SIZES[d.type] + (major(d) ? 14 : 11))
+    .attr('font-size', d => d.type === 'person' ? '13px' : major(d) ? '11px' : '9px')
     .attr('font-weight', d => d.type === 'person' || d.type === 'domain' ? 'bold' : 'normal')
-    .attr('fill', d => d.type === 'domain' ? ENTITY_COLORS.domain : '#202124')
-    .text(d => d.name.length > 8 ? d.name.slice(0, 8) + '...' : d.name)
+    .attr('fill', d => d.type === 'domain' ? ENTITY_COLORS.domain : major(d) ? '#202124' : '#5F6368')
+    .attr('pointer-events', 'none')
+    .text(d => {
+      const max = major(d) ? 8 : 14
+      return d.name.length > max ? d.name.slice(0, max) + '...' : d.name
+    })
 
   // Hover events
   node

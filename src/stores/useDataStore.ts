@@ -196,13 +196,18 @@ export const useDataStore = defineStore('data', () => {
       nodes.push({ id: c.id, type: 'company', name: c.name, description: `${c.role} | ${c.period}` })
       addEdge(person.value.id, c.id, '근무')
       c.projects.forEach(pid => addEdge(c.id, pid, '프로젝트'))
-      c.tags.slice(0, 3).forEach(tid => addEdge(c.id, tid, '태그'))
+      c.tags.forEach(tid => addEdge(c.id, tid, '태그'))
       c.domains.forEach(did => addEdge(c.id, did, '도메인'))
+      // 이 회사의 프로젝트 어디에도 안 걸린 기술은 회사에 바로 잇는다 (안 그러면 선 없이 떠다닌다)
+      const viaProjects = new Set(
+        projects.value.filter(p => c.projects.includes(p.id)).flatMap(p => p.skills)
+      )
+      c.skills.filter(sid => !viaProjects.has(sid)).forEach(sid => addEdge(c.id, sid, '기술'))
     })
 
     projects.value.forEach(p => {
       nodes.push({ id: p.id, type: 'project', name: p.name, description: p.projectType })
-      p.skills.slice(0, 3).forEach(sid => addEdge(p.id, sid, '기술'))
+      p.skills.forEach(sid => addEdge(p.id, sid, '기술'))
     })
 
     const usedSkillIds = new Set<string>()
@@ -215,7 +220,7 @@ export const useDataStore = defineStore('data', () => {
     })
 
     const usedTagIds = new Set<string>()
-    companies.value.forEach(c => c.tags.slice(0, 3).forEach(t => usedTagIds.add(t)))
+    companies.value.forEach(c => c.tags.forEach(t => usedTagIds.add(t)))
     tags.value.forEach(t => {
       if (usedTagIds.has(t.id)) {
         nodes.push({ id: t.id, type: 'tag', name: t.name, description: t.description })
